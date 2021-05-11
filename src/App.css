@@ -1,38 +1,101 @@
+@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
 .App {
-  text-align: center;
+    text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title {
+    text-align: center;
+    font-size: 60px;
+    color: #F7FBFC;
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search {
+    font-family: 'Open Sans', sans-serif, FontAwesome;
+    margin-top: 2% !important;
+    padding: 30px !important;
+    border-radius: 20px !important;
+    font-size: 20px !important;
+    margin: 0 auto !important;
+    width: 80% !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.formInput {
+    border-radius: 10px !important;
+    height: 40px !important;
 }
 
-.App-link {
-  color: #61dafb;
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif !important;
+    background-color: #2A5A7F !important;
+    animation: fadeInAnimation ease 1.5s !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav {
+    animation: fadeInAnimation ease 1.5s !important;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.topnav {
+    padding: 10px;
+    height: 70px;
+    background-color: #0A1B26;
+}
+
+.topnav a {
+    color: #F7FBFC;
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 17px;
+    border: 1px solid transparent;
+    font-weight: 900;
+}
+
+.topnav a:hover {
+    color: #F7FBFC;
+    font-weight: 900;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    text-decoration: none;
+    border: 1px solid #16344A;
+    border-radius: 10px;
+    background-color: #16344A
+}
+
+.glyphicon-search {
+    position: absolute !important;
+    font-size: 25px;
+    top: 25% !important;
+}
+
+.searchSkater {
+    padding: 50px;
+}
+
+.carousel {
+    top: 200px;
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.activeNav {
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    border: 1px solid #16344A;
+    border-radius: 10px;
+    background-color: #2A5A7F;
 }
