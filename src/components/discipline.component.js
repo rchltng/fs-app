@@ -45,10 +45,10 @@ export default class Discipline extends Component {
         }
     }
 
-    recordTable(record) {
+    recordTable(record, index) {
         let record_detail = record.map((detail) =>
             <td>{detail}</td>)
-        return <tr>{record_detail}</tr>
+        return <tr key = {index}> {record_detail}</tr>
     }
 
     render() {

@@ -98,16 +98,275 @@
             "required": ["pairs"],
             "summary": ["A twist is an element where a pair skater throws their partner upwards and catches them by the waist after they do a number of revolutions in the air. Twist entries are almost always based on the lutz or flip jump entry and the pair skater must set their partner down on a back outside edge. Axel and toeloop entries are also possible but are very rare. Twists are a leveled element and can consist of one to four rotations: the greater the number of rotations, the greater the base value of the element. Most senior teams do triple twists; some teams have done quad twists."]
         }
+    ],
 
+    "athletes": [{
+            "athlete": "Yuzuru Hanyu",
+            "representing": "Japan",
+            "discipline": "men's singles",
+            "coaches": ["Brian Orser", "Tracy Wilson", "Ghislain Briand"],
+            "current world standing": 2,
+            "ISU personal bests": [
+                ["combined total", 322.59],
+                ["short program", 111.82],
+                ["free skate", 212.99]
+            ],
+            "season's programs as of season 2020/2021": [
+                ["Let Me Entertain You", "Robbie Williams", "Jeffrey Buttle"],
+                ["Heaven and Earth", "Isao Tomita", "Shae-Lynn Bourne"]
+            ],
+            "season's results": {
+                "season": "2019-2020",
+                "event": [{
+                        "event": "2020-2021 Japan Championships",
+                        "SP": 111.82,
+                        "FS": 187.60,
+                        "Total": 299.42,
+                        "Rank": 1
+                    },
 
+                    {
+                        "event": "2021 World Championships",
+                        "SP": 106.98,
+                        "FS": 182.20,
+                        "Total": 289.18,
+                        "Rank": 3
+                    },
+                    {
+                        "event": "2021 World Team Trophy",
+                        "SP": 107.12,
+                        "FP": 193.76,
+                        "Total": 200.88,
+                        "Rank": 2
+                    }
+                ]
+            }
+        },
+        {
+            "athlete": "Shoma Uno",
+            "discipline": "men's singles",
+            "representing": "Japan"
+        },
+        {
+            "athlete": "Yuma Kagiyama",
+            "discipline": "men's singles",
+            "representing": "Japan"
+        },
+        {
+            "athlete": "Keiji Tanaka",
+            "discipline": "men's singles",
+            "representing": "Japan"
+        },
 
+        {
+            "athlete": "Nathan Chen",
+            "discipline": "men's singles",
+            "representing": "United States of America"
+        },
+        {
+            "athlete": "Jason Brown ",
+            "discipline": "men's singles",
+            "representing": "United States of America"
+        },
+        {
+            "athlete": "Javier Fernandez",
+            "discipline": "men's singles",
+            "representing": "Spain"
+        },
 
-
-
-
-
-
-
-
+        {
+            "athlete": "Patrick Chan",
+            "discipline": "men's singles",
+            "representing": "Canada"
+        },
+        {
+            "athlete": "Mikhail Kolyada",
+            "discipline": "men's singles",
+            "representing": "Russia"
+        },
+        {
+            "athlete": "Junhwan Cha",
+            "discipline": "men's singles",
+            "representing": "Republic of Korea"
+        },
+        {
+            "athlete": "Yuna Kim",
+            "discipline": "ladies' singles",
+            "representing": "Republic of Korea"
+        },
+        {
+            "athlete": "Evgenia Medvedeva",
+            "discipline": "ladies' singles",
+            "representing": "Russia"
+        },
+        {
+            "athlete": "Anna Scherbakova",
+            "discipline": "ladies' singles",
+            "representing": "Russia"
+        },
+        {
+            "athlete": "Aliona Kostarnaia",
+            "discipline": "ladies' singles",
+            "representing": "Russia"
+        },
+        {
+            "athlete": "Alexandra Trusova",
+            "discipline": "ladies' singles",
+            "representing": "Russia"
+        },
+        {
+            "athlete": "Starr Andrews",
+            "discipline": "ladies' singles",
+            "representing": "United States of America"
+        },
+        {
+            "athlete": "Mariah Bell",
+            "discipline": "ladies' singles",
+            "representing": "United States of America"
+        },
+        {
+            "athlete": "Karen Chen",
+            "discipline": "ladies' singles",
+            "representing": "United States of America"
+        },
+        {
+            "athlete": "Amber Glenn",
+            "discipline": "ladies' singles",
+            "representing": "United States of America"
+        },
+        {
+            "athlete": "Gracie Gold",
+            "discipline": "ladies' singles",
+            "representing": "United States of America "
+        },
+        {
+            "athlete": "Miki Ando",
+            "discipline": "ladies' singles",
+            "representing": "Japan"
+        },
+        {
+            "athlete": "Shizuka Arakawa",
+            "discipline": "ladies' singles",
+            "representing": "Japan"
+        },
+        {
+            "athlete": "Mao Asada",
+            "discipline": "ladies' singles",
+            "representing": "Japan"
+        }, {
+            "athlete": "Wakaba Higuchi",
+            "discipline": "ladies' singles",
+            "representing": "Japan"
+        },
+        {
+            "athlete": "Marin Honda",
+            "discipline": "ladies' singles",
+            "representing": "Japan"
+        },
+        {
+            "athlete": "Rika Kihira",
+            "discipline": "ladies' singles",
+            "representing": "Japan"
+        },
+        {
+            "athlete": "Tessa Virtue / Scott Moir",
+            "discipline": "ice dance",
+            "representing": "Canada"
+        },
+        {
+            "athlete": "Kaitlyn Weaver / Andrew Poje",
+            "discipline": "ice dance",
+            "representing": "Canada"
+        },
+        {
+            "athlete": "Shae Lynn Bourne / Victor Kraatz",
+            "discipline": "ice dance",
+            "representing": "Canada"
+        },
+        {
+            "athlete": "Piper Gilles / Paul Poirier",
+            "discipline": "ice dance",
+            "representing": "Canada"
+        },
+        {
+            "athlete": "Madison Chock / Evan Bates ",
+            "discipline": "ice dance",
+            "representing": "United States of America"
+        },
+        {
+            "athlete": "Meryl Davis / Charlie White ",
+            "discipline": "ice dance",
+            "representing": "United States of America"
+        },
+        {
+            "athlete": "Madison Hubbell / Zachary Donohue ",
+            "discipline": "ice dance",
+            "representing": "United States of America"
+        },
+        {
+            "athlete": "Maia Shibutani / Alex Shibutani ",
+            "discipline": "ice dance",
+            "representing": "United States of America"
+        },
+        {
+            "athlete": "Alexandra Stepanova / Ivan Bukin ",
+            "discipline": "ice dance",
+            "representing": "Russia"
+        },
+        {
+            "athlete": "Victoria Sinitsina / Nikita Katsalapov ",
+            "discipline": "ice dance",
+            "representing": "Russia"
+        },
+        {
+            "athlete": "Misato Komatsubara / Tim Koleto ",
+            "discipline": "ice dance",
+            "representing": "Japan"
+        },
+        {
+            "athlete": "Utana Yoshida / Shingo Nishiyama ",
+            "discipline": "ice dance",
+            "representing": "Japan"
+        },
+        {
+            "athlete": "Gabriella Papadakis / Guillaume Cizeron",
+            "discipline": "ice dance",
+            "representing": "France"
+        },
+        {
+            "athlete": "Wenjing Sui / Cong Han ",
+            "discipline": "pairs",
+            "representing": "China"
+        },
+        {
+            "athlete": "Aleksandra Boikova / Dmitrii Kozlovskii ",
+            "discipline": "pairs",
+            "representing": "Russia"
+        },
+        {
+            "athlete": "Tatiana Volosozhar / Maxim Trankov ",
+            "discipline": "pairs",
+            "representing": "Russia"
+        },
+        {
+            "athlete": "Riku Miura / Ryuichi Kihara ",
+            "discipline": "pairs",
+            "representing": "Japan"
+        },
+        {
+            "athlete": "Alexa Knierim / Brandon Frazier",
+            "discipline": "pairs",
+            "representing": "United States of America"
+        },
+        {
+            "athlete": "Evelyn Walsh / Trennt Michaud",
+            "discipline": "pairs",
+            "representing": "Canada"
+        },
+        {
+            "athlete": "Kirsten Moore-Towers / Michael Marinaro",
+            "discipline": "pairs",
+            "representing": "Canada"
+        }
     ]
 }

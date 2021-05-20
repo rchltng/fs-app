@@ -24,6 +24,8 @@
 .formInput {
     border-radius: 10px !important;
     height: 40px !important;
+    appearance: auto !important;
+    background-color: #F7FBFC !important;
 }
 
 body {
@@ -64,6 +66,8 @@ body {
     text-decoration: none;
     font-size: 17px;
     border: 1px solid transparent;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
 }
 
 .link:hover {
@@ -115,6 +119,12 @@ body {
     height: 65% !important;
 }
 
+.filters {
+    padding: 30px;
+    width: 75%;
+    margin: auto !important;
+}
+
 .sidenav {
     height: 50%;
     width: 15%;
@@ -134,11 +144,13 @@ body {
     color: #F7FBFC !important;
     float: left;
     text-align: center;
-    padding: 14px 16px;
+    padding: 15px;
     font-size: 17px;
     border: 1px solid transparent;
     width: 100%;
     text-decoration: none !important;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
 }
 
 .discDetail:hover {
@@ -238,6 +250,8 @@ tr {
     background-color: #16344A;
     border-radius: 5px !important;
     color: #F6F6F6;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
 }
 
 .require:hover {
@@ -249,4 +263,26 @@ tr {
 
 .required {
     margin-bottom: 30px;
+}
+
+.athleteTable {
+    width: 80% !important;
+    margin: 0 auto;
+}
+
+
+/* .athleteTable tr:hover {
+    background-color: #56776c !important;
+} */
+
+.table-hover tbody tr:hover td,
+.table-hover tbody tr:hover th {
+    background-color: #16344A;
+    color: #F6F6F6;
+    cursor: pointer;
+}
+
+.head {
+    font-size: 20px;
+    font-weight: bolder;
 }
