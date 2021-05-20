@@ -1,0 +1,113 @@
+{
+    "disciplines": [{
+            "discipline": "singles",
+            "overview": ["Single skating is a discipline of figure skating in which male and female skaters compete individually. All athletes perform the short program, and depending on their placement in the short, move to the second round and perform in the free skate.", "Single skating has required elements that skaters must perform during a competition and that make up a well-balanced skating program. These elements include jumps, (performed as a single jump, a sequence, or a combination), spins, step sequences, and choreographic sequences. "],
+            "sp_elements": [
+                "3 jumping passes", ["1 non-axel solo triple (for ladies or men) or quadruple (for men) jump", "1 double or triple axel", "1 jump combination: quad-triple, quad-double (for men), triple-triple, or triple-double (for ladies or men)"], "3 spins (1 flying spin, 1 spin in one basic position, 1 combination spin)", "1 step sequence", "1 choreographic sequence"
+            ],
+            "fs_elements": ["7 jumping passes", ["At least 1 axel", "Up to 3 combinations or sequences; only one 3-jump combination allowed", "1 quadruple jump may be repeated", "Up to 2 different quad or triple jumps may be repeated", "Same quad/triple/double jump may only be performed twice in total"], "3 spins (1 flying spin, 1 spin in one basic position, 1 combination spin)", "1 step sequence", "1 choreographic sequence"],
+            "records": [
+                ["Short Program (Men)", 111.82, "Yuzuru Hanyu"],
+                ["Short Program (Ladies)", 85.45, "Aliona Kostornaia"],
+                ["Free Skate (Men) ", 224.92, "Nathan Chen"],
+                ["Free Skate (Ladies)", 166.62, "Alexandra Trusova"],
+                ["Combined Total (Men)", 335.30, "Nathan Chen"],
+                ["Combined Total (Ladies) ", 247.59, "Aliona Kostornaia"]
+            ],
+            "super_slam": [
+                ["Yuzuru Hanyu", 2020],
+                ["Yuna Kim", 2010],
+                ["Alina Zagitova", 2019]
+            ]
+        },
+        {
+            "discipline": "pairs",
+            "overview": ["Pair skating is a figure skating discipline defined by the International Skating Union (ISU) as 'the skating of two persons in unison who perform their movements in such harmony with each other as to give the impression of genuine Pair Skating as compared with independent Single Skating'. As of now, a pairs team has to consist of one woman and one man. All athletes perform the short program, and depending on their placement in the short, move to the second segment and perform in the free skate.", "Pair skating has required elements that skaters must perform during a competition and that make up a well-balanced skating program. These elements include overhead lifts, throw jumps, synchronized side-by-side jumps and spins, death spirals, pair spins, and twists."],
+            "sp_elements": ["1 side-by-side solo jump (any double or triple)", "1 throw jump (any double or triple)", "1 lift (group varies by season)", "1 death spiral (type varies by season)", "1 twist (double or triple)", "1 side-by-side combination spin", "1 step sequence"],
+            "fs_elements": [" side-by-side jumping passes, one in combination or sequence", "2 throw jumps (different types, any number of rotations)", "3 lifts (all from different groups)", "1 death spiral (any type)", "1 twist (any number of rotations)", "1 pair combination spin"],
+            "records": [
+                ["Short Program", 82.34, "Aleksandra Boikova / Dmitrii Kozlovskii"],
+                ["Free Skating", 155.60, "Sui Wenjing / Hang Cong"],
+                ["Combined Total", 234.84, "Sui Wenjing / Hang Cong"]
+            ],
+            "super_slam": [
+                ["Maxim Trankov", 2014],
+                ["Aliona Savchenko", 2018]
+            ]
+        },
+        {
+            "discipline": "ice dance",
+            "overview": ["Ice dance is a discipline of figure skating that historically draws from ballroom dancing. Due to its origins, ice dancers actually wear shorter blades with a smaller toe pick to accommodate the intricate footwork, edge-work, and close partnering required. As of now, an ice dance team has to consist of one woman and one man.", "Unlike the other disciplines, the two segments of an ice dance competition are called the rhythm dance (RD) and the free dance (FD); however, the duration of both segments are the same as the short and long program in the other disciplines. The rhythm dance has a predetermined pattern, tempo, and style of music; the requirements change each season.", "Ice dance has required elements that competitors must perform in both. They include the dance lift, the dance spin, the step sequence, twizzles, and choreographic elements. The majority of these elements are expected to be done in various dance holds, which is the manner dancers hold each other’s hands during a dance."],
+            "sp_elements": ["Up to 3 step sequences, at least one of which is a pattern dance segment (pattern varies by season)", "1 lift", "1 set of sequential twizzles"],
+            "fs_elements": ["2 step sequences (requirements vary by season)", "3 lifts (different types)", "1 set of synchronized twizzles", "1 dance combination spin", "1 choreographic character step sequence", "2 of the following: choreographic lift, choreographic spinning movement, choreographic twizzling movement, choreographic sliding movement"],
+            "records": [
+                ["Rhythm Dance", 90.03, "Gabriella Papadakis / Guillaume Cizeron"],
+                ["Free Dance", 136.58, "Gabriella Papadakis / Guillaume Cizeron"],
+                ["Combined Total", 226.61, "Gabriella Papadakis / Guillaume Cizeron"]
+            ],
+            "super_slam": [
+                ["Tessa Virtue", 2016],
+                ["Scott Moir", 2016]
+            ]
+        }
+    ],
+
+    "elements": [{
+            "element": "anatomy of a figure skate",
+            "required": [],
+            "summary": ["To understand elements, it is important to know the anatomy of a figure skate. Figure skates consist of a boot and a blade that is attached with screws to the sole of the boot. These blades are about 4.8 millimeters thick and slightly curved, forming an arc of a circle with a radius of 180-220 centimeters; the curved portion of the blade is also known as a rocker. Figure skating blades also contain jagged teeth in the front of the blade, which is known as a toe pick, and a groove on the bottom, which creates a distinct inside and outside edge. The anatomy of the blade is crucial for the execution of elements performed in all four disciplines."]
+        },
+        {
+            "element": "jumps",
+            "required": ["singles", "pairs"],
+            "summary": ["Jumps are an element where a skater leaps into the air and does numerous rotations in the air before landing on one leg. Skaters are scored based on how difficult the jump is (the base value of the jump), and how well the jump is executed (the grade of execution, or GOE). Jumps are differentiated based on the type of takeoff used and number of rotations completed.)", "The six jumps performed in competition are: the toe loop, the flip, the lutz, the salchow, the loop, and the axel. These jumps can be divided into two groups: toe jumps (the toe loop, the flip, and the Lutz) are jumps where the skaters propel themselves into the air by using the toe pick, while edge jumps (the Salchow, the loop, and the Axel) are jumps where skaters take off with the edge of the blade. All jumps land backwards on an outside edge, and all jumps have a backwards take off except for the axel. Skaters will either rotate counterclockwise and land on their right foot (the most common type of rotation), or rotate clockwise and land on their left foot. For jumps with the same number of rotations, the value from least to greatest is: toe loop, salchow, loop, flip, lutz, axel.", "The number of rotations performed in the air determines whether the jump is a single, double, triple, or quadruple (commonly known as a 'quad'). The only quad not to have been accomplished by a skater in competition is the quadruple Axel, which involves four and a half rotations. This jump has been attempted by Japanese skater Yuzuru Hanyu in practice but has not yet been landed successfully.", "Men’s singles and ladies’ singles are expected to perform jumps, and pairs are expected to perform jumps side by side in synch.", "Pairs are also expected to perform throw jumps, which consist of the male partner throwing the female partner into one of the size jumps mentioned previously. However, for throw jumps, throw flips and lutzes have the same base value, and throw jumps in general have lower base values than the normal, unassisted jumps of the same type."]
+        },
+        {
+            "element": "spins",
+            "required": ["singles", "pairs", "ice dance"],
+            "summary": ["Spins are an element that is required by all discipline in which the skater rotates, centered on a single point on the ice, while holding one or more body positions. There are three main categories of spins in figure skating: upright spins, camel spins, and sit spins, but there are numerous variations of spins within these categories that skaters perform. Spins, like jumps, are also expected to be performed in combination and require a certain number of rotations. Spins are a leveled element, with increasing base value from level B through levels 1-4; in other words, the higher the level, the higher the score given to the spin.", "Single skaters are expected to perform flying spins, which is a spin where skaters enter the spin by jumping into the air). In pairs, partners are expected to do spins side by side in synchronization and pair spins, which are spins where the two partners are in physical contact and spin together. In ice dance, partners are expected to perform dance spins, which are spins that are performed in a dance hold."]
+
+        },
+        {
+            "element": "lifts",
+            "required": ["pairs", "ice dance"],
+            "summary": ["Lifts have two main qualities: the hold or point of contact between partners and the lifted partner’s position during the lift. There are no rules against a reverse rotational lift, in which the woman lifts the man. Lifts are a leveled element, with increasing base value from level B through levels 1-4.", "In ice dance, point of contact must not go over the lifting partner’s head. There are two types of dance lifts: short lifts, which should be done in under seven seconds; and combination lifts, which should be done in under 12 seconds. There are four types of short lifts: the stationary lift, the straight-line lift, the Curve lift, and the Rotational lift. There are three types of combination lifts: two Rotational lifts in different directions, two Curve lifts performed in a serpentine pattern, and different two types of short lifts performed together.", "In pairs lifts, the pair skater must hold their partner over their head while rotating.  There are five “groups” of lifts based on the hold of the partners during takeoff. The groups are the armpit hold position. The waist hold position, the hand to hip position, the hand-to-hand position (press lift), and the hand-to-hand position (lasso lift). The higher the group, the higher number of points given."]
+        },
+        {
+            "element": "step sequences",
+            "required": ["singles", "pairs", "ice dance"],
+            "summary": ["Step sequences have been defined as 'steps and turns in a pattern on the ice'. There are various types of turns and steps used in a step sequence, but some are: twizzles (turn), brackets (turn), loops (turn), counters (turn), rockers (turn), and choctaws (step). To earn the most points. the sequence must: match the music, be performed effortlessly throughout the sequence, contain multidirectional rotations, and use their upper body while maintaining their balance, have deep edges, clean turns, and steps. Step sequences are a leveled element, with increasing base value from level B through levels 1-4."]
+        },
+        {
+            "element": "choreographic sequence",
+            "required": ["singles", "pairs"],
+            "summary": ["A choreographic sequence consists of any kind of movements like steps, turns, spirals, arabesques, spread eagles, Ina Bauers, hydroblading, any jumps with maximum of 2 revolutions, spins, etc. "]
+        },
+        {
+            "element": "twizzles",
+            "required": ["ice dance"],
+            "summary": ["While twizzles are an optional movement that singles and pair skaters can perform in their step sequence, twizzles are a required element in ice dance. A twizzle is a continuous travelling turn of at least one rotation on one foot. Twizzles must be continuous and must always be travelling across the ice, or else they will be invalidated. Twizzles can start from any of the four edges of their blade & the skater rotates in the same direction as the initial curve.", "There are two types of twizzle sets. A set of synchronized twizzles is a series of two twizzles performed by each partner, with up to three steps between twizzles. A set of sequential twizzles is a series of two twizzles for each partner, with up to one step between twizzles."]
+        },
+        {
+            "element": "death spirals",
+            "required": ["pairs"],
+            "summary": ["The death spiral is 'a circular move in which a pair skater lowers their partner to the ice while they are arched backwards gliding on one foot'. There are four types of death spirals: the forward inside death spiral, the backward inside death spiral, the backward outside death spiral, and the forward outside death spiral."]
+        },
+        {
+            "element": "twists",
+            "required": ["pairs"],
+            "summary": ["A twist is an element where a pair skater throws their partner upwards and catches them by the waist after they do a number of revolutions in the air. Twist entries are almost always based on the lutz or flip jump entry and the pair skater must set their partner down on a back outside edge. Axel and toeloop entries are also possible but are very rare. Twists are a leveled element and can consist of one to four rotations: the greater the number of rotations, the greater the base value of the element. Most senior teams do triple twists; some teams have done quad twists."]
+        }
+
+
+
+
+
+
+
+
+
+
+
+    ]
+}

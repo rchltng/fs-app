@@ -30,7 +30,9 @@ body {
     margin: 0;
     font-family: 'Raleway', sans-serif !important;
     background-color: #2A5A7F !important;
+    color: #F7FBFC !important;
     animation: fadeInAnimation ease 1.5s !important;
+    font-size: 16px !important;
 }
 
 .nav {
@@ -52,7 +54,7 @@ body {
     background-color: #0A1B26;
 }
 
-.topnav a {
+.link {
     color: #F7FBFC;
     float: left;
     text-align: center;
@@ -61,12 +63,10 @@ body {
     text-decoration: none;
     font-size: 17px;
     border: 1px solid transparent;
-    font-weight: 900;
 }
 
-.topnav a:hover {
+.link:hover {
     color: #F7FBFC;
-    font-weight: 900;
     transition: all .3s ease;
     -webkit-transition: all .3s ease;
     text-decoration: none;
@@ -98,4 +98,153 @@ body {
     border: 1px solid #16344A;
     border-radius: 10px;
     background-color: #2A5A7F;
+    color: #F7FBFC !important;
+    text-decoration: none !important;
+}
+
+.options {
+    margin-top: 50% !important;
+    height: 100%;
+}
+
+.elementnav {
+    width: 20% !important;
+}
+
+.sidenav {
+    height: 50%;
+    width: 15%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    border-left: 1px solid;
+    /* overflow-x: hidden; */
+    margin-top: 10%;
+    /* margin-right: 5%; */
+    display: flex;
+    /* min-height: 100%; */
+}
+
+.discDetail {
+    color: #F7FBFC;
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+    border: 1px solid transparent;
+    width: 100%;
+}
+
+.discDetail:hover {
+    color: #F7FBFC;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    text-decoration: none;
+    border: 1px solid;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.container {
+    margin-top: 70px;
+}
+
+.sidenav li {
+    padding: 0;
+    margin-top: 0px;
+    list-style-type: none;
+    line-height: 1.2em;
+}
+
+#anatomy {
+    height: 300px;
+}
+
+.disciplineTitle {
+    font-size: 85px;
+    height: 85px;
+    display: block;
+}
+
+.discipline {
+    margin: 100px;
+    height: 100%;
+}
+
+.disciplines {
+    margin-top: 150px;
+    width: 80%;
+}
+
+.overview {
+    font-size: 16px;
+    text-align: justify;
+}
+
+.element-header {
+    font-size: 25px;
+    text-align: center;
+}
+
+.container {
+    border-spacing: 15px;
+    margin: 0;
+}
+
+.elements {
+    display: table-row;
+    table-layout: fixed;
+}
+
+.element {
+    display: table-cell;
+    font-size: 15px;
+    border: solid 1px;
+    border-radius: 10px;
+    padding: 5%;
+    width: 50%;
+}
+
+tr {
+    color: #F6F6F6;
+    text-align: center;
+}
+
+.table {
+    width: 93% !important;
+    margin: 0 auto;
+}
+
+.attribute {
+    border: solid 1px;
+    border-radius: 10px;
+    margin: 30px;
+    margin-top: 0px;
+    padding: 20px;
+}
+
+.elementTitle {
+    font-size: 75px;
+    height: 75px;
+}
+
+.require {
+    padding: 10px 16px;
+    font-size: 17px;
+    margin: 5px;
+    background-color: #16344A;
+    border-radius: 5px !important;
+    color: #F6F6F6;
+}
+
+.require:hover {
+    color: #F6F6F6;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    background-color: #0A1B26;
+}
+
+.required {
+    margin-bottom: 30px;
 }
