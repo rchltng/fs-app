@@ -30,7 +30,7 @@ export default class Element extends Component {
 
     link(discipline){
         let link = "disciplines/#" + discipline;
-        return <Link onClick={() => window.location.replace(link)} to={"disciplines" + "/#" + discipline} class="require"> {discipline} </Link>
+        return <Link onClick={() => window.location.replace(link)} to={"disciplines" + "/#" + discipline} className="require"> {discipline} </Link>
     }
 
     render() {

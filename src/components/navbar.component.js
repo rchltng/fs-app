@@ -18,8 +18,8 @@ class NavBar extends Component {
                         <NavLink className="link" to="/" exact={true} activeClassName="activeNav">  Home</NavLink>
                         <NavLink className="link" to="/elements" activeClassName="activeNav"> Elements </NavLink>
                         <NavLink className="link" to="/disciplines" activeClassName="activeNav"> Disciplines </NavLink>
-                        <NavLink className="link" to="/scores" activeClassName="activeNav"> Scores </NavLink>
                         <NavLink className="link" to="/skaters" activeClassName="activeNav"> Skaters &amp; Rankings</NavLink>
+                        <NavLink className="link" to="/scores" activeClassName="activeNav"> Scores </NavLink>
                                 <Switch location={location}>
                                     <Route path="/" exact component={Home} />
                                     <Route path="/disciplines" component={Disciplines} />

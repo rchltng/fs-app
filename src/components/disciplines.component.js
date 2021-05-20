@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom"; 
 
 import Discipline from './discipline.component';
 
@@ -8,8 +9,10 @@ const Disciplines = ({ }) => {
     const pairs = React.useRef()
     const icedance = React.useRef()
 
-    function smoothScroll(target) {
+    function smoothScroll(target, e) {
         const { top } = target.getBoundingClientRect();
+      console.log(e)
+    //   e.target.classList.add('active')
         
         window.scrollTo({
             top: top + window.pageYOffset - 50,
@@ -22,21 +25,21 @@ const Disciplines = ({ }) => {
             <div className="sidenav">
                 <li className = "options">
                     <ol>
-                        <a className = "discDetail" onClick={() => smoothScroll(overview.current)}>overview</a>
+                        <Link className = "discDetail" onClick={(e) => smoothScroll(overview.current, e)} to={"#overview"}>overview</Link>
                     </ol>
                     <ol>
-                        <a className = "discDetail" onClick={() => smoothScroll(singles.current)}>singles</a>
+                        <Link className = "discDetail" onClick={(e) => smoothScroll(singles.current, e)} to={"#singles"}>singles</Link>
                     </ol>
                     <ol>
-                        <a className = "discDetail" onClick={() => smoothScroll(pairs.current)}>pairs</a>
+                        <Link className = "discDetail" onClick={(e) => smoothScroll(pairs.current, e)} to={"#pairs"}>pairs</Link>
                     </ol>
                     <ol>
-                        <a className = "discDetail" onClick={() => smoothScroll(icedance.current)}>ice dance</a>
+                        <Link className = "discDetail" onClick={(e) => smoothScroll(icedance.current, e)} to={"#ice dance"}>ice dance</Link>
                     </ol>
                 </li>
             </div>
             <div className="disciplines">
-                <div className="discipline" ref={overview}>
+                <div id={'overview'} className="discipline" ref={overview}>
                     <div className="disciplineTitle">
                         overview
                     </div>
@@ -54,7 +57,7 @@ const Disciplines = ({ }) => {
                     <Discipline discipline="pairs"></Discipline>
                 </div>
 
-                <div id={'icedance'} ref={icedance}>
+                <div id={'ice dance'} ref={icedance}>
                     <Discipline discipline="ice dance"></Discipline>
                 </div>
             </div>
