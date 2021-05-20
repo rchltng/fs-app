@@ -15,7 +15,7 @@ const Disciplines = ({ }) => {
     //   e.target.classList.add('active')
         
         window.scrollTo({
-            top: top + window.pageYOffset - 50,
+            top: top + window.pageYOffset,
             behavior: "smooth"
         });
     }
@@ -49,15 +49,15 @@ const Disciplines = ({ }) => {
                     <p> The scores from the short and free programs are added together to determine the skaters’ final scores. The skater with the highest total score wins.</p>
                 </div>
 
-                <div id={'singles'} ref={singles} >
-                    <Discipline discipline="singles"></Discipline>
+                <div className="discipline" id={'singles'} ref={singles} >
+                    <Discipline  id={'singles'} discipline="singles"></Discipline>
                 </div>
 
-                <div id={'pairs'} ref={pairs} >
+                <div className="discipline" id={'pairs'} ref={pairs} >
                     <Discipline discipline="pairs"></Discipline>
                 </div>
 
-                <div id={'ice dance'} ref={icedance}>
+                <div className="discipline" id={'ice dance'} ref={icedance}>
                     <Discipline discipline="ice dance"></Discipline>
                 </div>
             </div>

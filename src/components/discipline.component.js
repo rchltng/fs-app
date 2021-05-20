@@ -86,7 +86,7 @@ export default class Discipline extends Component {
     </table>
 
         return (
-            <div className="discipline">
+            <React.Fragment>
                 <div className="disciplineTitle">
                     {this.state.discipline}
                 </div>
@@ -125,7 +125,7 @@ export default class Discipline extends Component {
                     <p> Winning all major international competitions during the course of a career is called a "Career Super Grand Slam" or "Super Slam". Major competitions consist of the Olympics, Worlds, 4 Continents/Europeans, Grand Prix Final, Junior Worlds, and Junior Grand Prix Final. The following individuals in this discipline have achieved this feat.</p>
                     {super_slam}
                 </div>
-            </div>
+            </React.Fragment>
         )
     }
 }

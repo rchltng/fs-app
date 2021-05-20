@@ -110,11 +110,6 @@ body {
     text-decoration: none !important;
 }
 
-.options {
-    margin-top: 50% !important;
-    height: 100%;
-}
-
 .elementnav {
     width: 20% !important;
     height: 65% !important;
@@ -174,8 +169,9 @@ body {
 }
 
 .discipline {
-    margin: 100px;
-    height: 100%;
+    margin: 50px;
+    padding: 50px;
+    height: 100% !important;
 }
 
 .disciplines {
