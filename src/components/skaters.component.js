@@ -10,30 +10,73 @@ export default class Skaters extends Component {
     constructor(props) {
 
         super(props);
+        this.handleQuery = this.handleQuery.bind(this);
+        this.handleDiscipline = this.handleDiscipline.bind(this);
+        this.handleCountry = this.handleCountry.bind(this);
         this.state = {
+            allAthletes: [],
             athletes: [],
+            query: '',
+            country: ''
         }
     }
 
     componentDidMount() {
         let data = require("../data/data.json");
         this.setState({
-            athletes: data.athletes
+            athletes: data.athletes,
+            allAthletes: data.athletes
         });
     }
 
-    handleQuery(athlete, index) {
+    listAthletes(athlete, index) {
         return <tr key={index} className="article">
-            <td> {athlete.athlete} </td>
-            <td> {athlete.discipline} </td>
-            <td> {athlete.representing}</td>
-        
+            <td className="athleteTD"> {athlete.athlete} </td>
+            <td className="athleteTD"> {athlete.discipline} </td>
+            <td className="athleteTD"> {athlete.representing}</td>
         </tr>
     }
 
+    handleQuery(e) {
+        let query = e.target.value.toLowerCase();
+        console.log(query)
+        let athletes = this.state.allAthletes.filter((athlete) => athlete.athlete.toLowerCase().includes(query));
+        this.setState({
+            athletes: athletes
+        });
+    }
+
+    handleDiscipline(e) {
+        let discipline = e.target.value.toLowerCase();
+        if (discipline === '') {
+            this.setState({
+                athletes: this.state.allAthletes
+            });
+        } else {
+            let athletes = this.state.allAthletes.filter((athlete) => athlete.discipline.toLowerCase() === discipline);
+            this.setState({
+                athletes: athletes
+            });
+        }
+    }
+
+    handleCountry(e) {
+        let country = e.target.value.toLowerCase();
+        if (country === '') {
+            this.setState({
+                athletes: this.state.allAthletes
+            });
+        } else {
+            let athletes = this.state.allAthletes.filter((athlete) => athlete.representing.toLowerCase() === country);
+            this.setState({
+                athletes: athletes
+            });
+        }
+    }
+
     render() {
-        console.log(this.state.athletes)
-        let athletesList = this.state.athletes.map(this.handleQuery);
+        console.log("here: " + this.state.athletes)
+        let athletesList = this.state.athletes.map(this.listAthletes);
         return (
             <div>
                 <div className="searchSkater">
@@ -307,19 +350,24 @@ export default class Skaters extends Component {
                         </Row>
                     </Form>
 
+                    {(this.state.athletes.length !== 0) ?
+                        <div className="athleteTable">
+                            <table className="table table-hover" >
+                                <thead className="head">
+                                    <tr>
+                                        <th scope="col">skater / pair</th>
+                                        <th scope="col">discipline</th>
+                                        <th scope="col">country representing</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {athletesList}
+                                </tbody>
+                            </table>
 
-                    <table className="table athleteTable table-hover" >
-                    <thead className="head">
-                    <tr>
-                        <th scope="col">skater / pair</th>
-                        <th scope="col">discipline</th>
-                        <th scope="col">country representing</th>
-                    </tr>
-                </thead>
-                        <tbody>
-                        {athletesList}
-                        </tbody>
-                    </table>
+                        </div>
+                        : <p className = "noResults"> sorry, there no skaters were found in this search. please try a different query. </p>
+                    }
 
                 </div>
             </div>
