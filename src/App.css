@@ -296,3 +296,7 @@ tr {
     color: #F6F6F6;
     font-size: 20px;
 }
+
+select {
+    color: #16344A !important;
+}
