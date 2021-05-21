@@ -7,6 +7,7 @@ import Disciplines from "./disciplines.component";
 import Skaters from "./skaters.component";
 import Elements from "./elements.component";
 import Scores from "./scores.component";
+import Skater from "./skater.component"
 
 class NavBar extends Component {
     render() {
@@ -23,9 +24,10 @@ class NavBar extends Component {
                                 <Switch location={location}>
                                     <Route path="/" exact component={Home} />
                                     <Route path="/disciplines" component={Disciplines} />
-                                    <Route path="/skaters" component={Skaters} />
+                                    <Route path="/skaters" exact component={Skaters} />
                                     <Route path="/elements" component={Elements} />
                                     <Route path="/scores" component={Scores} />
+                                    <Route path="/skaters/:skater" component={Skater}/>
                                 </Switch>
                     </nav>
                 )} />

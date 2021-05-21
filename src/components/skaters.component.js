@@ -30,7 +30,8 @@ export default class Skaters extends Component {
     }
 
     listAthletes(athlete, index) {
-        return <tr key={index} className="article">
+        let link = 'skaters/' + athlete.athlete;
+        return <tr key={index} onClick= {() => window.location.replace(link)} className="article">
             <td className="athleteTD"> {athlete.athlete} </td>
             <td className="athleteTD"> {athlete.discipline} </td>
             <td className="athleteTD"> {athlete.representing}</td>
@@ -214,8 +215,8 @@ export default class Skaters extends Component {
                                         <option value="Kazakhstan">Kazakhstan</option>
                                         <option value="Kenya">Kenya</option>
                                         <option value="Kiribati">Kiribati</option>
-                                        <option value="Korea, Democratic People's Republic of">Korea, Democratic People's Republic of</option>
-                                        <option value="Korea, Republic of">Korea, Republic of</option>
+                                        <option value="Democratic People's Republic of Korea">Democratic People's Republic of Korea</option>
+                                        <option value="Republic of Korea">Republic of Korea </option>
                                         <option value="Kuwait">Kuwait</option>
                                         <option value="Kyrgyzstan">Kyrgyzstan</option>
                                         <option value="Lao People's Democratic Republic">Lao People's Democratic Republic</option>
