@@ -104,6 +104,9 @@
             "athlete": "Yuzuru Hanyu",
             "representing": "Japan",
             "discipline": "men's singles",
+            "age": 26,
+            "dob": "12/07/1994",
+            "skating_since": 1998,
             "coaches": ["Brian Orser", "Tracy Wilson", "Ghislain Briand"],
             "standing": 2,
             "pb": [

@@ -298,6 +298,140 @@ select {
     color: #16344A !important;
 }
 
+.skaterDetail {
+    margin-top: 8%;
+}
+
+.firstName {
+    font-size: 250%;
+    font-weight: bold;
+    margin: 0;
+}
+
+.lastName {
+    font-size: 400%;
+    font-weight: bold;
+    margin: 0;
+}
+
 .flag {
-    max-width: 10%
+    float: left;
+    margin-top: 20px;
+    max-width: 35%;
+}
+
+.flagName {
+    float: left;
+    font-size: 175%;
+    margin-left: 10%;
+    margin-top: 12%;
+    font-weight: bold;
+}
+
+.skaterInfo {
+    margin-top: 5%;
+}
+
+.profile_card {
+    /* display: table-row;
+    table-layout: fixed; */
+    width: 95% !important;
+    margin: 0 auto;
+}
+
+.skaterTop {
+    display: table-cell;
+}
+
+.skaterImg {
+    width: 20%;
+}
+
+.skaterBlurb {
+    width: 20%;
+}
+
+.skaterRank {
+    width: 20%;
+    text-align: center;
+}
+
+.standingHeader {
+    font-size: 200%;
+    margin: 0;
+    font-weight: bold;
+}
+
+.standingNum {
+    font-size: 425%;
+    font-weight: bold;
+}
+
+.space {
+    width: 10%;
+}
+
+.blurbDetail {
+    float: left;
+    /* padding-left: 12%; */
+    text-align: center !important;
+    width: 33.33%;
+    font-size: 12px;
+}
+
+.blurbDisc {
+    border-left: solid 1.5px;
+}
+
+.skatingSince {
+    border-left: solid 1.5px;
+}
+
+.blurbTitle {
+    margin: 0;
+    font-weight: bold;
+}
+
+.blurb {
+    margin-top: 12%;
+}
+
+
+/* .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: orangered;
+    background-color: #fff;
+    border-color: none;
+} */
+
+.nav-tabs {
+    border-color: transparent !important;
+}
+
+.nav-link {
+    color: #F6F6F6 !important;
+    border-color: transparent !important;
+    text-decoration: none !important;
+    background-color: #16344A !important;
+}
+
+.nav-link:hover {
+    background-color: #11293B !important;
+}
+
+
+/* .nav-link:active {
+    color: black !important;
+} */
+
+.nav-item {
+    width: 20%;
+    text-align: center;
+    margin-right: .5%;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    background-color: #0A1B26!important;
+    border-color: transparent !important;
 }
