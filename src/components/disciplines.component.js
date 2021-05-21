@@ -1,19 +1,15 @@
 import React from 'react';
 import { Link } from "react-router-dom"; 
-
 import Discipline from './discipline.component';
 
-const Disciplines = ({ }) => {
+const Disciplines = () => {
     const overview = React.useRef()
     const singles = React.useRef()
     const pairs = React.useRef()
     const icedance = React.useRef()
 
     function smoothScroll(target, e) {
-        const { top } = target.getBoundingClientRect();
-      console.log(e)
-    //   e.target.classList.add('active')
-        
+        const { top } = target.getBoundingClientRect(); 
         window.scrollTo({
             top: top + window.pageYOffset,
             behavior: "smooth"

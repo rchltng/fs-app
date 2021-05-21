@@ -163,10 +163,6 @@ body {
     cursor: pointer;
 }
 
-.container {
-    margin-top: 70px;
-}
-
 .sidenav li {
     padding: 0;
     margin-top: 0px;
@@ -201,9 +197,10 @@ body {
     text-align: center;
 }
 
-.container {
+.discContainer {
     border-spacing: 15px;
     margin: 0;
+    margin-top: 70px;
 }
 
 .elements {
@@ -233,8 +230,8 @@ tr {
 .attribute {
     border: solid 1px;
     border-radius: 10px;
-    margin: 30px;
-    margin-top: 0px;
+    margin: 12px;
+    margin-bottom: 0px;
     padding: 20px;
 }
 
@@ -299,4 +296,8 @@ tr {
 
 select {
     color: #16344A !important;
+}
+
+.flag {
+    max-width: 10%
 }

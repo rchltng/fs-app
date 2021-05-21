@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Form, Row, Col, Table } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'semantic-ui-css/semantic.min.css';
 import 'font-awesome/css/font-awesome.min.css';
@@ -28,14 +27,14 @@ export default class Element extends Component {
         });
     }
 
-    link(discipline){
+    link(discipline, index){
         let link = "disciplines/#" + discipline;
-        return <Link onClick={() => window.location.replace(link) + window.pageYOffset} to={"disciplines" + "/#" + discipline} className="require"> {discipline} </Link>
+        return <Link key = {index} onClick={() => window.location.replace(link)} to={"disciplines/#" + discipline} className="require"> {discipline} </Link>
     }
 
     render() {
-        let summary = this.state.summary.map((sentence) =>
-            <p> {sentence} </p>)
+        let summary = this.state.summary.map((sentence, index) =>
+            <p key={index}> {sentence} </p>)
         let required = this.state.required.map(this.link);
 
 

@@ -105,17 +105,17 @@
             "representing": "Japan",
             "discipline": "men's singles",
             "coaches": ["Brian Orser", "Tracy Wilson", "Ghislain Briand"],
-            "current world standing": 2,
-            "ISU personal bests": [
+            "standing": 2,
+            "pb": [
                 ["combined total", 322.59],
                 ["short program", 111.82],
                 ["free skate", 212.99]
             ],
-            "season's programs as of season 2020/2021": [
+            "current_programs": [
                 ["Let Me Entertain You", "Robbie Williams", "Jeffrey Buttle"],
                 ["Heaven and Earth", "Isao Tomita", "Shae-Lynn Bourne"]
             ],
-            "season's results": {
+            "season_results": {
                 "season": "2019-2020",
                 "event": [{
                         "event": "2020-2021 Japan Championships",
@@ -164,7 +164,7 @@
             "representing": "United States of America"
         },
         {
-            "athlete": "Jason Brown ",
+            "athlete": "Jason Brown",
             "discipline": "men's singles",
             "representing": "United States of America"
         },
@@ -269,102 +269,102 @@
             "representing": "Japan"
         },
         {
-            "athlete": "Tessa Virtue / Scott Moir",
+            "athlete": "Tessa Virtue/Scott Moir",
             "discipline": "ice dance",
             "representing": "Canada"
         },
         {
-            "athlete": "Kaitlyn Weaver / Andrew Poje",
+            "athlete": "Kaitlyn Weaver/Andrew Poje",
             "discipline": "ice dance",
             "representing": "Canada"
         },
         {
-            "athlete": "Shae Lynn Bourne / Victor Kraatz",
+            "athlete": "Shae Lynn Bourne/Victor Kraatz",
             "discipline": "ice dance",
             "representing": "Canada"
         },
         {
-            "athlete": "Piper Gilles / Paul Poirier",
+            "athlete": "Piper Gilles/Paul Poirier",
             "discipline": "ice dance",
             "representing": "Canada"
         },
         {
-            "athlete": "Madison Chock / Evan Bates ",
+            "athlete": "Madison Chock/Evan Bates ",
             "discipline": "ice dance",
             "representing": "United States of America"
         },
         {
-            "athlete": "Meryl Davis / Charlie White ",
+            "athlete": "Meryl Davis/Charlie White ",
             "discipline": "ice dance",
             "representing": "United States of America"
         },
         {
-            "athlete": "Madison Hubbell / Zachary Donohue ",
+            "athlete": "Madison Hubbell/Zachary Donohue ",
             "discipline": "ice dance",
             "representing": "United States of America"
         },
         {
-            "athlete": "Maia Shibutani / Alex Shibutani ",
+            "athlete": "Maia Shibutani/Alex Shibutani ",
             "discipline": "ice dance",
             "representing": "United States of America"
         },
         {
-            "athlete": "Alexandra Stepanova / Ivan Bukin ",
+            "athlete": "Alexandra Stepanova/Ivan Bukin ",
             "discipline": "ice dance",
             "representing": "Russia"
         },
         {
-            "athlete": "Victoria Sinitsina / Nikita Katsalapov ",
+            "athlete": "Victoria Sinitsina/Nikita Katsalapov ",
             "discipline": "ice dance",
             "representing": "Russia"
         },
         {
-            "athlete": "Misato Komatsubara / Tim Koleto ",
+            "athlete": "Misato Komatsubara/Tim Koleto ",
             "discipline": "ice dance",
             "representing": "Japan"
         },
         {
-            "athlete": "Utana Yoshida / Shingo Nishiyama ",
+            "athlete": "Utana Yoshida/Shingo Nishiyama ",
             "discipline": "ice dance",
             "representing": "Japan"
         },
         {
-            "athlete": "Gabriella Papadakis / Guillaume Cizeron",
+            "athlete": "Gabriella Papadakis/Guillaume Cizeron",
             "discipline": "ice dance",
             "representing": "France"
         },
         {
-            "athlete": "Wenjing Sui / Cong Han ",
+            "athlete": "Wenjing Sui/Cong Han ",
             "discipline": "pairs",
             "representing": "China"
         },
         {
-            "athlete": "Aleksandra Boikova / Dmitrii Kozlovskii ",
+            "athlete": "Aleksandra Boikova/Dmitrii Kozlovskii ",
             "discipline": "pairs",
             "representing": "Russia"
         },
         {
-            "athlete": "Tatiana Volosozhar / Maxim Trankov ",
+            "athlete": "Tatiana Volosozhar/Maxim Trankov ",
             "discipline": "pairs",
             "representing": "Russia"
         },
         {
-            "athlete": "Riku Miura / Ryuichi Kihara ",
+            "athlete": "Riku Miura/Ryuichi Kihara ",
             "discipline": "pairs",
             "representing": "Japan"
         },
         {
-            "athlete": "Alexa Knierim / Brandon Frazier",
+            "athlete": "Alexa Knierim/Brandon Frazier",
             "discipline": "pairs",
             "representing": "United States of America"
         },
         {
-            "athlete": "Evelyn Walsh / Trennt Michaud",
+            "athlete": "Evelyn Walsh & Trennt Michaud",
             "discipline": "pairs",
             "representing": "Canada"
         },
         {
-            "athlete": "Kirsten Moore-Towers / Michael Marinaro",
+            "athlete": "Kirsten Moore-Towers & Michael Marinaro",
             "discipline": "pairs",
             "representing": "Canada"
         }

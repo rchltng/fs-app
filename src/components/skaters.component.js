@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import { Form, Row, Col, Table } from 'react-bootstrap';
+import { Form, Row, Col} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'semantic-ui-css/semantic.min.css';
 import 'font-awesome/css/font-awesome.min.css';
-
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 export default class Skaters extends Component {
     constructor(props) {
@@ -40,7 +38,6 @@ export default class Skaters extends Component {
 
     handleQuery(e) {
         let query = e.target.value.toLowerCase();
-        console.log(query)
         let athletes = this.state.allAthletes.filter((athlete) => athlete.athlete.toLowerCase().includes(query));
         this.setState({
             athletes: athletes
@@ -76,7 +73,6 @@ export default class Skaters extends Component {
     }
 
     render() {
-        console.log("here: " + this.state.athletes)
         let athletesList = this.state.athletes.map(this.listAthletes);
         return (
             <div>

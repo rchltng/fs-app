@@ -1,11 +1,8 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, NavLink, useLocation } from "react-router-dom";
-import { Switch } from "react-router";
-import NavBar from "./navbar.component";
+import React from 'react';
 import Element from "./element.component"
 import { Link } from "react-router-dom"; 
 
-const Elements = ({ }) => {
+const Elements = () => {
     const anatomy = React.useRef()
     const jumps = React.useRef()
     const spins = React.useRef()

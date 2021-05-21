@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
-import { Form, Row, Col, Table } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'semantic-ui-css/semantic.min.css';
 import 'font-awesome/css/font-awesome.min.css';
-
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 export default class Discipline extends Component {
     constructor(props) {
@@ -34,26 +31,26 @@ export default class Discipline extends Component {
 
     }
 
-    programElements(element) {
+    programElements(element, index) {
         if (Array.isArray(element)) {
-            let element_detail = element.map((detail) =>
-                <li> {detail}</li>
+            let element_detail = element.map((detail, index) =>
+                <li key = {index}>{detail}</li>
             )
-            return <ul>  {element_detail} </ul>
+            return <ul key = {index}>{element_detail}</ul>
         } else {
-            return <li> {element} </li>
+            return <li key={index}>{element}</li>
         }
     }
 
     recordTable(record, index) {
-        let record_detail = record.map((detail) =>
-            <td>{detail}</td>)
-        return <tr key = {index}> {record_detail}</tr>
+        let record_detail = record.map((detail, index) =>
+            <td key = {index}>{detail}</td>)
+        return <tr key = {index}>{record_detail}</tr>
     }
 
     render() {
-        let overview = this.state.overview.map((sentence) =>
-            <p> {sentence} </p>)
+        let overview = this.state.overview.map((sentence, index) =>
+            <p key={index}> {sentence} </p>)
 
         let sp_elements = this.state.sp_elements.map(this.programElements);
         let fs_elements = this.state.fs_elements.map(this.programElements);
@@ -93,7 +90,7 @@ export default class Discipline extends Component {
                 <div className="overview">
                     {overview}
                 </div>
-                <div className="container">
+                <div className="discContainer">
                     <div className="elements">
                         <div className="element">
                             {this.props.discipline === "ice dance" ? <p className="element-header"> short dance elements</p> :
