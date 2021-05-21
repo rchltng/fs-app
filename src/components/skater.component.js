@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Flag from 'react-world-flags'
 import Tabs from 'react-bootstrap/Tabs'
 import Tab from 'react-bootstrap/Tab'
-import yuzu from '../data/yuzu.jpg'
+import data from "../data/data.json";
 
 export default class Skater extends Component {
 
@@ -13,6 +13,7 @@ export default class Skater extends Component {
             name: '',
             age: '',
             dob: '',
+            img: '',
             began_skating: '',
             representing: '',
             discipline: '',
@@ -25,13 +26,16 @@ export default class Skater extends Component {
     }
 
     componentDidMount() {
-        let data = require("../data/data.json");
+        // let data = require("../data/data.json");
         console.log(this.props.match.params.skater)
         var index = data.athletes.findIndex(i => i.athlete === this.props.match.params.skater);
         console.log(index);
+        console.log( data.athletes[index].img)
+
         this.setState({
             name: data.athletes[index].athlete,
             age: data.athletes[index].age,
+            img: data.athletes[index].img,
             dob: data.athletes[index].dob,
             skating_since:data.athletes[index].skating_since,
             representing: data.athletes[index].representing,
@@ -45,7 +49,6 @@ export default class Skater extends Component {
     }
 
     getName(name) {
-        console.log("here");
         let nameIndex = name.lastIndexOf(" ");
         let firstName = name.substring(0, nameIndex).toUpperCase();
 
@@ -63,7 +66,7 @@ export default class Skater extends Component {
 
                 <div className="profile_card">
                     <div className="skaterTop skaterImg">
-                        <img src={yuzu} alt="bio" />
+                        <img src={this.state.img} alt="bio" />
                     </div>
                     <div className="skaterTop skaterBlurb">
                         {name}
