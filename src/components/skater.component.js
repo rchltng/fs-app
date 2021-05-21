@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Flag from 'react-world-flags'
 import Tabs from 'react-bootstrap/Tabs'
 import Tab from 'react-bootstrap/Tab'
+import yuzu from '../data/yuzu.jpg'
 
 export default class Skater extends Component {
 
@@ -49,7 +50,7 @@ export default class Skater extends Component {
         let firstName = name.substring(0, nameIndex).toUpperCase();
 
         let lastName = name.substring(nameIndex + 1).toUpperCase();
-        return <div>
+        return <div className = "name">
             <p className="firstName">{firstName}</p>
             <p className="lastName"> {lastName}</p>
         </div>
@@ -62,7 +63,7 @@ export default class Skater extends Component {
 
                 <div className="profile_card">
                     <div className="skaterTop skaterImg">
-                        <img src="../data/yuzu.jpeg" alt="bio" />
+                        <img src={yuzu} alt="bio" />
                     </div>
                     <div className="skaterTop skaterBlurb">
                         {name}
