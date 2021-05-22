@@ -370,10 +370,9 @@ select {
 
 .blurbDetail {
     float: left;
-    /* padding-left: 12%; */
     text-align: center !important;
     width: 33.33%;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 .blurbDisc {
@@ -445,4 +444,52 @@ img {
 
 .name {
     height: 50%;
+}
+
+.aboutDetail {
+    display: table-cell;
+    font-size: 15px;
+    padding: 5%;
+}
+
+.about {
+    background-color: #0A1B26 !important;
+    border-radius: 0px .25rem .25rem .25rem;
+    margin-bottom: 5%;
+}
+
+.profileTitle {
+    font-size: 30px;
+    margin-bottom: 20px;
+    border-bottom: solid 2px;
+}
+
+.bio {
+    text-align: justify;
+    width: 60%;
+}
+
+.aboutOverview {
+    width: 40%;
+}
+
+.profileHeader {
+    text-align: left;
+    vertical-align: top;
+}
+
+.profileDetail {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 7%;
+}
+
+.profileTable {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.profileDetail ol {
+    margin: 0;
 }

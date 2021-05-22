@@ -110,15 +110,16 @@
             "skating_since": 1998,
             "coaches": ["Brian Orser", "Tracy Wilson", "Ghislain Briand"],
             "standing": 2,
+            "bio": ["Yuzuru Hanyu (羽生 結弦, Ha'nyū Yuzuru, born December 7, 1994) is a Japanese figure skater. He is a two-time Olympic champion (2014, 2018), a two-time World champion (2014, 2017), a four-time Grand Prix Final champion (2013–2016), a Four Continents champion (2020), the 2010 World Junior champion, the 2009–10 Junior Grand Prix Final champion, and a five-time Japanese national champion (2012–2015, 2020). He has also medaled at five other World Championships, taking bronze in 2012 and 2021, and silver in 2015, 2016 and 2019.",
+                "Upon winning the 2020 Four Continents Championships, Hanyu became the first and only male singles skater to achieve a Super Slam, having won all major competitions in his senior and junior career. Regarded as one of, if not the greatest male figure skater in history, Hanyu has broken world records nineteen times—the most times amongst singles skaters since the introduction of the ISU Judging System in 2004. He is the first man to have received over 100 points in the men's short program, over 200 points in the men's free skate, and over 300 total points in competition.",
+                "Hanyu is the first Asian men's singles skater to win the Olympic gold. At nineteen years old, he was the youngest male skater to win the Olympic title since Dick Button in 1948. He also became the first man to win two consecutive Olympic gold medals since Button's back-to-back titles in 1948 and 1952. At the 2016 CS Autumn Classic International, Hanyu became the first skater in history to successfully land a quadruple loop in a competition. He is the first men's singles skater from Asia to win multiple World Championships."
+            ],
             "pb": [
                 ["combined total", 322.59],
                 ["short program", 111.82],
                 ["free skate", 212.99]
             ],
-            "current_programs": [
-                ["Let Me Entertain You", "Robbie Williams", "Jeffrey Buttle"],
-                ["Heaven and Earth", "Isao Tomita", "Shae-Lynn Bourne"]
-            ],
+            "current_programs": ["Let Me Entertain You", "Heaven and Earth"],
             "season_results": {
                 "season": "2019-2020",
                 "event": [{
