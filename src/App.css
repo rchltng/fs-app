@@ -452,7 +452,7 @@ img {
     padding: 5%;
 }
 
-.about {
+.tab {
     background-color: #0A1B26 !important;
     border-radius: 0px .25rem .25rem .25rem;
     margin-bottom: 5%;
@@ -476,6 +476,7 @@ img {
 .profileHeader {
     text-align: left;
     vertical-align: top;
+    width: 40%;
 }
 
 .profileDetail {
@@ -492,4 +493,24 @@ img {
 
 .profileDetail ol {
     margin: 0;
+}
+
+.achievementTitle {
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+}
+
+.achievement {
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.achievements {
+    width: 75% !important;
+}
+
+.achievementTab {
+    padding-top: 2.5%;
 }

@@ -4,6 +4,7 @@ import Tabs from 'react-bootstrap/Tabs'
 import Tab from 'react-bootstrap/Tab'
 import data from "../data/data.json";
 import Profile from "./profile.components"
+import Achievements from "./achievements.component"
 
 export default class Skater extends Component {
 
@@ -11,15 +12,19 @@ export default class Skater extends Component {
         super(props);
         this.getName = this.getName.bind(this);
         this.state = {
+            index:'',
             name: '',
             age: '',
             dob: '',
             img: '',
             bio: [],
+            achievements: [],
             began_skating: '',
+            skating_club: '',
             representing: '',
             discipline: '',
             coaches: [],
+            choreographers: [],
             standing: '',
             pb: [],
             current_programs: [],
@@ -35,15 +40,19 @@ export default class Skater extends Component {
         console.log(data.athletes[index].img)
 
         this.setState({
+            index: index,
             name: data.athletes[index].athlete,
             age: data.athletes[index].age,
             img: data.athletes[index].img,
             dob: data.athletes[index].dob,
             bio: data.athletes[index].bio,
+            achievements: data.athletes[index].achievements,
             skating_since: data.athletes[index].skating_since,
             representing: data.athletes[index].representing,
             discipline: data.athletes[index].discipline,
             coaches: data.athletes[index].coaches,
+            choreographers: data.athletes[index].choreographers,
+            skating_club: data.athletes[index].skating_club,
             standing: data.athletes[index].standing,
             pb: data.athletes[index].pb,
             current_programs: data.athletes[index].current_programs,
@@ -106,15 +115,17 @@ export default class Skater extends Component {
                     <Tabs transition={false} defaultActiveKey="profile" id="skaterTabs">
                         <Tab className="tab" eventKey="profile" title="PROFILE">
                             <Profile
-                            bio = {this.state.bio}
+                                bio={this.state.bio}
                                 coaches={this.state.coaches}
+                                choreographers={this.state.choreographers}
+                                skating_club = {this.state.skating_club}
                                 dob={this.state.dob}
                                 pb={this.state.pb}
                                 current_programs={this.state.current_programs}
                             />
                         </Tab>
-                        <Tab className="tab" eventKey="achievements" title="ACHIEVEMENTS">
-                            {/* <Sonnet /> */}
+                        <Tab className="tab" eventKey="achievements" title="MEDAL COUNT">
+                           <Achievements index={this.state.index} achievements={this.state.achievements}/>
                         </Tab>
                         <Tab className="tab" eventKey="competition record" title="COMPETITION RECORD">
                             {/* <Sonnet /> */}

@@ -15,9 +15,11 @@ export default class Profile extends Component {
         let pb = this.props.pb.map(this.scores)
         let coaches = this.props.coaches.map((coach, index) =>
 <ol key={index}> {coach}</ol>)
+ let choreographers = this.props.choreographers.map((choreographer, index) =>
+ <ol key={index}> {choreographer}</ol>)
 
         return (
-            <div className="about">
+            <div className="tab">
                 <div className="aboutDetail bio">
                     <p className="profileTitle"> BIOGRAPHY </p>
                     {bio}
@@ -26,6 +28,11 @@ export default class Profile extends Component {
                     <p className="profileTitle"> OVERVIEW</p>
              <table> 
                     <tbody className = "profileTable">
+                        <tr className = "profileHeader"> 
+                        <th className = "profileHeader">SKATING CLUB</th>
+                            <td className = "profileDetail">
+                                <ol> {this.props.skating_club} </ol> </td>
+                        </tr>
                         <tr>
                             <th className = "profileHeader">SEASON'S PROGRAMS</th>
                             <td className = "profileDetail">
@@ -44,6 +51,10 @@ export default class Profile extends Component {
                         <tr>
                             <th className = "profileHeader">COACHES</th>
                             <td className = "profileDetail">{coaches}</td>
+                        </tr>
+                        <tr>
+                            <th className = "profileHeader">CHOREOGRAPHERS</th>
+                            <td className = "profileDetail">{choreographers}</td>
                         </tr>
                     </tbody>
                     </table>
