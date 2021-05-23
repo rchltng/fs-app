@@ -147,7 +147,7 @@
                 {
                     "event": "Grand Prix Final",
                     "medals": [
-                        ["🥇", "2016-17 Marseille", "Singles"],
+                        ["🥇", "2016-2017 Marseille", "Singles"],
                         ["🥇", "2015-2016 Barcelona", "Singles"],
                         ["🥇", "2014-2015 Barcelona", "Singles"],
                         ["🥇", "2013-2014 Fukuoka", "Singles"],
@@ -176,38 +176,148 @@
                     ]
                 }
             ],
+            "competitions": [{
+                    "season": "2020-2021",
+                    "competitions": [
+                        ["2021 World Team Trophy", 107.12, 193.76, 300.88, 3],
+                        ["2021 World Championships", 106.98, 182.20, 289.18, 3],
+                        ["2020-2021 Japan Championships", 103.53, 215.83, 319.36, 1]
+                    ]
+                },
+                {
+                    "season": "2019-2020",
+                    "competitions": [
+                        ["2020 Four Continents Championships", 111.82, 187.60, 299.42, 1],
+                        ["2019-2020 Japan Championships", 110.72, 172.05, 282.77, 2],
+                        ["2019-2020 Grand Prix Final", 97.43, 194.00, 291.43, 2],
+                        ["2019 NHK Trophy", 109.34, 195.71, 305.05, 1],
+                        ["2019 Skate Canada International", 109.6, 212.99, 322.59, 1],
+                        ["2019 CS Autumn CLassic International", 98.38, 180.67, 279.05, 1]
+                    ]
+                },
+                {
+                    "season": "2018-2019",
+                    "competitions": [
+                        ["2019 World Championships", 94.87, 206.10, 300.97, 2],
+                        ["2018 Rostelecom Cup", 110.53, 167.89, 278.42, 1],
+                        ["2018 Grand Prix of Helsinki", 106.69, 190.43, 297.12, 1],
+                        ["2018 CS Autumn Classic", 97.74, 165.91, 263.65, 1]
+                    ]
+                },
+                {
+                    "season": "2017-2018",
+                    "competitions": [
+                        ["2018 Winter Olympics", 111.68, 206.17, 317.85, 1],
+                        ["2017 Rostelecom Cup", 94.85, 195.92, 290.77, 2],
+                        ["2017 CS Autumn CLassic International", 112.72, 155.52, 286.24, 2]
+                    ]
+                },
+                {
+                    "season": "2016-2017",
+                    "competitions": [
+                        ["2017 World Team Trophy", 83.51, 200.49, 284.00, 1],
+                        ["2017 World Championships", 98.39, 223.20, 321.59, 1],
+                        ["2017 Four Continents Championships", 97.04, 206.67, 303.71, 2],
+                        ["2016-2017 Grand Prix Final", 106.53, 187.37, 293.90, 1],
+                        ["2016 NHK Trophy", 103.89, 197.58, 301.47, 1],
+                        ["2016 Skate Canada International", 79.65, 183.41, 263.06, 2],
+                        ["2016 CS Autumn Classic International", 88.3, 172.27, 260.57, 1]
+                    ]
+                },
+                {
+                    "season": "2015-2016",
+                    "competitions": [
+                        ["2016 World Championships", 110.56, 184.61, 295.17, 2],
+                        ["2015-2016 Japan Championships", 102.63, 183.73, 286.36, 1],
+                        ["2015-2016 Grand Prix Final", 110.95, 219.48, 330.43, 1],
+                        ["2015 NHK Trophy", 106.33, 216.07, 322.40, 1],
+                        ["2015 Skate Canada International", 73.25, 186.29, 259.54, 2],
+                        ["2015 Autumn Classic International", 93.14, 184.05, 277.19, 1]
+                    ]
+                },
+                {
+                    "season": "2014-2015",
+                    "competitions": [
+                        ["2015 World Team Trophy", 96.27, 192.31, 288.58, 3],
+                        ["2015 World Championships", 95.20, 175.88, 271.08, 2],
+                        ["2014-2015 Japan Championships", 94.36, 192.50, 286.86, 1],
+                        ["2014-2015 Grand Prix Final", 94.08, 194.08, 288.16, 1],
+                        ["2014 NHK Trophy", 78.01, 151.79, 229.80, 4],
+                        ["2014 Cup of China", 82.95, 154.60, 237.55, 2]
+                    ]
+                },
+                {
+                    "season": "2013-2014",
+                    "competitions": [
+                        ["2014 World Championships", 91.24, 191.35, 282.59, 1],
+                        ["2014 Winter Olympics", 101.45, 178.64, 280.09, 1],
+                        ["2013-2014 Japan Championships", 103.10, 194.70, 297.80, 1],
+                        ["2013-2014 Grand Prix Final", 99.84, 193.41, 293.41, 1],
+                        ["2013 Trophée Éric Bompard", 95.37, 168.22, 263.59, 2],
+                        ["2013 Skate Canada International", 80.40, 154.40, 234.80, 2],
+                        ["2013 Finlandia Trophy", 84.66, 180.93, 165.59, 1]
+                    ]
+                },
+                {
+                    "season": "2012-2013",
+                    "competitions": [
+                        ["2013 World Championships", 75.94, 169.05, 244.99, 4],
+                        ["2013 Four Continents Championships", 87.65, 158.73, 246.38, 2],
+                        ["2012-2013 Japan Championships", 97.68, 187.55, 285.23, 1],
+                        ["2012-2013 Grand Prix Final", 87.17, 177.12, 264.29, 2],
+                        ["2012 NHK Trophy", 95.32, 165.71, 261.03, 1],
+                        ["2012 Skate America", 95.07, 148.67, 243.74, 2],
+                        ["2012 Finlandia Trophy", 75.57, 173.56, 248.13]
+                    ]
+                },
+                {
+                    "season": "2011-2012",
+                    "competitions": [
+                        ["2012 World Championships", 77.07, 173.99, 251.06, 3],
+                        ["2011-2012 Japan Championships", 74.32, 167.59, 241.91, 3],
+                        ["2011-2012 Grand Prix Final", 79.33, 166.49, 245.82, 4],
+                        ["2011 Rostelecom Cup", 82.78, 158.88, 241.66, 1],
+                        ["2011 Cup of China", 81.37, 145.16, 226.53, 4],
+                        ["2011 Nebelhorn Trophy", 75.26, 151.00, 226.26, 1]
+                    ]
+                },
+                {
+                    "season": "2010-2011",
+                    "competitions": [
+                        ["2011 Four Continents Championships", 76.43, 151.58, 228.01, 2],
+                        ["2010-2011 Japan Championships", 78.94, 141.12, 220.06, 4],
+                        ["2010 Cup of Russia", 70.24, 132.42, 202.66, 7],
+                        ["2010 NHK Trophy", 69.31, 138.41, 207.72, 4]
+                    ]
+                },
+                {
+                    "season": "2009-2010",
+                    "competitions": [
+                        ["2010 World Junior Championships", 68.75, 147.35, 216.10, 1],
+                        ["2009-2010 Japan Championships", 57.99, 137.23, 195.22, 6],
+                        ["2009-2010 Junior Grand Priz Final", 69.85, 136.92, 206.77, 1],
+                        ["2009-2010 Japan Junior Championships", 76.00, 118.15, 194.15, 1],
+                        ["2009 JGP Croatia", 70.78, 130.37, 201.15, 1],
+                        ["2009 JGP Poland", 66.77, 131.88, 198.65, 1]
+                    ]
+                },
+                {
+                    "season": "2008-2009",
+                    "competitions": [
+                        ["2009 World Junior Championships", 58.18, 103.58, 161.77, 12],
+                        ["2008-2009 Japan Championships", 64.50, 117.15, 181.65, 8],
+                        ["2008-2009- Japan Junior Championships", 57.25, 124.92, 182.17, 1],
+                        ["2008 JGP Italy", 51.06, 95.62, 146.68, 5]
+                    ]
+                }
+
+            ],
             "pb": [
                 ["combined total", 322.59],
                 ["short program", 111.82],
                 ["free skate", 212.99]
             ],
-            "current_programs": ["Let Me Entertain You", "Heaven and Earth"],
-            "season_results": {
-                "season": "2019-2020",
-                "event": [{
-                        "event": "2020-2021 Japan Championships",
-                        "SP": 111.82,
-                        "FS": 187.60,
-                        "Total": 299.42,
-                        "Rank": 1
-                    },
-
-                    {
-                        "event": "2021 World Championships",
-                        "SP": 106.98,
-                        "FS": 182.20,
-                        "Total": 289.18,
-                        "Rank": 3
-                    },
-                    {
-                        "event": "2021 World Team Trophy",
-                        "SP": 107.12,
-                        "FP": 193.76,
-                        "Total": 200.88,
-                        "Rank": 2
-                    }
-                ]
-            }
+            "current_programs": ["Let Me Entertain You", "Heaven and Earth"]
         },
         {
             "athlete": "Shoma Uno",

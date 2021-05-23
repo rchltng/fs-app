@@ -5,6 +5,7 @@ import Tab from 'react-bootstrap/Tab'
 import data from "../data/data.json";
 import Profile from "./profile.components"
 import Achievements from "./achievements.component"
+import Competitions from "./competitions.component"
 
 export default class Skater extends Component {
 
@@ -19,6 +20,7 @@ export default class Skater extends Component {
             img: '',
             bio: [],
             achievements: [],
+            competitions: [],
             began_skating: '',
             skating_club: '',
             representing: '',
@@ -28,7 +30,6 @@ export default class Skater extends Component {
             standing: '',
             pb: [],
             current_programs: [],
-            season_results: [],
         }
     }
 
@@ -47,6 +48,7 @@ export default class Skater extends Component {
             dob: data.athletes[index].dob,
             bio: data.athletes[index].bio,
             achievements: data.athletes[index].achievements,
+            competitions: data.athletes[index].competitions,
             skating_since: data.athletes[index].skating_since,
             representing: data.athletes[index].representing,
             discipline: data.athletes[index].discipline,
@@ -56,7 +58,6 @@ export default class Skater extends Component {
             standing: data.athletes[index].standing,
             pb: data.athletes[index].pb,
             current_programs: data.athletes[index].current_programs,
-            season_results: data.athletes[index].season_results,
         });
     }
 
@@ -128,7 +129,7 @@ export default class Skater extends Component {
                            <Achievements index={this.state.index} achievements={this.state.achievements}/>
                         </Tab>
                         <Tab className="tab" eventKey="competition record" title="COMPETITION RECORD">
-                            {/* <Sonnet /> */}
+                            <Competitions competitions={this.state.competitions}/>
                         </Tab>
                         <Tab className="tab" eventKey="programs" title="PROGRAMS">
                             {/* <Sonnet /> */}

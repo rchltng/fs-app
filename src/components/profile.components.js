@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 
 export default class Profile extends Component {
-    constructor(props) {
-        super(props);
-    }
+
 
     scores(score, index) {
     return <ol key={index}> {score[0]} : {score[1]}</ol>
