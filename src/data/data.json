@@ -192,7 +192,7 @@
                         ["2019-2020 Grand Prix Final", 97.43, 194.00, 291.43, 2],
                         ["2019 NHK Trophy", 109.34, 195.71, 305.05, 1],
                         ["2019 Skate Canada International", 109.6, 212.99, 322.59, 1],
-                        ["2019 CS Autumn CLassic International", 98.38, 180.67, 279.05, 1]
+                        ["2019 CS Autumn Classic International", 98.38, 180.67, 279.05, 1]
                     ]
                 },
                 {
@@ -209,7 +209,7 @@
                     "competitions": [
                         ["2018 Winter Olympics", 111.68, 206.17, 317.85, 1],
                         ["2017 Rostelecom Cup", 94.85, 195.92, 290.77, 2],
-                        ["2017 CS Autumn CLassic International", 112.72, 155.52, 286.24, 2]
+                        ["2017 CS Autumn Classic International", 112.72, 155.52, 286.24, 2]
                     ]
                 },
                 {
@@ -267,7 +267,7 @@
                         ["2012-2013 Grand Prix Final", 87.17, 177.12, 264.29, 2],
                         ["2012 NHK Trophy", 95.32, 165.71, 261.03, 1],
                         ["2012 Skate America", 95.07, 148.67, 243.74, 2],
-                        ["2012 Finlandia Trophy", 75.57, 173.56, 248.13]
+                        ["2012 Finlandia Trophy", 75.57, 173.56, 248.13, 1]
                     ]
                 },
                 {
@@ -295,7 +295,7 @@
                     "competitions": [
                         ["2010 World Junior Championships", 68.75, 147.35, 216.10, 1],
                         ["2009-2010 Japan Championships", 57.99, 137.23, 195.22, 6],
-                        ["2009-2010 Junior Grand Priz Final", 69.85, 136.92, 206.77, 1],
+                        ["2009-2010 Junior Grand Prix Final", 69.85, 136.92, 206.77, 1],
                         ["2009-2010 Japan Junior Championships", 76.00, 118.15, 194.15, 1],
                         ["2009 JGP Croatia", 70.78, 130.37, 201.15, 1],
                         ["2009 JGP Poland", 66.77, 131.88, 198.65, 1]

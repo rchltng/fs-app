@@ -22,9 +22,9 @@ export default class Competitions extends Component {
                 <thead >
                     <tr>
                         <th scope="col">event</th>
-                        <th scope="col">sp score</th>
-                        <th scope="col">fs score</th>
-                        <th scope="col">total score</th>
+                        <th scope="col">sp</th>
+                        <th scope="col">fs</th>
+                        <th scope="col">total</th>
                         <th scope="col">rank</th>
                     </tr>
                 </thead>
