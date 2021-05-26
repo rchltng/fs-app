@@ -517,25 +517,19 @@ img {
 
 .intro {
     padding-left: 5%;
-    padding-right: 25%;
-    /* padding-bottom: 2%; */
+    padding-right: 58%;
     text-align: justify;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .welcome {
     margin-top: -2% !important;
     padding-bottom: 1%;
     padding-left: 5%;
-    font-size: 100px;
+    font-size: 90px;
     margin: 0px;
     text-align: left;
 }
-
-
-/* .home {
-    padding-bottom: 10% !important;
-} */
 
 .vid {
     padding-top: 9%;
