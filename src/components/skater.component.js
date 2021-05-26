@@ -127,9 +127,9 @@ export default class Skater extends Component {
                         <Tab className="tab" eventKey="competition record" title="COMPETITION RECORD">
                             <Competitions competitions={this.state.competitions}/>
                         </Tab>
-                        <Tab className="tab" eventKey="programs" title="PROGRAMS">
-                            {/* <Sonnet /> */}
-                        </Tab>
+                        {/* <Tab className="tab" eventKey="programs" title="PROGRAMS">
+                     
+                        </Tab> */}
                     </Tabs>
                 </div>
             </div>
