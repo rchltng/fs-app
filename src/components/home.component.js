@@ -8,7 +8,7 @@ export default class Home extends Component {
         <div className="vid">
           <div className="video-overlay"></div>
           <iframe title="home-background" frameBorder="0" height="100%" width="100%"
-            src="https://www.youtube-nocookie.com/embed/7hgI1F2pLy4?playlist=7hgI1F2pLy4&loop=1;&end=203&showinfo=0&autohide=1&autoplay=1&mute=1&controls=0&rel=0">
+            src="https://www.youtube-nocookie.com/embed/7hgI1F2pLy4?playlist=7hgI1F2pLy4&loop=1&start=30;&end=203&showinfo=0&autohide=1&autoplay=1&mute=1&controls=0&rel=0">
           </iframe>
           <div className="homePage">
             <p className="welcome">  Figure Skating </p>
