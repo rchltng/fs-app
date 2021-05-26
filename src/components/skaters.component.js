@@ -77,7 +77,7 @@ export default class Skaters extends Component {
         return (
             <div>
                 <div className="searchSkater">
-                    <p className="searchTitle">find a figure skater</p>
+                    <p className="searchTitle">Find a Figure Skater</p>
                     <Form className="form">
                         <Form.Control className="search" type="text" placeholder="&#61442;" onChange={this.handleQuery} />
                         <Row className="filters">

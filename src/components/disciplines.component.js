@@ -21,23 +21,23 @@ const Disciplines = () => {
             <div className="sidenav">
                 <li className = "options">
                     <ol>
-                        <Link className = "discDetail" onClick={(e) => smoothScroll(overview.current, e)} to={"#overview"}>overview</Link>
+                        <Link className = "discDetail" onClick={(e) => smoothScroll(overview.current, e)} to={"#overview"}>Overview</Link>
                     </ol>
                     <ol>
-                        <Link className = "discDetail" onClick={(e) => smoothScroll(singles.current, e)} to={"#singles"}>singles</Link>
+                        <Link className = "discDetail" onClick={(e) => smoothScroll(singles.current, e)} to={"#singles"}>Singles</Link>
                     </ol>
                     <ol>
-                        <Link className = "discDetail" onClick={(e) => smoothScroll(pairs.current, e)} to={"#pairs"}>pairs</Link>
+                        <Link className = "discDetail" onClick={(e) => smoothScroll(pairs.current, e)} to={"#pairs"}>Pairs</Link>
                     </ol>
                     <ol>
-                        <Link className = "discDetail" onClick={(e) => smoothScroll(icedance.current, e)} to={"#ice dance"}>ice dance</Link>
+                        <Link className = "discDetail" onClick={(e) => smoothScroll(icedance.current, e)} to={"#ice dance"}>Ice Dance</Link>
                     </ol>
                 </li>
             </div>
             <div className="disciplines">
                 <div id={'overview'} className="discipline" ref={overview}>
                     <div className="disciplineTitle">
-                        overview
+                        Overview
                     </div>
                     <p>
                         In all four disciplines, athletes perform two programs (the short program and the free skate) where they are required to perform various elements on figure skates with music. The length of a short program is 2 minutes and 40 seconds, while the free skate is 4 minutes. The score earned by each program performed consists of a technical element score and a program component score. The technical element score is based on the level of difficulty and grade of execution (GOE) of the elements performed, and the program component score is based on five attributes relating to an athlete’s artistry and presentation.

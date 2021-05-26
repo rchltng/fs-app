@@ -27,61 +27,61 @@ const Elements = () => {
             <div className="sidenav elementnav">
                 <li>
                     <ol>
-                        <Link className = "discDetail" onClick={() => smoothScroll(anatomy.current)} to = {"#anatomy"}>anatomy of a figure skate</Link>
+                        <Link className = "discDetail" onClick={() => smoothScroll(anatomy.current)} to = {"#anatomy"}>Anatomy of a Figure Skate</Link>
                     </ol>
                     <ol>
-                        <Link className = "discDetail" onClick={() => smoothScroll(jumps.current)} to = {"#jumps"}>jumps</Link>
+                        <Link className = "discDetail" onClick={() => smoothScroll(jumps.current)} to = {"#jumps"}>Jumps</Link>
                     </ol>
                     <ol>
-                        <Link className = "discDetail" onClick={() => smoothScroll(spins.current)} to = {"#spins"}>spins</Link>
+                        <Link className = "discDetail" onClick={() => smoothScroll(spins.current)} to = {"#spins"}>Spins</Link>
                     </ol>
                     <ol>
-                        <Link className = "discDetail" onClick={() => smoothScroll(lifts.current)} to = {"#lifts"}>lifts</Link>
+                        <Link className = "discDetail" onClick={() => smoothScroll(lifts.current)} to = {"#lifts"}>Lifts</Link>
                     </ol>
                     <ol>
-                        <Link className = "discDetail" onClick={() => smoothScroll(stepseq.current)} to = {"#stepseq"}>step sequences</Link>
+                        <Link className = "discDetail" onClick={() => smoothScroll(stepseq.current)} to = {"#stepseq"}>Step Sequences</Link>
                     </ol>
                     <ol>
-                        <Link className = "discDetail" onClick={() => smoothScroll(choreo.current)} to = {"#choreo"}>choreographic sequences</Link>
+                        <Link className = "discDetail" onClick={() => smoothScroll(choreo.current)} to = {"#choreo"}>Choreographic Sequences</Link>
                     </ol>
                     <ol>
-                        <Link className = "discDetail" onClick={() => smoothScroll(twizzles.current)} to = {"#twizzles"}>twizzles</Link>
+                        <Link className = "discDetail" onClick={() => smoothScroll(twizzles.current)} to = {"#twizzles"}>Twizzles</Link>
                     </ol>
                     <ol>
-                        <Link className = "discDetail" onClick={() => smoothScroll(death_spirals.current)} to = {"#death_spirals"}>death spirals</Link>
+                        <Link className = "discDetail" onClick={() => smoothScroll(death_spirals.current)} to = {"#death_spirals"}>Death Spirals</Link>
                     </ol>
                     <ol>
-                        <Link className = "discDetail" onClick={() => smoothScroll(twists.current)} to = {"#twists"}>twists</Link>
+                        <Link className = "discDetail" onClick={() => smoothScroll(twists.current)} to = {"#twists"}>Twists</Link>
                     </ol>
                 </li>
             </div>
             <div className="disciplines">
                 <div id={'anatomy'} ref={anatomy} >
-                    <Element element="anatomy of a figure skate"> </Element>
+                    <Element element="Anatomy of a Figure Skate"> </Element>
                 </div>
                 <div id={'jumps'} ref={jumps} >
-                <Element element="jumps"> </Element>
+                <Element element="Jumps"> </Element>
                 </div>
                 <div id={'spins'} ref={spins} >
-                <Element element="spins"> </Element>
+                <Element element="Spins"> </Element>
                 </div>
                 <div id={'lifts'} ref={lifts} >
-                <Element element="lifts"> </Element>
+                <Element element="Lifts"> </Element>
                 </div>
                 <div id={'stepseq'} ref={stepseq} >
-                <Element element="step sequences"> </Element>
+                <Element element="Step Sequences"> </Element>
                 </div>
                 <div id={'choreo'}  ref={choreo} >
-                <Element element="choreographic sequence"> </Element>
+                <Element element="Choreographic Sequence"> </Element>
                 </div>
                 <div id={'twizzles'} ref={twizzles} >
-                <Element element="twizzles"> </Element>
+                <Element element="Twizzles"> </Element>
                 </div>
                 <div id={'death_spirals'} ref={death_spirals} >
-                <Element element="death spirals"> </Element>
+                <Element element="Death Spirals"> </Element>
                 </div>
                 <div id={'twists'} ref={twists} >
-                <Element element="twists"> </Element>
+                <Element element="Twists"> </Element>
                 </div>
 
             </div>

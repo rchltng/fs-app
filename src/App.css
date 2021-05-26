@@ -174,7 +174,7 @@ body {
 
 .discipline {
     margin: 50px;
-    padding: 50px;
+    padding: 2%;
     height: 100% !important;
 }
 
@@ -514,13 +514,14 @@ img {
 
 .intro {
     padding-left: 10%;
-    padding-right: 10%;
+    padding-right: 20%;
     padding-bottom: 2%;
     text-align: justify;
 }
 
 .welcome {
-    padding-top: 5%;
+    padding-top: 7.5%;
+    padding-bottom: 2%;
     padding-left: 10%;
     font-size: 75px;
     margin: 0px;

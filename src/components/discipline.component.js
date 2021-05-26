@@ -85,7 +85,7 @@ export default class Discipline extends Component {
         return (
             <React.Fragment>
                 <div className="disciplineTitle">
-                    {this.state.discipline}
+                    {this.state.discipline.charAt(0).toUpperCase() + this.state.discipline.slice(1)}
                 </div>
                 <div className="overview">
                     {overview}

@@ -43,7 +43,7 @@ export default class Element extends Component {
                 <div className="elementTitle">
                     {this.state.element}
                 </div>
-                {this.state.element !== "anatomy of a figure skate" ?
+                {this.state.element !== "Anatomy of a Figure Skate" ?
                     <div className="required">
                         required for: {required}
                     </div> : null
