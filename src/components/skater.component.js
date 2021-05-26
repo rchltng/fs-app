@@ -34,11 +34,7 @@ export default class Skater extends Component {
     }
 
     componentDidMount() {
-        // let data = require("../data/data.json");
-        console.log(this.props.match.params.skater)
         var index = data.athletes.findIndex(i => i.athlete === this.props.match.params.skater);
-        console.log(index);
-        console.log(data.athletes[index].img)
 
         this.setState({
             index: index,

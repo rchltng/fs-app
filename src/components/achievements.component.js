@@ -35,7 +35,6 @@ export default class Achievements extends Component {
     }
 
     render() {
-        console.log(this.props.achievements)
         let achievement = this.props.achievements.map(this.achievementsList)
         return (
             <div className="tab achievementTab">

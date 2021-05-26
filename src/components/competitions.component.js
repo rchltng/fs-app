@@ -37,7 +37,6 @@ export default class Competitions extends Component {
     }
 
     render() {
-        console.log(this.props.competitions)
         let competitions = this.props.competitions.map(this.seasonsList)
         return (
             <div className="tab achievementTab">
