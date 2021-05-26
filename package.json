@@ -20,6 +20,7 @@
         "react-scripts": "4.0.3",
         "react-slick": "^0.28.1",
         "react-world-flags": "^1.4.0",
+        "react-youtube-background": "^1.0.0",
         "semantic-ui-css": "^2.4.1",
         "semantic-ui-react": "^2.0.3",
         "slick-carousel": "^1.8.1",
@@ -53,7 +54,6 @@
     "main": "index.js",
     "author": "",
     "license": "ISC",
-    "devDependencies": {},
     "repository": {
         "type": "git",
         "url": "git+https://github.com/rchltng/fs-app.git"
