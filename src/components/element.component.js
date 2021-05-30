@@ -17,7 +17,7 @@ export default class Element extends Component {
         }
     }
 
-    componentDidMount() {
+    componentWillMount() {
         let data = require("../data/data.json");
         var index = data.elements.findIndex(i => i.element === this.props.element);
         this.setState({

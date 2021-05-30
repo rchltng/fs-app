@@ -2,65 +2,56 @@ import React, { Component } from 'react';
 import Flag from 'react-world-flags'
 import Tabs from 'react-bootstrap/Tabs'
 import Tab from 'react-bootstrap/Tab'
-import data from "../data/data.json";
+import data from "../data/skaters.json";
 import Profile from "./profile.components"
 import Achievements from "./achievements.component"
 import Competitions from "./competitions.component"
+import country from "../data/country.json"
 
 export default class Skater extends Component {
-
     constructor(props) {
         super(props);
+        this.getThird = this.getThird.bind(this);
         this.getName = this.getName.bind(this);
+        this.getStanding = this.getStanding.bind(this);
         this.state = {
-            index:'',
+            index: '',
             name: '',
             age: '',
             dob: '',
             img: '',
-            bio: [],
-            achievements: [],
+            retired: '',
             competitions: [],
             began_skating: '',
-            skating_club: '',
             representing: '',
+            code: '',
             discipline: '',
-            coaches: [],
-            choreographers: [],
-            standing: '',
-            pb: [],
-            current_programs: [],
+            standing: [],
         }
     }
 
-    componentDidMount() {
+    componentWillMount() {
         var index = data.athletes.findIndex(i => i.athlete === this.props.match.params.skater);
-
         this.setState({
             index: index,
             name: data.athletes[index].athlete,
             age: data.athletes[index].age,
             img: data.athletes[index].img,
             dob: data.athletes[index].dob,
-            bio: data.athletes[index].bio,
-            achievements: data.athletes[index].achievements,
+            code: data.athletes[index].countryCode,
+            retired: data.athletes[index]["retired"],
+            // achievements: data.athletes[index].achievements,
             competitions: data.athletes[index].competitions,
-            skating_since: data.athletes[index].skating_since,
+            skating_since: data.athletes[index]["Began skating"],
             representing: data.athletes[index].representing,
             discipline: data.athletes[index].discipline,
-            coaches: data.athletes[index].coaches,
-            choreographers: data.athletes[index].choreographers,
-            skating_club: data.athletes[index].skating_club,
             standing: data.athletes[index].standing,
-            pb: data.athletes[index].pb,
-            current_programs: data.athletes[index].current_programs,
         });
     }
 
     getName(name) {
         let nameIndex = name.lastIndexOf(" ");
         let firstName = name.substring(0, nameIndex).toUpperCase();
-
         let lastName = name.substring(nameIndex + 1).toUpperCase();
         return <div className="name">
             <p className="firstName">{firstName}</p>
@@ -68,8 +59,37 @@ export default class Skater extends Component {
         </div>
     }
 
+    getStanding() {
+        return <div>
+            <p className="standingHeader">WORLD STANDING </p>
+            <p className="standingNum"> #{this.state.index % 100 + 1}</p>
+        </div>
+    }
+
+    getThird() {
+        console.log("retire " + this.state.retired)
+        console.log("skating since" + this.skating_since)
+        if (typeof this.state.retired !== 'undefined') {
+            return <div className="blurbDetail skatingSince">
+                <p className="blurbTitle"> RETIRED </p>
+                <p> {this.state.retired}</p>
+            </div>
+        } else if (typeof this.state.skating_since !== 'undefined') {
+            return <div className="blurbDetail skatingSince">
+                <p className="blurbTitle">SKATING SINCE</p>
+                <p> {this.state.skating_since}</p>
+            </div>
+        } else {
+            return <div className="blurbDetail skatingSince">
+            </div>
+        }
+    }
+
     render() {
         let name = this.getName(this.state.name);
+        let standing = this.getStanding();
+        let thirdDiv = this.getThird();
+
         return (
             <div className="skaterDetail">
 
@@ -80,30 +100,26 @@ export default class Skater extends Component {
                     <div className="skaterTop skaterBlurb">
                         {name}
                         <div className="representing">
-                            <Flag className="flag" code="JP" />
+                            <Flag className="flag" code={this.state.code} />
                             <p className="flagName"> {this.state.representing.toUpperCase()}</p>
                         </div>
                     </div>
                     <div className="skaterTop space">
                     </div>
                     <div className="skaterTop skaterRank">
-                        <div>
-                            <p className="standingHeader"> WORLD STANDING</p>
-                            <p className="standingNum"> #{this.state.standing}</p>
-                        </div>
+                        {standing}
                         <div className="blurb">
-                            <div className="blurbDetail age">
-                                <p className="blurbTitle"> AGE</p>
-                                <p> {this.state.age}</p>
-                            </div>
-                            <div className="blurbDetail blurbDisc">
-                                <p className="blurbTitle"> DISCIPLINE</p>
-                                <p> {this.state.discipline} </p>
-                            </div>
-                            <div className="blurbDetail skatingSince">
-                                <p className="blurbTitle">SKATING SINCE</p>
-                                <p> {this.state.skating_since}</p>
-                            </div>
+                            {this.state.age !== '' ?
+                                <div className="blurbDetail age">
+                                    <p className="blurbTitle"> AGE</p>
+                                    <p> {this.state.age}</p>
+                                </div> : null}
+                            {this.state.discipline !== '' ?
+                                <div className="blurbDetail blurbDisc">
+                                    <p className="blurbTitle"> DISCIPLINE</p>
+                                    <p> {this.state.discipline} </p>
+                                </div> : null}
+                            {thirdDiv}
                         </div>
                     </div>
                 </div>
@@ -112,20 +128,14 @@ export default class Skater extends Component {
                     <Tabs transition={false} defaultActiveKey="profile" id="skaterTabs">
                         <Tab className="tab" eventKey="profile" title="PROFILE">
                             <Profile
-                                bio={this.state.bio}
-                                coaches={this.state.coaches}
-                                choreographers={this.state.choreographers}
-                                skating_club = {this.state.skating_club}
-                                dob={this.state.dob}
-                                pb={this.state.pb}
-                                current_programs={this.state.current_programs}
+                                index={this.state.index}
                             />
                         </Tab>
-                        <Tab className="tab" eventKey="achievements" title="MEDAL COUNT">
-                           <Achievements index={this.state.index} achievements={this.state.achievements}/>
-                        </Tab>
+                        {/* <Tab className="tab" eventKey="achievements" title="MEDAL COUNT">
+                            <Achievements index={this.state.index} achievements={this.state.achievements} />
+                        </Tab> */}
                         <Tab className="tab" eventKey="competition record" title="COMPETITION RECORD">
-                            <Competitions competitions={this.state.competitions}/>
+                            <Competitions competitions={this.state.competitions} />
                         </Tab>
                         {/* <Tab className="tab" eventKey="programs" title="PROGRAMS">
                      

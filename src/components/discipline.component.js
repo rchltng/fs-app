@@ -17,7 +17,7 @@ export default class Discipline extends Component {
         }
     }
 
-    componentDidMount() {
+    componentWillMount() {
         let data = require("../data/data.json");
         var index = data.disciplines.findIndex(i => i.discipline === this.props.discipline);
         this.setState({

@@ -39,8 +39,7 @@ export default class Achievements extends Component {
         return (
             <div className="tab achievementTab">
                 {achievement}
-
             </div>
-        )
+        );
     }
 }

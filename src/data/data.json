@@ -104,9 +104,9 @@
             "athlete": "Yuzuru Hanyu",
             "representing": "Japan",
             "discipline": "men's singles",
-            "img": "/images/yuzu.jpg",
+            "img": "/images/Yuzuru_Hanyu.jpeg",
             "age": 26,
-            "dob": "12/07/1994",
+            "dob": "December 7th, 1994",
             "skating_since": 1998,
             "coaches": ["Brian Orser", "Tracy Wilson", "Ghislain Briand"],
             "choreographers": ["Jeffrey Buttle", "Shae-Lynn Bourne"],
@@ -119,40 +119,40 @@
             "achievements": [{
                     "event": "Olympic Games",
                     "medals": [
-                        ["🥇", "2018 Pyeongchang", "Singles"],
-                        ["🥇", "2014 Sochi", "Singles"]
+                        ["🥇", "2018 Pyeongchang", "Men's Singles"],
+                        ["🥇", "2014 Sochi", "Men's Singles"]
                     ]
                 },
                 {
                     "event": "World Championships",
                     "medals": [
-                        ["🥇", "2017 Helsinki", "Singles"],
-                        ["🥇", "2014 Saitama", "Singles"],
-                        ["🥈", "2019 Saitama", "Singles"],
-                        ["🥈", "2016 Boston", "Singles"],
-                        ["🥈", "2015 Shanghai", "Singles"],
-                        ["🥉", "2021 Stockholm", "Singles"],
-                        ["🥉", "2012 Nice", "Singles"]
+                        ["🥇", "2017 Helsinki", "Men's Singles"],
+                        ["🥇", "2014 Saitama", "Men's Singles"],
+                        ["🥈", "2019 Saitama", "Men's Singles"],
+                        ["🥈", "2016 Boston", "Men's Singles"],
+                        ["🥈", "2015 Shanghai", "Men's Singles"],
+                        ["🥉", "2021 Stockholm", "Men's Singles"],
+                        ["🥉", "2012 Nice", "Men's Singles"]
                     ]
                 },
                 {
                     "event": "Four Continents Championships",
                     "medals": [
-                        ["🥇", "2020 Seoul", "Singles"],
-                        ["🥈", "2017 Gangneung", "Singles"],
-                        ["🥈", "2013 Osaka", "Singles"],
-                        ["🥈", "2011 Taipei", "Singles"]
+                        ["🥇", "2020 Seoul", "Men's Singles"],
+                        ["🥈", "2017 Gangneung", "Men's Singles"],
+                        ["🥈", "2013 Osaka", "Men's Singles"],
+                        ["🥈", "2011 Taipei", "Men's Singles"]
                     ]
                 },
                 {
                     "event": "Grand Prix Final",
                     "medals": [
-                        ["🥇", "2016-2017 Marseille", "Singles"],
-                        ["🥇", "2015-2016 Barcelona", "Singles"],
-                        ["🥇", "2014-2015 Barcelona", "Singles"],
-                        ["🥇", "2013-2014 Fukuoka", "Singles"],
-                        ["🥈", "2019-2020 Torino", "Singles"],
-                        ["🥈", "2012-2013 Sochi", "Singles"]
+                        ["🥇", "2016-2017 Marseille", "Men's Singles"],
+                        ["🥇", "2015-2016 Barcelona", "Men's Singles"],
+                        ["🥇", "2014-2015 Barcelona", "Men's Singles"],
+                        ["🥇", "2013-2014 Fukuoka", "Men's Singles"],
+                        ["🥈", "2019-2020 Torino", "Men's Singles"],
+                        ["🥈", "2012-2013 Sochi", "Men's Singles"]
                     ]
                 },
                 {
@@ -166,13 +166,13 @@
                 {
                     "event": "World Junior Championships",
                     "medals": [
-                        ["🥇", "2010 The Hague", "Singles"]
+                        ["🥇", "2010 The Hague", "Men's Singles"]
                     ]
                 },
                 {
                     "event": "Junior Grand Prix Final",
                     "medals": [
-                        ["🥇", "2009-10 Tokyo", "Singles"]
+                        ["🥇", "2009-10 Tokyo", "Men's Singles"]
                     ]
                 }
             ],
@@ -322,34 +322,958 @@
         {
             "athlete": "Shoma Uno",
             "discipline": "men's singles",
-            "representing": "Japan"
+            "representing": "Japan",
+            "img": "/images/Shoma_Uno.jpeg",
+            "dob": "December 17, 1997",
+            "age": 23,
+            "skating_since": 2002,
+            "coaches": ["Stéphane Lambiel", "Angela Dolfini", "Yoann Deslot"],
+            "choreographers": ["Shae-Lynn Bourne", "David Wilson"],
+            "skating_club": "Toyota Motor Corporation",
+            "standing": 3,
+            "bio": ["Shoma Uno (宇野 昌磨, Uno Shōma, born December 17, 1997) is a Japanese figure skater. He is the 2018 Olympic silver medalist, a two-time World silver medalist (2018, 2017), the 2019 Four Continents Champion, a four-time Grand Prix Final medalist (2015–2018), the 2017 Asian Winter Games champion, and a four-time Japanese national champion (2016–2019).", "Earlier in his career, he became the 2015 World Junior champion, 2014–15 Junior Grand Prix Final champion, and 2012 Youth Olympic silver medalist.",
+                "Uno is the first skater to successfully land a quadruple flip in an international competition.[10] He is also the historic record-holder for the highest score by a junior in the short program."
+            ],
+            "achievements": [{
+                    "event": "Olympic Games",
+                    "medals": [
+                        ["🥈", "2018 Pyeongchang", "Men's Singles"]
+                    ]
+                },
+                {
+                    "event": "World Championships",
+                    "medals": [
+                        ["🥈", "2017 Helsinki", "Men's Singles"],
+                        ["🥈", "2018 Milan", "Men's Singles"]
+                    ]
+                },
+                {
+                    "event": "Four Continents Championships",
+                    "medals": [
+                        ["🥇", "2019 Anaheim", "Men's Singles"],
+                        ["🥈", "2018 Taipei", "Men's Singles"],
+                        ["🥉", "2017 Gangneung", "Men's Singles"]
+                    ]
+                },
+                {
+                    "event": "Grand Prix Final",
+                    "medals": [
+                        ["🥈", "2018-2019 Vancouver", "Men's Singles"],
+                        ["🥈", "2017-2018 Nagoya", "Men's Singles"],
+                        ["🥉", "2016-2017 Marseille", "Men's Singles"],
+                        ["🥉", "2015-2016 Barcelona", "Men's Singles"]
+                    ]
+                },
+                {
+                    "event": "World Team Trophy",
+                    "medals": [
+                        ["🥇", "2017 Tokyo", "Team"],
+                        ["🥉", "2021 Osaka", "Team"]
+                    ]
+                },
+                {
+                    "event": "World Junior Championships",
+                    "medals": [
+                        ["🥇", "2015 Tallinn", "Men's Singles"]
+                    ]
+                },
+                {
+                    "event": "Junior Grand Prix Final",
+                    "medals": [
+                        ["🥇", "2014-2015 Barcelona", "Men's Singles"]
+                    ]
+                }
+            ],
+            "competitions": [{
+                    "season": "2020-2021",
+                    "competitions": [
+                        ["2021 World Team Trophy", 77.46, 164.96, 242.42, 3],
+                        ["2021 World Championships", 92.62, 184.82, 277.44, 4],
+                        ["2020-2021 Japan Championships", 94.22, 190.59, 284.81, 2]
+                    ]
+                },
+                {
+                    "season": "2019-2020",
+                    "competitions": [
+                        ["2020 Challenge Cup", 91.71, 198.70, 290.41, 1],
+                        ["2019-2020 Japan Championships", 105.71, 184.86, 290.57, 1],
+                        ["2019 Rostelecom Cup", 97.29, 164.95, 252.24, 4],
+                        ["2019 Internationaux de France", 79.05, 136.79, 215.84, 8],
+                        ["2019 CS Finlandia Trophy", 92.28, 162.95, 255.23, 1]
+                    ]
+                },
+                {
+                    "season": "2018-2019",
+                    "competitions": [
+                        ["2019 World Team Trophy", 92.78, 189.46, 248.24, 2],
+                        ["2019 World Championships", 91.40, 178.92, 270.32, 4],
+                        ["2019 Four Continents Championships", 91.76, 197.36, 289.12, 1],
+                        ["2018-2019 Japan Championships", 102.06, 187.04, 289.10, 1],
+                        ["2018-2019 Grand Prix Final", 91.67, 183.43, 275.10, 2],
+                        ["2018 NHK Trophy", 92.49, 183.96, 276.45, 1],
+                        ["2018 Skate Canada International", 88.87, 188.38, 277.25, 1],
+                        ["2018 CS Lombardia Trophy", 104.15, 172.05, 276.20, 1]
+                    ]
+                },
+                {
+                    "season": "2017-2018",
+                    "competitions": [
+                        ["2018 World Championships", 94.26, 179.51, 273.77, 2],
+                        ["2018 Winter Olympics", 104.17, 202.73, 306.90, 2],
+                        ["2018 Four Continents Championships", 100.49, 197.45, 297.94, 2],
+                        ["2017-2018 Japan Championships", 96.83, 186.47, 283.30, 1],
+                        ["2017-2018 Grand Prix Final", 101.51, 184.50, 286.01, 2],
+                        ["2017 Internationaux de France", 93.92, 179.40, 273.32, 2],
+                        ["2017 Skate Canada International", 103.62, 197.48, 301.10, 1],
+                        ["2017 CS Lombardia Trophy", 104.87, 214.97, 319.84, 1]
+                    ]
+                },
+                {
+                    "season": "2016-2017",
+                    "competitions": [
+                        ["2017 World Team Trophy", 103.52, 198.49, 302.02, 1],
+                        ["2017 World Championships", 104.86, 214.45, 319.31, 2],
+                        ["2017 Coupe du Printempts", 104.31, 199.37, 303.68, 1],
+                        ["2017 Asian Winter Games", 92.43, 188.84, 281.27, 1],
+                        ["2017 Four Continents Championships", 100.28, 187.77, 288.05, 3],
+                        ["2016-2017 Japan Championships", 88.05, 192.36, 280.41, 1],
+                        ["2016-2017 Grand Prix Final", 86.82, 195.69, 282.51, 3],
+                        ["2016 Rostelecom Cup", 98.59, 186.48, 285.07, 2],
+                        ["2016 Skate America", 89.15, 190.19, 279.34, 1],
+                        ["2016 CS Lombardia Trophy", 86.68, 172.25, 258.93, 1]
+                    ]
+                },
+                {
+                    "season": "2015-2016",
+                    "competitions": [
+                        ["2016 Team Challenge Cup", 105.74, 192.92, 298.66, 3],
+                        ["2016 World Championships", 90.74, 173.51, 264.25, 7],
+                        ["2016 Four Continents Championships", 92.99, 176.82, 269.81, 4],
+                        ["2015-2016 Japan Championships", 97.94, 169.21, 267.15, 2],
+                        ["2015-2016 Grand Prix Final", 86.47, 190.32, 276.79, 3],
+                        ["2015 Skate America", 80.78, 176.65, 257.43, 2],
+                        ["2015 US Classic", 52.45, 154.96, 207.41, 5]
+                    ]
+                },
+                {
+                    "season": "2014-2015",
+                    "competitions": [
+                        ["2015 World Junior Championships", 84.87, 147.67, 232.54, 1],
+                        ["2015 Four Continents Championships", 88.90, 167.55, 256.45, 5],
+                        ["2014–15 Japan Championships", 85.53, 165.75, 251.28, 2],
+                        ["2014–15 JGP Final", 75.21, 163.06, 238.27, 1],
+                        ["2014–15 Japan Junior Championships", 82.72, 128.00, 210.72, 1],
+                        ["2014 JGP Croatia", 74.82, 152.69, 227.51, 1],
+                        ["2014 JGP Japan", 69.78, 150.21, 219.99, 2]
+                    ]
+                },
+                {
+                    "season": "2013-2014",
+                    "competitions": [
+                        ["2014 World Junior Championships", 70.67, 135.83, 206.50, 5],
+                        ["2013–14 Japan Championships", 72.15, 144.34, 216.49, 7],
+                        ["2013–14 Japan Junior Championships", 71.61, 134.49, 206.10, 2],
+                        ["2013 JGP Estonia", 67.09, 130.73, 197.82, 4],
+                        ["2013 JGP Latvia", 58.22, 117.59, 175.81, 3]
+                    ]
+                },
+                {
+                    "season": "2012-2013",
+                    "competitions": [
+                        ["2013 World Junior Championships", 61.66, 125.42, 187.08, 7],
+                        ["2012–13 Japan Championships", 67.56, 131.47, 199.03, 11],
+                        ["2012–13 Japan Junior Championships", 66.21, 124.37, 190.58, 2],
+                        ["2012 JGP Germany", 63.48, 125.00, 188.48, 2],
+                        ["2012 JGP Slovenia", 61.42, 112.92, 174.34, 6]
+                    ]
+                },
+                {
+                    "season": "2011-2012",
+                    "competitions": [
+                        ["2012 World Junior Championships", 57.71, 118.21, 175.92, 10],
+                        ["2012 Winter Youth Olympics", 51.52, 115.63, 167.15, 2],
+                        ["2011–12 Japan Championships", 63.49, 126.93, 190.42, 9],
+                        ["2011–12 Japan Junior Championships", 61.56, 111.90, 173.46, 5],
+                        ["2011 JGP Estonia", 56.29, 118.86, 175.15, 3],
+                        ["2011 JGP Poland", 48.69, 114.55, 163.24, 4]
+                    ]
+                },
+                {
+                    "season": "2009-2010",
+                    "competitions": [
+                        ["2009–10 Japan Junior Championships", 52.95, 95.09, 148.04, 3]
+                    ]
+                }
+            ],
+            "pb": [
+                ["combined total", 289.12],
+                ["short program", 104.15],
+                ["free skate", 197.36]
+            ],
+            "current_programs": ["Great Spirit", "Our Life, Dancing on My Own, Your Last Kiss"]
         },
         {
             "athlete": "Yuma Kagiyama",
             "discipline": "men's singles",
-            "representing": "Japan"
+            "representing": "Japan",
+            "img": "/images/Yuma_Kagiyama.jpeg",
+            "dob": "May 5, 2003",
+            "age": 18,
+            "skating_since": 2008,
+            "coaches": ["Masakazu Kagiyama", "Misao Sato"],
+            "choreographers": ["Misao Sato", "Lori Nichol"],
+            "skating_club": "SEISA Kokusai High School Yokohama",
+            "standing": 11,
+            "bio": ["Yuma Kagiyama (鍵山 優真, Kagiyama Yūma, born May 5, 2003) is a Japanese figure skater.", "He is the 2021 World silver medalist, the 2020 Four Continents bronze medalist, the 2020 Youth Olympic champion, the 2020 World Junior silver medalist, the 2019–20 Japanese junior national champion, and the 2019–20 and 2020-21 Japanese national bronze medalist."],
+            "achievements": [{
+                    "event": "World Championships",
+                    "medals": [
+                        ["🥈", "2021 Stockholm", "Men's Singles"]
+                    ]
+                },
+                {
+                    "event": "Four Continents Championships",
+                    "medals": [
+                        ["🥉", "2020 Seoul", "Men's Singles"]
+                    ]
+                },
+                {
+                    "event": "World Junior Championships",
+                    "medals": [
+                        ["🥈", "2020 Tallinn", "Men's Singles"]
+                    ]
+                },
+                {
+                    "event": "Winter Youth Olympics",
+                    "medals": [
+                        ["🥇", "2020 Lausanne", "Men's Singles"]
+                    ]
+                },
+                {
+                    "event": "Winter Youth Olympics",
+                    "medals": [
+                        ["🥈", "2020 Lausanne", "Team"]
+                    ]
+                }
+
+            ],
+            "competitions": [{
+                    "season": "2020-2021",
+                    "competitions": [
+                        ["2021 World Championships", 100.96, 190.81, 291.77, 2],
+                        ["2020-2021 Japan Championships", 98.60, 180.19, 278.79, 3],
+                        ["2020 NHK Trophy", 87.26, 188.61, 275.87, 1]
+                    ]
+                },
+                {
+                    "season": "2019-2020",
+                    "competitions": [
+                        ["2020 Junior World Championships", 85.82, 145.93, 231.75, 2],
+                        ["2020 Four Continents Championships", 91.61, 179.00, 270.61, 3],
+                        ["2020 Winter Youth Olympics", 72.76, 166.41, 239.17, 1],
+                        ["2020 Winter Youth Olympics- Team", "-", 157.62, "-", 2],
+                        ["2019-2020 Japan Championships", 77.41, 180.58, 257.99, 3],
+                        ["2019-2020 Junior Grand Prix Final", 71.19, 155.90, 227.09, 4],
+                        ["2019-2020 Japan Junior Championships", 79.92, 171.09, 250.01, 1],
+                        ["2019 JGP Poland", 84.72, 160.63, 245.35, 2],
+                        ["2019 JGP France", 80.61, 154.26, 234.87, 1]
+                    ]
+                },
+                {
+                    "season": "2018-2019",
+                    "competitions": [
+                        ["2019 International Challenge Cup", 78.97, 139.05, 218.02, 2],
+                        ["2018-2019 Japan Championships", 74.51, 141.85, 216.36, 6],
+                        ["2018-2019 Japan Junior Championships", 60.71, 136.89, 197.60, 5],
+                        ["2018 JGP Armenia", 65.10, 136.92, 202.02, 2],
+                        ["2018 JGP Canada", 75.60, 119.13, 194.73, 4],
+                        ["2018 Asian Open Trophy", 57.75, 117.15, 174.90, 1]
+                    ]
+                }
+            ],
+            "pb": [
+                ["combined total", 291.77],
+                ["short program", 100.96],
+                ["free skate", 190.81]
+            ],
+            "current_programs": ["Vocussion", "Avatar, The Lord of the Rings"]
         },
         {
             "athlete": "Keiji Tanaka",
             "discipline": "men's singles",
-            "representing": "Japan"
+            "representing": "Japan",
+            "img": "/images/Keiji_Tanaka.jpeg",
+            "dob": "November 22, 1994",
+            "age": 26,
+            "skating_since": 2002,
+            "coaches": ["Utako Nagamitsu", "Yusuke Hayashi"],
+            "choreographers": ["Kenji Miyamoto", "Missimo Scali"],
+            "skating_club": "Kurashiki FSC",
+            "standing": 20,
+            "bio": ["Keiji Tanaka (田中 刑事, Tanaka Keiji, born November 22, 1994) is a Japanese figure skater. He is the 2016 NHK Trophy bronze medalist, 2019 U.S. Classic champion, 2017 Winter Universiade silver medalist, 2011 World Junior silver medalist, and a two-time Japanese national silver medalist (2016, 2017)."],
+            "achievements": [{
+                    "event": "Winter Universiade",
+                    "medals": [
+                        ["🥈", "2017 Almaty", "Men's Singles"]
+                    ]
+                },
+                {
+                    "event": "World Team Trophy",
+                    "medals": [
+                        ["🥈", "2019 Fukuoka", "Team"]
+                    ]
+                },
+                {
+                    "event": "World Junior Championships",
+                    "medals": [
+                        ["🥈", "2011 Gangneung", "Men's Singles"]
+                    ]
+                }
+            ],
+            "competitions": [{
+                    "season": "2020-2021",
+                    "competitions": [
+                        ["2020-2021 Japan Championships", 83.61, 155.22, 238.83, 4],
+                        ["2020 NHK Trophy", 76.57, 138.95, 215.52, 4]
+                    ]
+                },
+                {
+                    "season": "2019-2020",
+                    "competitions": [
+                        ["2020 Challenge Cup", 75.54, 165.64, 241.18, 2],
+                        ["2019-2020 Japan Championships", 80.90, 171.54, 252.44, 4],
+                        ["2019 Cup of China", 74.64, 158.98, 233.62, 5],
+                        ["2019 Skate Canada", 80.11, 169.91, 250.02, 3],
+                        ["2019 CS U.S. International Classic", 88.76, 161.20, 249.96, 1]
+                    ]
+                },
+                {
+                    "season": "2018-2019",
+                    "competitions": [
+                        ["2019 World Team Trophy", 89.05, 169.79, 258.84, 2],
+                        ["2019 World Championships", 78.76, 159.64, 238.84, 14],
+                        ["2019 Four Continents Championships", 83.93, 167.61, 251.54, 7],
+                        ["2018-2019 Japan Championships", 79.32, 157.13, 236.45, 3],
+                        ["2018 Internationaux de France", 79.35, 136.97, 216.32, 8],
+                        ["2018 Grand Prix of Helsinki", 80.60, 126.22, 206.82, 8],
+                        ["2018 CS Ondrej Nepela Trophy", 77.53, 144.39, 221.92, 3]
+                    ]
+                },
+                {
+                    "season": "2017-2018",
+                    "competitions": [
+                        ["2018 World Championships", 80.17, 156.49, 236.66, 13],
+                        ["2018 Winter Olympics", 80.05, 164.78, 244.83, 18],
+                        ["2018 Winter Olympics- Team", "-", 148.36, "-", 5],
+                        ["2018 Four Continents Championships", 90.68, 169.63, 260.31, 4],
+                        ["2017-2018 Japan Championships", 91.34, 175.81, 267.15, 2],
+                        ["2017 Cup of China", 87.19, 159.98, 247.17, 7],
+                        ["2017 Ondrej Nepela Trophy", 75.81, 121.37, 197.18, 8],
+                        ["2017 Asian Trophy", 68.75, 151.33, 220.08, 1]
+                    ]
+                },
+                {
+                    "season": "2016-2017",
+                    "competitions": [
+                        ["2017 World Championships", 73.45, 148.89, 222.34, 19],
+                        ["2017 Four Continents Championships", 77.55, 142.63, 220.18, 13],
+                        ["2016-2017 Japan Championships", 85.68, 163.70, 249.38, 2],
+                        ["2017 NHK Trophy", 80.49, 167.95, 248.44, 3],
+                        ["2016 Rostelecom Cup", 69.13, 155.78, 224.91, 7],
+                        ["2016 CS U.S International Classic", 61.85, 124.13, 185.98, 10],
+                        ["2016 Asian Trophy", 63.55, 148.74, 212.29, 1]
+                    ]
+                },
+                {
+                    "season": "2015-2016",
+                    "competitions": [
+                        ["2016 Four Continents Championships", 74.82, 147.88, 222.70, 6],
+                        ["2015-2016 Japan Championships", 74.19, 167.86, 242.05, 4],
+                        ["2015 NHK Trophy", 73.74, 161.16, 234.90, 5],
+                        ["2015 US Classic", 66.54, 145.80, 212.34, 2],
+                        ["2015 Asian Trophy", 61.64, 121.06, 182.70, 2]
+                    ]
+                },
+                {
+                    "season": "2014-2015",
+                    "competitions": [
+                        ["2015 Gardena Spring Trophy", 63.11, 131.44, 194.55, 2],
+                        ["2014–15 Japan Championships", 92.83, 124.60, 187.43, 8],
+                        ["2014 Cup of China", 56.82, 132.44, 189.26, 8],
+                        ["2014 Cup of Nice", 67.96, 129.87, 197.83, 3]
+                    ]
+                },
+                {
+                    "season": "2013-2014",
+                    "competitions": [
+                        ["2014 Triglav Trophy", 63.08, 126.75, 189.83, 2],
+                        ["2014 World Junior Championships", 70.57, 122.19, 192.76, 7],
+                        ["2014 Four Continents Championships", 62.61, 116.30, 178.91, 17],
+                        ["2013–14 Japan Championships", 71.78, 139.74, 211.52, 8],
+                        ["2013–14 Junior Grand Prix Final", 73.63, 132.08, 205.71, 4],
+                        ["2013 JGP Czech Skate", 70.43, 139.59, 210.02, 1],
+                        ["2013 JGP Kosice", 70.72, 122.89, 193.61, 1]
+                    ]
+                },
+                {
+                    "season": "2012-2013",
+                    "competitions": [
+                        ["2012–13 Japan Championships", 62.54, 145.98, 208.52, 7],
+                        ["2012–13 Junior Grand Prix Final", 61.74, 112.81, 174.55, 6],
+                        ["2012 JGP Sencila Bled Cup", 61.83, 118.94, 180.77, 4],
+                        ["2012 JGP Lake Placid", 58.632, 123.87, 182.50, 2]
+                    ]
+                },
+                {
+                    "season": "2011-2012",
+                    "competitions": [
+                        ["2012 World Junior Championships", 57.70, 132.16, 189.86, 7],
+                        ["2011–12 Japan Championships", 67.48, 133.97, 201.45, 7],
+                        ["2011–12 Junior Grand Prix Final", 58.15, 112.99, 171.98, 3],
+                        ["2011 JGP Cup of Austria", 59.73, 114.25, 173.98, 3],
+                        ["2011 JGP Brisbane", 68.65, 127.21, 192.36, 2]
+                    ]
+                },
+                {
+                    "season": "2010-2011",
+                    "competitions": [
+                        ["2011 World Junior Championships", 64.06, 132.92, 196.98],
+                        ["2011–12 Japan Championships", 57.64, 126.14, 183.78, 11],
+                        ["2011 JGP John Curry Memorial", 58.28, 97.03, 155.31, 6],
+                        ["2011 JGP Brasov Cup", 57.98, 108.50, 166.48, 3]
+                    ]
+                },
+                {
+                    "season": "2009-2010",
+                    "competitions": [
+                        ["2009–10 Cup of Nice", 56.78, 112.68, 169.46, 7]
+                    ]
+                }
+            ],
+            "pb": [
+                ["combined total", 258.84],
+                ["short program", 89.05],
+                ["free skate", 169.91]
+            ],
+            "current_programs": ["Hip Hip Chin Chin", "Sherlock Holmes (soundtrack)"]
+
         },
 
         {
             "athlete": "Nathan Chen",
             "discipline": "men's singles",
-            "representing": "United States of America"
+            "representing": "United States",
+            "img": "/images/Nathan_Chen.jpeg",
+            "dob": "May 5th, 1999",
+            "age": 22,
+            "skating_since": 2002,
+            "coaches": ["Rafael Arutiunian"],
+            "choreographers": ["Shae-Lynn Bourne"],
+            "skating_club": "Salt Lake City FSC",
+            "standing": 1,
+            "bio": ["Nathan Wei Chen (born May 5, 1999) is an American figure skater. He is a three-time World champion (2018, 2019, 2021), a 2018 Olympic bronze medalist in the team event, the 2017 Four Continents champion, a three-time Grand Prix Final champion (2017, 2018, 2019), and a five-time U.S. national champion (2017–21). At the junior level, Chen is the 2015–16 Junior Grand Prix Final champion, 2013–14 Junior Grand Prix Final bronze medalist, and 2014 World Junior bronze medalist.",
+                "Chen is the first skater to have landed five types of quadruple jumps in competition – toe loop, Salchow, loop, flip, and Lutz – as well as eight quadruple jumps across a single competition (2018 World Championships).[10] Since placing fifth at the 2018 Winter Olympics, he has been undefeated in every competition he has entered, both domestic and international. As of 2021, Chen is the world record holder for the free skate and the combined score."
+            ],
+            "achievements": [{
+                    "event": "Olympic Games",
+                    "medals": [
+                        ["🥉", "2018 Pyeongchang", "Team"]
+                    ]
+                },
+                {
+                    "event": "World Championships",
+                    "medals": [
+                        ["🥇", "2021 Stockholm", "Men's Singles"],
+                        ["🥇", "2019 Saitama", "Men's Singles"],
+                        ["🥇", "2019 Milan", "Men's Singles"]
+                    ]
+                },
+                {
+                    "event": "Four Continents Championships",
+                    "medals": [
+                        ["🥇", "2017 Gangneung", "Men's Singles"]
+                    ]
+                },
+                {
+                    "event": "Grand Prix Final",
+                    "medals": [
+                        ["🥇", "2019-20 Turin", "Men's Singles"],
+                        ["🥇", "2018-19 Vancouver", "Men's Singles"],
+                        ["🥇", "2017-18 Nagoya", "Men's Singles"],
+                        ["🥈", "2016-17 Marseille", "Men's Singles"]
+                    ]
+                },
+                {
+                    "event": "World Team Trophy",
+                    "medals": [
+                        ["🥈", "2021 Osaka", "Team"],
+                        ["🥇", "2019 Fukuoka", "Team"],
+                        ["🥉", "2017 Tokyo", "Team"]
+
+                    ]
+                },
+                {
+                    "event": "World Junior Championships",
+                    "medals": [
+                        ["🥉", "2014 Sofia", "Men's Singles"]
+                    ]
+                },
+                {
+                    "event": "Junior Grand Prix Final",
+                    "medals": [
+                        ["🥇", "2015-16 Barcelona", "Men's Singles"],
+                        ["🥉", "2013-14 Fukuoka", "Men's Singles"]
+                    ]
+                }
+            ],
+            "competitions": [{
+                    "season": "2020-2021",
+                    "competitions": [
+                        ["2021 World Team Trophy", 109.65, 203.23, 312.89, 2],
+                        ["2021 World Championships", 98.85, 222.03, 320.88, 1],
+                        ["2020-2021 U.S. Championships", 113.92, 208.36, 322.28, 1],
+                        ["2020 Skate America", 111.17, 187.98, 299.15, 1]
+                    ]
+                },
+                {
+                    "season": "2019-2020",
+                    "competitions": [
+                        ["2020 U.S. Championships", 114.13, 216.04, 330.17, 1],
+                        ["2019-2020 Grand Prix Final", 110.38, 224.92, 335.30, 1],
+                        ["2019 Internationaux de France", 102.48, 194.68, 297.16, 1],
+                        ["2019 Skate America", 102.71, 196.38, 299.09, 1],
+                        ["2019 Japan Open", "-", 189.83, "-", 3]
+                    ]
+                },
+                {
+                    "season": "2018-2019",
+                    "competitions": [
+                        ["2019 World Team Trophy", 101.95, 199.49, 301.44, 1],
+                        ["2019 World Championships", 107.40, 216.02, 323.42, 1],
+                        ["2018-2019 U.S.Championships", 113.42, 228.80, 342.42, 1],
+                        ["2018-2019 Grand Prix Final", 92.99, 189.43, 282.42, 1],
+                        ["2018 Internationaux de France", 86.94, 184.64, 271.58, 1],
+                        ["2018 Skate America", 90.58, 189.99, 280.57, 1],
+                        ["2018 Japan Open", "-", 144.96, "-", 3]
+                    ]
+                },
+                {
+                    "season": "2017-2018",
+                    "competitions": [
+                        ["2018 World Championships", 101.94, 219.46, 321.40, 1],
+                        ["2018 Winter Olympics", 82.27, 215.08, 297.35, 5],
+                        ["2018 Winter Olympics - Team", 80.61, "-", "-", 3],
+                        ["2017-2018 U.S. Championships", 104.45, 210.78, 315.23, 1],
+                        ["2017-2018 Grand Prix Final", 103.32, 183.19, 286.51, 1],
+                        ["2017 Skate America", 104.12, 171.76, 275.88, 1],
+                        ["2017 Rostelecom Cup", 100.54, 193.25, 293.79, 1],
+                        ["2017 Japan Open", "-", 178.46, "-", 3],
+                        ["2016 CS U.S. International Classic", 91.80, 183.24, 275.04, 1]
+                    ]
+                },
+                {
+                    "season": "2016-2017",
+                    "competitions": [
+                        ["2017 World Team Trophy", 99.28, 185.24, 284.52, 3],
+                        ["2017 World Championships", 97.33, 193.39, 290.72, 6],
+                        ["2017 Four Continents Championships", 103.12, 204.34, 307.46, 1],
+                        ["2016-2017 U.S. Championships", 106.39, 212.08, 318.47, 1],
+                        ["2016-2017 Grand Prix Final", 85.30, 197.55, 282.85, 2],
+                        ["2016 NHK Trophy", 87.94, 180.97, 268.91, 2],
+                        ["2016 Trophée de France", 92.85, 171.95, 264.80, 4],
+                        ["2016 CS Finlandia Trophy", 87.50, 168.94, 256.44, 1]
+                    ]
+                },
+                {
+                    "season": "2015-2016",
+                    "competitions": [
+                        ["2015-2016 U.S. Championships", 86.33, 180.60, 266.93, 3],
+                        ["2015-2016 Junior Grand Prix Final", 78.59, 146.45, 225.04, 1],
+                        ["2015 JGP Spain", 77.94, 158.43, 236.37, 1],
+                        ["2015 JPG United States", 77.13, 159.63, 236.76, 1]
+                    ]
+                },
+                {
+                    "season": "2014-2015",
+                    "competitions": [
+                        ["2015 World Junior Championships", 69.87, 143.98, 213.85, 4],
+                        ["2014-15 U.S. Championships", 76.20, 154.79, 230.99, 8],
+                        ["2014–15 JGP Croatia", 72.57, 135.59, 208.16, 2]
+                    ]
+                },
+                {
+                    "season": "2013-2014",
+                    "competitions": [
+                        ["2014 World Junior Championships", 69.65, 142.38, 212.03, 3],
+                        ["2013-14 U.S. Junior Championships", 79.61, 144.32, 223.93, 1],
+                        ["2013–14 Japan Championships", 85.53, 165.75, 251.28, 2],
+                        ["2013–14 JGP Final", 71.52, 143.09, 214.61, 3],
+                        ["2013 JGP Belarus", 69.96, 141.15, 211.11, 1],
+                        ["2013 JGP Mexico", 74.22, 144.40, 218.62, 1]
+                    ]
+                },
+                {
+                    "season": "2012-2013",
+                    "competitions": [
+                        ["2013 World Junior Championships", 63.60, 117.71, 181.31, 3],
+                        ["2012 JGP Austria", 75.15, 146.85, 222.00, 1]
+                    ]
+                }
+            ],
+            "pb": [
+                ["combined total", 335.30],
+                ["short program", 110.38],
+                ["free skate", 224.92]
+            ],
+            "current_programs": ["Asturias, Canción del Mariachi", "Selections"]
         },
+
         {
             "athlete": "Jason Brown",
             "discipline": "men's singles",
-            "representing": "United States of America"
+            "representing": "United States",
+            "img": "/images/Jason_Brown.jpeg",
+            "dob": "December 15th, 1994",
+            "age": 26,
+            "skating_since": 1999,
+            "coaches": ["Brian Orser", "Tracy Wilson"],
+            "choreographers": ["Rohene Ward", "David Wilson"],
+            "skating_club": "Skokie Valley Skating Club",
+            "standing": 4,
+            "bio": ["Jason Lawrence Brown (born December 15, 1994) is an American figure skater. He is a seven-time Grand Prix medalist, a two-time Four Continents medalist (2020 silver, 2018 bronze), and the 2015 U.S. national champion. Earlier in his career, he became a two-time World Junior medalist (2013 silver, 2012 bronze), the 2011 Junior Grand Prix Final champion, and the 2010 junior national champion.",
+                "Brown won a bronze medal in the team event at the 2014 Winter Olympics in Sochi, becoming one of the youngest male figure skating Olympic medalists."
+            ],
+            "achievements": [{
+                    "event": "Olympic Games",
+                    "medals": [
+                        ["🥉", "2014 Sochi", "Team"]
+
+                    ]
+                },
+
+                {
+                    "event": "Four Continents Championships",
+                    "medals": [
+                        ["🥈", "2020  Seoul", "Men's Singles"],
+                        ["🥉", "2018 Taipei", "Men's Singles"]
+
+                    ]
+                },
+                {
+                    "event": "World Team Trophy",
+                    "medals": [
+                        ["🥈", "2021 Osaka", "Team"],
+                        ["🥉", "2017 Tokyo", "Team"],
+                        ["🥇", "2015 Tokyo", "Team"]
+
+                    ]
+                },
+                {
+                    "event": "World Junior Championships",
+                    "medals": [
+                        ["🥈", "2013 Milan", "Men's Singles"],
+                        ["🥉", "2012 Minsk", "Men's Singles"]
+
+                    ]
+                },
+                {
+                    "event": "Junior Grand Prix Final",
+                    "medals": [
+                        ["🥇", "2011-12 Quebec", "Men's Singles"]
+                    ]
+                }
+            ],
+            "competitions": [{
+                    "season": "2020-2021",
+                    "competitions": [
+                        ["2021 World Team Trophy", 94.86, 160.33, 255.19, 2],
+                        ["2021 World Championships", 91.25, 170.92, 262.17, 7],
+                        ["2020-2021 U.S. Championships", 100.92, 176.00, 276.92, 3]
+                    ]
+                },
+                {
+                    "season": "2019-2020",
+                    "competitions": [
+                        ["2020 Four Continents Championships", 94.71, 180.11, 274.82, 2],
+                        ["2019-2020 U.S. Championships", 100.99, 191.89, 292.88, 2],
+                        ["2019 CS Golden Spin of Zagreb", 79.44, 162.95, 242.39, 1],
+                        ["2019 NHK Trophy", 73.73, 157.54, 231.27, 5],
+                        ["2019 Skate America", 83.45, 171.64, 255.09, 2]
+                    ]
+                },
+                {
+                    "season": "2018-2019",
+                    "competitions": [
+                        ["2019 World Championships", 96.81, 157.34, 254.15, 9],
+                        ["2019 Four Continents Championships", 86.57, 172.32, 258.89, 5],
+                        ["2018-2019 U.S. Championships", 100.52, 172.56, 273.08, 3],
+                        ["2018-2019 Grand Prix Final", 95.50, 167.92, 263.42, 1],
+                        ["2018 CS Golden Spin of Zagreb", 92.49, 183.96, 276.45, 1],
+                        ["2018 Internationaux de France", 96.41, 159.92, 256.33, 2],
+                        ["2018 Skate Canada International", 76.46, 158.51, 234.97, 6],
+                        ["2018 CS Autumn Classic International", 88.90, 144.33, 233.23, 4]
+                    ]
+                },
+                {
+                    "season": "2017-2018",
+                    "competitions": [
+                        ["2018 Four Continents Championships", 89.78, 179.44, 269.22, 3],
+                        ["2017-2018 U.S. Championships", 93.23, 160.45, 253.68, 6],
+                        ["2017-2018 Grand Prix Final", 89.02, 164.79, 253.81, 6],
+                        ["2017 NHK Trophy", 85.36, 160.59, 245.95, 4],
+                        ["2017 Skate Canada International", 90.71, 170.43, 261.14, 2],
+                        ["2017 CS Lombardia Trophy", 83.01, 176.87, 259.88, 2]
+                    ]
+                },
+                {
+                    "season": "2016-2017",
+                    "competitions": [
+                        ["2017 World Team Trophy", 94.32, 179.35, 273.67, 3],
+                        ["2017 World Championships", 93.10, 176.47, 269.57, 7],
+                        ["2017 Four Continents Championships", 80.77, 165.08, 245.85, 6],
+                        ["2016-2017 U.S. Championships", 79.23, 175.00, 254.23, 3],
+                        ["2016 NHK Trophy", 74.33, 144.14, 218.47, 7],
+                        ["2016 Skate America", 85.75, 182.63, 268.38, 2],
+                        ["2016 CS U.S. Classic", 83.18, 170.86, 254.04, 1],
+                        ["2016 CS Lombardia Trophy", 81.58, 174.91, 256.49, 2]
+                    ]
+                },
+                {
+                    "season": "2015-2016",
+                    "competitions": [
+                        ["2016 Team Challenge Cup", 87.72, 155.36, 268.72, 1],
+                        ["2015 Ice Challenge", 85.29, 155.36, 240.65, 2],
+                        ["2015 Skate America", 78.64, 159.83, 238.47, 3],
+                        ["2015 CS Ondrej Nepela Trophy", 76.98, 162.39, 239.37, 1]
+                    ]
+                },
+                {
+                    "season": "2014-2015",
+                    "competitions": [
+                        ["2015 World Team Trophy", 86.38, 176.69, 263.17, 1],
+                        ["2015 World Championships", 84.32, 163.97, 248.29, 4],
+                        ["2015 Four Continents Championships", 75.86, 167.35, 243.21, 6],
+                        ["2014–15 U.S. Championships", 93.36, 181.62, 274.98, 1],
+                        ["2014 Rostelecom Cup", 76.32, 159.24, 235.56, 5],
+                        ["2014 Skate America", 79.75, 154.42, 234.17, 2],
+                        ["2014 CS Nebelhorn Trophy", 83.59, 153.38, 237.17, 1]
+                    ]
+                },
+                {
+                    "season": "2013-2014",
+                    "competitions": [
+                        ["2014 Winter Olympics", 86.00, 152.37, 238.37, 9],
+                        ["2014 Winter Olympics - Team", "-", 153.67, "-", 3],
+                        ["2013–14 U.S. Championships", 87.47, 182.61, 270.08, 2],
+                        ["2013 Trophée Éric Bompard", 84.77, 158.32, 243.09, 3],
+                        ["2013 Skate America", 83.78, 147.25, 231.03, 5],
+                        ["2013 Nebelhorn Trophy", 79.41, 149.02, 228.43, 2]
+                    ]
+                },
+                {
+                    "season": "2012-2013",
+                    "competitions": [
+                        ["2013 World Junior Championships", 70.06, 154.09, 224.15, 1],
+                        ["2012–13 U.S. Championships", 74.05, 149.24, 223.29, 8],
+                        ["2012–13 Junior Grand Prix Final", 69.43, 128.89, 198.32, 4],
+                        ["2012 Junior Grand Prix Turkey", 65.95, 132.21, 198.16, 1],
+                        ["2012 Junior Grand Prix France", 59.33, 126.48, 185.81, 2]
+                    ]
+                },
+                {
+                    "season": "2011-2012",
+                    "competitions": [
+                        ["2012 World Junior Championships", 70.20, 144.70, 214.90, 3],
+                        ["2012 Winter Youth Olympics", 51.52, 115.63, 167.15, 2],
+                        ["2011–12 U.S. Championships", 75.68, 133.48, 209.16, 9],
+                        ["2011–12 Junior Grand Prix Final", 68.77, 139.64, 208.41, 1],
+                        ["2011 JGP Italy", 68.37, 125.91, 219.37, 2],
+                        ["2011 JGP Australia", 68.20, 129.03, 197.23, 1]
+                    ]
+                },
+                {
+                    "season": "2010-2011",
+                    "competitions": [
+                        ["2011 World Junior Championships", 62.64, 122.80, 185.44, 7],
+                        ["2011–12 U.S. Championships", 64.32, 144.44, 208.76, 9],
+                        ["2011 JGP Japan", 57.13, 110.15, 167.28, 6],
+                        ["2011 JGP France", 58.00, 122.57, 180.57, 2]
+                    ]
+                },
+                {
+                    "season": "2009-2010",
+                    "competitions": [
+                        ["2010 Gardena Trophy", 68.98, 128.32, 197.30, 1],
+                        ["2010 U.S. Junior Championships", 62.10, 133.12, 195.22, 1]
+                    ]
+                }
+            ],
+            "pb": [
+                ["combined total", 274.82],
+                ["short program", 96.81],
+                ["free skate", 180.11]
+            ],
+            "current_programs": ["Sinnerman", "Slaughter on Tenth Avenue"]
         },
         {
             "athlete": "Javier Fernandez",
             "discipline": "men's singles",
-            "representing": "Spain"
+            "representing": "Spain",
+            "img": "/images/Yuzuru_Hanyu.jpeg",
+            "dob": "April 15th, 1991",
+            "age": 30,
+            "skating_since": 1997,
+            "coaches": ["Brian Orser", "Tracy Wilson", "Daniel Peinado"],
+            "choreographers": ["David Wilson", "Antonio Najarro", "Kurt Browning", "Geoffrey Tyler"],
+            "skating_club": "Toronto Cricket Skating and Curling Club",
+            "standing": [2019, 5],
+            "bio": ["Javier Fernández López (Spanish pronunciation: [xaˈβjeɾ feɾˈnandeθ ˈlopeθ]; born 15 April 1991) is a Spanish former figure skater. He is the 2018 Olympic bronze medalist, a two-time World champion (2015, 2016), a two-time World bronze medalist (2013, 2014), a seven-time European champion (2013–2019), a two-time Grand Prix Final silver medalist (2014, 2015), a three-time Rostelecom Cup champion (2014–2016), a two-time Grand Prix in France champion (2016–2017) and an eight-time Spanish national champion (2010, 2012–2018).", "In addition to his bronze medal at the 2018 Winter Olympics, Fernández placed 14th at the 2010 Winter Olympics and 4th at the 2014 Winter Olympics.", "He is the first skater from Spain to medal at an Olympic Games, ISU Championship or a Grand Prix event.[12][13] Fernández is the second man to break the 100-point barrier in the short program,[14] the 200-point barrier in the long program,[15] and the 300-point barrier in the total score.[16] As of 24 May 2017, he has the second highest personal best scores in both segments and third highest in the combined score.", "In recognition of his achievements, Fernández received the Gold Medal of the Royal Order of Sports Merit by the Spanish government on 19 April 2016."],
+            "achievements": [{
+                    "event": "Olympic Games",
+                    "medals": [
+                        ["🥉", "2018 Pyeongchang", "Men's Singles"]
+                    ]
+                },
+                {
+                    "event": "World Championships",
+                    "medals": [
+                        ["🥇", "2015 Shanghai", "Men's Singles"],
+                        ["🥇", "2016 Boston", "Men's Singles"],
+                        ["🥉", "2017 Tokyo", "Men's Singles"],
+                        ["🥉", "2014 Saitama", "Men's Singles"]
+                    ]
+                },
+                {
+                    "event": "European Championships",
+                    "medals": [
+                        ["🥇", "2013 Zagreb", "Men's Singles"],
+                        ["🥇", "2014 Budapest", "Men's Singles"],
+                        ["🥇", "2015 Stockholm", "Men's Singles"],
+                        ["🥇", "2016 Bratislava", "Men's Singles"],
+                        ["🥇", "2018 Moscow", "Men's Singles"],
+                        ["🥇", "2019 Minsk", "Men's Singles"]
+                    ]
+                },
+                {
+                    "event": "Grand Prix Final",
+                    "medals": [
+                        ["🥈", "2015–15 Barcelona", "Men's Singles"],
+                        ["🥈", "2015–16 Barcelona", "Men's Singles"],
+                        ["🥉", "2011–12 Quebec", "Men's Singles"]
+                    ]
+                }
+            ],
+            "competitions": [{
+                    "season": "2019-2020",
+                    "competitions": [
+                        ["2019 Japan Open", "-", 153.14, "-", 1]
+                    ]
+                },
+                {
+                    "season": "2018-2019",
+                    "competitions": [
+                        ["2019 European Championships", 91.84, 179.75, 271.59, 1],
+                        ["2019 Japan Open", "-", 157.86, "-", 2]
+                    ]
+                },
+                {
+                    "season": "2017-2018",
+                    "competitions": [
+                        ["2018 Winter Olympics", 107.58, 197.66, 305.24, 3],
+                        ["2018 European Championships", 103.82, 191.73, 295.55, 1],
+                        ["2017-2018 Japan Championships", 96.83, 186.47, 283.30, 1],
+                        ["2017-2018 Grand Prix Final", 101.51, 184.50, 286.01, 2],
+                        ["2017 Internationaux de France", 93.92, 179.40, 273.32, 2],
+                        ["2017 Skate Canada International", 103.62, 197.48, 301.10, 1],
+                        ["2017 CS Lombardia Trophy", 104.87, 214.97, 319.84, 1]
+                    ]
+                },
+                {
+                    "season": "2016-2017",
+                    "competitions": [
+                        ["2017 World Team Trophy", 103.52, 198.49, 302.02, 1],
+                        ["2017 World Championships", 104.86, 214.45, 319.31, 2],
+                        ["2017 Coupe du Printempts", 104.31, 199.37, 303.68, 1],
+                        ["2017 Asian Winter Games", 92.43, 188.84, 281.27, 1],
+                        ["2017 Four Continents Championships", 100.28, 187.77, 288.05, 3],
+                        ["2016-2017 Japan Championships", 88.05, 192.36, 280.41, 1],
+                        ["2016-2017 Grand Prix Final", 86.82, 195.69, 282.51, 3],
+                        ["2016 Rostelecom Cup", 98.59, 186.48, 285.07, 2],
+                        ["2017 Skate America", 89.15, 190.19, 279.34, 1],
+                        ["2016 CS Lombardia Trophy", 86.68, 172.25, 258.93, 1]
+                    ]
+                },
+                {
+                    "season": "2015-2016",
+                    "competitions": [
+                        ["2016 Team Challenge Cup", 105.74, 192.92, 298.66, 3],
+                        ["2016 World Championships", 90.74, 173.51, 264.25, 7],
+                        ["2016 Four Continents Championships", 92.99, 176.82, 269.81, 4],
+                        ["2015-2016 Japan Championships", 97.94, 169.21, 267.15, 2],
+                        ["2015-2016 Grand Prix Final", 86.47, 190.32, 276.79, 3],
+                        ["2015 Skate America", 80.78, 176.65, 257.43, 2],
+                        ["2015 US Classic", 52.45, 154.96, 207.41, 5]
+                    ]
+                },
+                {
+                    "season": "2014-2015",
+                    "competitions": [
+                        ["2015 World Junior Championships", 84.87, 147.67, 232.54, 1],
+                        ["2015 Four Continents Championships", 88.90, 167.55, 256.45, 5],
+                        ["2014–15 Japan Championships", 85.53, 165.75, 251.28, 2],
+                        ["2014–15 JGP Final", 75.21, 163.06, 238.27, 1],
+                        ["2014–15 Japan Junior Championships", 82.72, 128.00, 210.72, 1],
+                        ["2014 JGP Croatia", 74.82, 152.69, 227.51, 1],
+                        ["2014 JGP Japan", 69.78, 150.21, 219.99, 2]
+                    ]
+                },
+                {
+                    "season": "2013-2014",
+                    "competitions": [
+                        ["2014 World Junior Championships", 70.67, 135.83, 206.50, 5],
+                        ["2013–14 Japan Championships", 72.15, 144.34, 216.49, 7],
+                        ["2013–14 Japan Junior Championships", 71.61, 134.49, 206.10, 2],
+                        ["2013 JGP Estonia", 67.09, 130.73, 197.82, 4],
+                        ["2013 JGP Latvia", 58.22, 117.59, 175.81, 3]
+                    ]
+                },
+                {
+                    "season": "2012-2013",
+                    "competitions": [
+                        ["2013 World Junior Championships", 61.66, 125.42, 187.08, 7],
+                        ["2012–13 Japan Championships", 67.56, 131.47, 199.03, 11],
+                        ["2012–13 Japan Junior Championships", 66.21, 124.37, 190.58, 2],
+                        ["2012 JGP Germany", 63.48, 125.00, 188.48, 2],
+                        ["2012 JGP Slovenia", 61.42, 112.92, 174.34, 6]
+                    ]
+                },
+                {
+                    "season": "2011-2012",
+                    "competitions": [
+                        ["2012 World Junior Championships", 57.71, 118.21, 175.92, 10],
+                        ["2012 Winter Youth Olympics", 51.52, 115.63, 167.15, 2],
+                        ["2011–12 Japan Championships", 63.49, 126.93, 190.42, 9],
+                        ["2011–12 Japan Junior Championships", 61.56, 111.90, 173.46, 5],
+                        ["2011 JGP Estonia", 56.29, 118.86, 175.15, 3],
+                        ["2011 JGP Poland", 48.69, 114.55, 163.24, 4]
+                    ]
+                },
+                {
+                    "season": "2009-2010",
+                    "competitions": [
+                        ["2009–10 Japan Junior Championships", 52.95, 95.09, 148.04, 3]
+                    ]
+                }
+            ],
+            "pb": [
+                ["combined total", 314.93],
+                ["short program", 109.05],
+                ["free skate", 216.41]
+            ],
+            "current_programs": ["Malagueña", "Man of La Mancha"]
         },
+
+
 
         {
             "athlete": "Patrick Chan",
@@ -394,27 +1318,27 @@
         {
             "athlete": "Starr Andrews",
             "discipline": "ladies' singles",
-            "representing": "United States of America"
+            "representing": "United States"
         },
         {
             "athlete": "Mariah Bell",
             "discipline": "ladies' singles",
-            "representing": "United States of America"
+            "representing": "United States"
         },
         {
             "athlete": "Karen Chen",
             "discipline": "ladies' singles",
-            "representing": "United States of America"
+            "representing": "United States"
         },
         {
             "athlete": "Amber Glenn",
             "discipline": "ladies' singles",
-            "representing": "United States of America"
+            "representing": "United States"
         },
         {
             "athlete": "Gracie Gold",
             "discipline": "ladies' singles",
-            "representing": "United States of America "
+            "representing": "United States"
         },
         {
             "athlete": "Miki Ando",
@@ -430,7 +1354,8 @@
             "athlete": "Mao Asada",
             "discipline": "ladies' singles",
             "representing": "Japan"
-        }, {
+        },
+        {
             "athlete": "Wakaba Higuchi",
             "discipline": "ladies' singles",
             "representing": "Japan"
@@ -468,22 +1393,22 @@
         {
             "athlete": "Madison Chock/Evan Bates ",
             "discipline": "ice dance",
-            "representing": "United States of America"
+            "representing": "United States"
         },
         {
             "athlete": "Meryl Davis/Charlie White ",
             "discipline": "ice dance",
-            "representing": "United States of America"
+            "representing": "United States"
         },
         {
             "athlete": "Madison Hubbell/Zachary Donohue ",
             "discipline": "ice dance",
-            "representing": "United States of America"
+            "representing": "United States"
         },
         {
             "athlete": "Maia Shibutani/Alex Shibutani ",
             "discipline": "ice dance",
-            "representing": "United States of America"
+            "representing": "United States"
         },
         {
             "athlete": "Alexandra Stepanova/Ivan Bukin ",

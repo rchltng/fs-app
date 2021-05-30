@@ -9,7 +9,8 @@ export default class Competitions extends Component {
 
     competitionsList(competitions, index) {
         let competitions_detail = competitions.map((detail, index) =>
-            <td key={index}>{detail}</td>)
+            <td key={index}>{detail}</td>
+        )
         return <tr key={index}>{competitions_detail}</tr>
     }
 

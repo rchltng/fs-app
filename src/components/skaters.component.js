@@ -6,7 +6,6 @@ import 'font-awesome/css/font-awesome.min.css';
 
 export default class Skaters extends Component {
     constructor(props) {
-
         super(props);
         this.handleQuery = this.handleQuery.bind(this);
         this.handleDiscipline = this.handleDiscipline.bind(this);
@@ -19,8 +18,8 @@ export default class Skaters extends Component {
         }
     }
 
-    componentDidMount() {
-        let data = require("../data/data.json");
+    componentWillMount() {
+        let data = require("../data/skaters.json");
         this.setState({
             athletes: data.athletes,
             allAthletes: data.athletes
@@ -340,7 +339,6 @@ export default class Skaters extends Component {
                                         <option value="Yemen">Yemen</option>
                                         <option value="Zambia">Zambia</option>
                                         <option value="Zimbabwe">Zimbabwe</option>
-
                                     </Form.Control>
                                 </Form.Group>
                             </Col>
