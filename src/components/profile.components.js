@@ -4,17 +4,24 @@ import data from "../data/skaters.json";
 export default class Profile extends Component {
     constructor(props) {
         super(props);
+        this.medalCount = this.medalCount.bind(this);
         this.state = {
             bio: [],
             skating_club: [],
             coaches: [],
             choreographers: [],
             pb: [],
+            medal_count: []
             // current_programs: [],
         }
     }
 
     componentWillMount() {
+        if (data.athletes[this.props.index].hasOwnProperty("medal count")) {
+            this.setState({
+                medal_count: data.athletes[this.props.index]["medal count"]
+            })
+        }
 
         if (data.athletes[this.props.index].hasOwnProperty("Skating club")) {
             this.setState({
@@ -55,7 +62,24 @@ export default class Profile extends Component {
         return <ol key={index}> {score[0]} : {score[1]}</ol>
     }
 
+    medalCount() {
+        return this.state.medal_count.length !== 0 ? <tr>
+            <th className="profileHeader"> MEDAL COUNT </th>
+            <td className="profileDetail">
+            <ol className ="medalDetail">
+                <div className="medal gold">  {this.state.medal_count[0]}
+                </div>
+                <div className="medal silver">  {this.state.medal_count[1]}
+                </div>
+                <div className="medal bronze">  {this.state.medal_count[2]}
+                </div>
+                </ol>
+            </td>
+        </tr> : null
+    }
+
     render() {
+        let medal_count = this.medalCount()
         let bio = (this.state.bio.length !== 0) ? <div className="aboutDetail bio">
             <p className="profileTitle"> BIOGRAPHY </p>
             {this.state.bio.map((sentence, index) =>
@@ -95,8 +119,9 @@ export default class Profile extends Component {
                     <p className="profileTitle"> OVERVIEW</p>
                     <table>
                         <tbody className="profileTable">
-                            {skating_club}
+                            {medal_count}
                             {pb}
+                            {skating_club}
                             {coaches}
                             {choreographers}
                         </tbody>

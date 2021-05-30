@@ -18,15 +18,15 @@ export default class Competitions extends Component {
         let seasonYear = season.season;
         let competitions = season.competitions.map(this.competitionsList);
         return <div key={index} className="achievement">
-            <p className="achievementTitle"> {seasonYear}</p>
+            <p className="achievementTitle"> {seasonYear} season</p>
             <table className="table achievements">
                 <thead >
                     <tr>
-                        <th scope="col">event</th>
-                        <th scope="col">sp</th>
-                        <th scope="col">fs</th>
-                        <th scope="col">total</th>
-                        <th scope="col">rank</th>
+                        <th scope="col">EVENT</th>
+                        <th scope="col">SP</th>
+                        <th scope="col">FS</th>
+                        <th scope="col">TOTAL</th>
+                        <th scope="col">RANK</th>
                     </tr>
                 </thead>
                 <tbody>

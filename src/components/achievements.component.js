@@ -9,7 +9,7 @@ export default class Achievements extends Component {
 
     medalsList(medals, index) {
         let medals_detail = medals.map((detail, index) =>
-            <td key={index}>{detail}</td>)
+            <td className = "compDetail" key={index}>{detail.toUpperCase()}</td>)
         return <tr key={index}>{medals_detail}</tr>
     }
 
@@ -21,9 +21,9 @@ export default class Achievements extends Component {
             <table className="table achievements">
                 <thead >
                     <tr>
-                        <th scope="col">medal</th>
-                        <th scope="col">event</th>
-                        <th scope="col">discipline</th>
+                        <th scope="col">MEDAL</th>
+                        <th scope="col">SEASON</th>
+                        <th scope="col">DISCIPLINE</th>
                     </tr>
                 </thead>
                 <tbody>

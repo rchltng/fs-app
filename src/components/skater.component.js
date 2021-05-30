@@ -21,6 +21,7 @@ export default class Skater extends Component {
             dob: '',
             img: '',
             retired: '',
+            medals: [],
             competitions: [],
             began_skating: '',
             representing: '',
@@ -40,7 +41,7 @@ export default class Skater extends Component {
             dob: data.athletes[index].dob,
             code: data.athletes[index].countryCode,
             retired: data.athletes[index]["retired"],
-            // achievements: data.athletes[index].achievements,
+            medals: data.athletes[index]["medal details"],
             competitions: data.athletes[index].competitions,
             skating_since: data.athletes[index]["Began skating"],
             representing: data.athletes[index].representing,
@@ -131,9 +132,9 @@ export default class Skater extends Component {
                                 index={this.state.index}
                             />
                         </Tab>
-                        {/* <Tab className="tab" eventKey="achievements" title="MEDAL COUNT">
-                            <Achievements index={this.state.index} achievements={this.state.achievements} />
-                        </Tab> */}
+                        <Tab className="tab" eventKey="achievements" title="MEDAL COUNT">
+                            <Achievements index={this.state.index} achievements={this.state.medals} />
+                        </Tab>
                         <Tab className="tab" eventKey="competition record" title="COMPETITION RECORD">
                             <Competitions competitions={this.state.competitions} />
                         </Tab>
