@@ -6,7 +6,6 @@ import data from "../data/skaters.json";
 import Profile from "./profile.components"
 import Achievements from "./achievements.component"
 import Competitions from "./competitions.component"
-import country from "../data/country.json"
 
 export default class Skater extends Component {
     constructor(props) {
@@ -61,9 +60,19 @@ export default class Skater extends Component {
     }
 
     getStanding() {
+        let rank
+        if(this.state.discipline == "men's singles"){
+            rank = this.state.index
+        }else if(this.state.discipline == "ladies' singles"){
+            rank = this.state.index % 94
+        }else{
+            console.log("?? HELLO")
+            rank = Math.floor((this.state.index % 186)/2)
+            console.log(this.state.athlete + " " + rank)
+        }
         return <div>
             <p className="standingHeader">WORLD STANDING </p>
-            <p className="standingNum"> #{this.state.index % 100 + 1}</p>
+            <p className="standingNum"> #{rank + 1}</p>
         </div>
     }
 
