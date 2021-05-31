@@ -65,10 +65,14 @@ export default class Skater extends Component {
             rank = this.state.index
         }else if(this.state.discipline == "ladies' singles"){
             rank = this.state.index % 94
-        }else{
+        }else if(this.state.discipline == "pairs"){
             console.log("?? HELLO")
             rank = Math.floor((this.state.index % 186)/2)
             console.log(this.state.athlete + " " + rank)
+        }else{
+            console.log("?? HELLO")
+            console.log(this.state.index)
+            rank = Math.floor((this.state.index % 338)/2)
         }
         return <div>
             <p className="standingHeader">WORLD STANDING </p>
