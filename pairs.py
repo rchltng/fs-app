@@ -47,29 +47,44 @@ def skaterBio(page, skaterProfile, skaterBios):
     for row in soup.find('table', class_="infobox vcard").tbody.findAll('tr'):
         header = row.find('th')
         #GETTTING WORLD STANDING
-        if(header is not None and not isinstance(header.contents[0], NavigableString)): 
-            if(len(header.contents) == 1 and header.contents[0].contents[0] == 'World standing'):
-                if(isinstance(row.find("td").contents[0], NavigableString)):
-                    rank = row.find("td").contents[0]
-                    date = row.find("td").contents[1].contents[0]
-                else:
-                    rank =  row.find("td").contents[0].contents[0]
-                    if(isinstance(row.find("td").contents[2], NavigableString)):
-                        date = row.find("td").contents[2]
-                    elif(isinstance(row.find("td").contents[2].contents[0], NavigableString)):
-                        date = row.find("td").contents[2].contents[0]
-                    else:
-                        date = row.find("td").contents[2].contents[0].contents[0]
-                skaterProfile['standing'] = [rank, date.replace('\xa0', ' ')]
+        # if(header is not None and not isinstance(header.contents[0], NavigableString)): 
+        #     if(len(header.contents) == 1 and header.contents[0].contents[0] == 'World standing'):
+        #         # print(row)
+        #         print(row.find("td").contents)
+        #         if(isinstance(row.find("td").contents[0], NavigableString)):
+        #             if 'Pair'
+        #             rank = row.find("td").contents[0]
+        #             date = row.find("td").contents[1].contents[0]
+        #         else:
+        #             rank =  row.find("td").contents[0].contents[0]
+        #             if(isinstance(row.find("td").contents[2], NavigableString)):
+        #                 date = row.find("td").contents[2]
+        #             elif(isinstance(row.find("td").contents[2].contents[0], NavigableString)):
+        #                 date = row.find("td").contents[2].contents[0]
+        #             else:
+        #                 date = row.find("td").contents[2].contents[0].contents[0]
+        #         skaterProfile['standing'] = [rank, date.replace('\xa0', ' ')]
+        if(header is not None):
+            shortDance = header.find('a')
+            # print(type(shortDance))
+            if(shortDance is not None):
+                if(shortDance['title'] == "Short dance"):
+                    # print("SHORT DANCE")
+                    # print(shortDance.contents)
+                    # print(row.contents)
+
+                    # print(row.find("td").contents[0].partition(' ')[0])
+                    skaterProfile['pb'].append(['Short dance', row.find("td").contents[0].partition(' ')[0]])
         if(header is not None and isinstance(header.contents[0], NavigableString)):
             #GET BIRTHDAY
             if header.contents[0] == 'Born':
-                skaterProfile['dob'] = row.contents[1].contents[1]
+                if(isinstance(row.contents[1].contents[1], NavigableString)):
+                    skaterProfile['dob'] = row.contents[1].contents[1]
             
             if header.contents[0] == 'Retired':
                 skaterProfile['retired'] = row.contents[1].contents[0]
             #GET PERSONAL BESTS
-            if header.contents[0] in ['Combined total', 'Short program', 'Free skate']:
+            if header.contents[0] in ['Combined total', 'Short program', 'Free skate', 'Comp. dance', 'Original dance', 'Free dance', 'Short dance']:
                 skaterProfile['pb'].append([header.contents[0], row.find("td").contents[0].partition(' ')[0]])
             
             #COACH, CHOREO, CLUB, BEGAN SKATING
@@ -105,7 +120,7 @@ def skaterBio(page, skaterProfile, skaterBios):
     skaterBios.append(skaterProfile)
 
 
-disciplines = {'pairs': [], 'dance': []}
+disciplines = {'dance': []}
 
 for discipline in disciplines:
     # print(discipline)
@@ -132,7 +147,8 @@ skaterBios = []
 
 for discipline in disciplines:
     for skater in disciplines[discipline]:
-        skaterProfile = {'pb': []}
+        girl = {'pb': []}
+        guy = {'pb': []}
         print(discipline)
         print(skater[0])
         competitions = []
@@ -186,35 +202,61 @@ for discipline in disciplines:
                 "competitions": list
             }
             competitions.append(currentSeason)
+        names = skaterHistory.find("h1").contents
 
-        skaterProfile["athlete"] = skater[0]
-        skaterProfile["representing"] = skater[2]
+        guy["athlete"] = names[6].contents[0].title()
+
+        print(guy["athlete"])
+        girl["athlete"] = names[4].contents[0].title()
+        print(girl["athlete"])
+        guy["partner"] = girl["athlete"]
+        girl["partner"] = guy["athlete"]
+        #ADD CODE FOR PARTNER HERE
+        guy["representing"] = skater[2]
+        girl["representing"] = skater[2]
         if(discipline == "pairs"):
-            skaterProfile['discipline'] = "pairs"
+            guy['discipline'] = "pairs"
+            girl['discipline'] = "pairs"
         elif(discipline == "dance"):
-            skaterProfile['discipline'] = "ice dance"
-        skaterProfile["competitions"] = competitions
-        athlete = skater[0]
-        #print("athlete: " + skater[0])
+             guy['discipline'] = "ice dance"
+             girl['discipline'] = "ice dance"
+        guy["competitions"] = competitions
+        girl["competitions"] = competitions
 
+        athlete1 = guy['athlete']
+        athlete2 = girl['athlete']
+        #print("athlete: " + skater[0])
         if(skater[2] == "CHN"):
-            athlete = " ".join(reversed(skater[0].split(" ")))
+            athlete1 = " ".join(reversed(guy['athlete'].split(" ")))
+            athlete2 = " ".join(reversed(girl['athlete'].split(" ")))
+        if athlete2 == "Alexandra Paul":
+            athlete2 = "Alexandra Paul (figure skater)"
         try:
-            page = wikipedia.page(athlete, auto_suggest=False, redirect=True)
-            skaterBio(page, skaterProfile, skaterBios)
+            page2 = wikipedia.page(athlete2, auto_suggest=False, redirect=True)
+            skaterBio(page2, girl, skaterBios)
         except (wikipedia.exceptions.DisambiguationError) as e:
-            page = wikipedia.page(athlete +  " (figure skater)")
-            skaterBio(page, skaterProfile, skaterBios)
+            print("hi")
+            page2 = wikipedia.page(athlete2 +  " (figure skater)")
+            skaterBio(page2, girl, skaterBios)
         except (wikipedia.exceptions.PageError) as e:
             pass
-        
-        
+        if athlete1 == "Brian Johnson":
+            athlete1 = "Brian Johnson (figure skater)"
+        try:
+            page1 = wikipedia.page(athlete1, auto_suggest=False, redirect=True)
+            skaterBio(page1, guy, skaterBios)
+        except (wikipedia.exceptions.DisambiguationError) as e:
+            page1 = wikipedia.page(athlete1 +  " (figure skater)")
+            skaterBio(page1, guy, skaterBios)
+        except (wikipedia.exceptions.PageError) as e:
+            pass
+
 
 skaterBios = {
     'athletes': skaterBios
 }
 
 jsonString= json.dumps(skaterBios)
-jsonFile = open("skatersPAIRS.json", "w")
+jsonFile = open("skatersDANCE.json", "w")
 jsonFile.write(jsonString)
 jsonFile.close()

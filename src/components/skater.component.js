@@ -81,8 +81,7 @@ export default class Skater extends Component {
                 <p> {this.state.skating_since}</p>
             </div>
         } else {
-            return <div className="blurbDetail skatingSince">
-            </div>
+            return null
         }
     }
 
@@ -107,21 +106,36 @@ export default class Skater extends Component {
                     </div>
                     <div className="skaterTop space">
                     </div>
+
                     <div className="skaterTop skaterRank">
                         {standing}
-                        <div className="blurb">
-                            {this.state.age !== '' ?
-                                <div className="blurbDetail age">
-                                    <p className="blurbTitle"> AGE</p>
-                                    <p> {this.state.age}</p>
-                                </div> : null}
-                            {this.state.discipline !== '' ?
-                                <div className="blurbDetail blurbDisc">
-                                    <p className="blurbTitle"> DISCIPLINE</p>
-                                    <p> {this.state.discipline} </p>
-                                </div> : null}
-                            {thirdDiv}
-                        </div>
+                        {thirdDiv !== null ?
+                            <div className="blurb">
+                                {typeof this.state.age !== 'undefined' ?
+                                    <div className="blurbDetail age">
+                                        <p className="blurbTitle"> AGE</p>
+                                        <p> {this.state.age}</p>
+                                    </div> : null}
+                                {typeof this.state.discipline !== 'undefined' ?
+                                    <div className="blurbDetail blurbDisc">
+                                        <p className="blurbTitle"> DISCIPLINE</p>
+                                        <p> {this.state.discipline} </p>
+                                    </div> : null}
+                                {thirdDiv}
+                            </div> :
+                            <div className="blurb">
+                                {typeof this.state.age !== 'undefined' ?
+                                    <div className="blurbTwo age">
+                                        <p className="blurbTitle"> AGE</p>
+                                        <p> {this.state.age}</p>
+                                    </div> : null}
+                                {typeof this.state.discipline !== 'undefined' ?
+                                    <div className="blurbTwo blurbDisc">
+                                        <p className="blurbTitle"> DISCIPLINE</p>
+                                        <p> {this.state.discipline} </p>
+                                    </div> : null}
+                                {thirdDiv}
+                            </div>}
                     </div>
                 </div>
 

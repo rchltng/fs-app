@@ -1,7 +1,26 @@
 import json
 
-with open('./skaters.json') as f:
+with open('./skatersDANCE.json') as f:
   skaterData = json.load(f)
+
+with open('./country.json') as f:
+  countryData = json.load(f)
+
+for skater in skaterData['athletes']:
+    # print(skater['representing'])
+    for country in countryData:
+        if country['code'] == skater['representing']:
+            skater['representing'] = country['name']
+            skater['countryCode'] = country['code']
+
+for skater in skaterData['athletes']:
+    competitions = skater['competitions']
+    for comp in competitions:
+        test = comp['season'].split('/')
+        test1 = test[0][:2]
+        test[1] = test[0][:2] + test[1] 
+        comp['season'] = test[0] + '-' + test[1]
+        print(comp['season'])
 
 for skater in skaterData['athletes']:
     print(skater['athlete'])
@@ -77,12 +96,8 @@ for skater in skaterData['athletes']:
                     achievements.append(newEvent)
             
     skater['medal details'] = achievements
-    skater['medal count'] = [gold, silver, bronze]
-    print(skater['medal details'])
-    print(skater['medal count'])
-            
-    
-# print(skaterData)
+    skater['medal count'] = [gold, silver, bronze]          
+print(skaterData)
 jsonString= json.dumps(skaterData)
 jsonFile = open("skatersNew.json", "w")
 jsonFile.write(jsonString)

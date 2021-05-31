@@ -371,6 +371,13 @@ select {
     font-size: 18px;
 }
 
+.blurbTwo {
+    float: left;
+    text-align: center !important;
+    width: 50%;
+    font-size: 18px;
+}
+
 .blurbDisc {
     border-left: solid 1.5px;
 }
@@ -579,7 +586,8 @@ img {
     border-radius: 15px;
     line-height: 30px;
     text-align: center;
-    color: #0A1B26
+    color: #0A1B26;
+    margin-right: 10px;
 }
 
 .gold {
