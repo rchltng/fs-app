@@ -1,4 +1,5 @@
 import json
+import math
 
 with open('./skaters.json') as f:
   skaterData = json.load(f)
@@ -6,11 +7,35 @@ with open('./skaters.json') as f:
 with open('./country.json') as f:
   countryData = json.load(f)
 
+men = False
+menRank = 1
+ladies = False
+ladiesRank = 1
+pairs = False
+pairsRank = 0
+id = False
+idRank = 0
+
 for skater in skaterData['athletes']:
+    # print(skater['discipline'])
+    if skater['discipline'] == "men's singles":
+      print("hello")
+      skater['rank'] = menRank
+      print(skater['rank'])
+      menRank += 1
+    elif skater['discipline'] == "ladies' singles":
+      skater['rank'] = ladiesRank
+      ladiesRank += 1
+    elif skater['discipline'] == 'pairs':
+      skater['rank'] = (pairsRank//2) + 1
+      pairsRank +=1
+    elif skater['discipline'] == 'ice dance':
+      skater['rank'] = (idRank//2) + 1 
+      idRank += 1
     # print(skater['representing'])
-    for country in countryData:
-        if country['Country'] == skater['representing']:
-            skater['countryCode'] = country['Alpha-2 code']
+    # for country in countryData:
+    #     if country['Country'] == skater['representing']:
+    #         skater['countryCode'] = country['Alpha-2 code']
 
 # for skater in skaterData['athletes']:
 #     competitions = skater['competitions']
@@ -96,7 +121,7 @@ for skater in skaterData['athletes']:
             
 #     skater['medal details'] = achievements
 #     skater['medal count'] = [gold, silver, bronze]          
-print(skaterData)
+#print(skaterData)
 jsonString= json.dumps(skaterData)
 jsonFile = open("skatersNew.json", "w")
 jsonFile.write(jsonString)

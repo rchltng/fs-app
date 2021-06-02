@@ -12,6 +12,7 @@ export default class Skaters extends Component {
         this.handleQuery = this.handleQuery.bind(this);
         this.handleDiscipline = this.handleDiscipline.bind(this);
         this.handleCountry = this.handleCountry.bind(this);
+        this.handleSort = this.handleSort.bind(this);
         this.listAthletes = this.listAthletes.bind(this);
         this.state = {
             allAthletes: [],
@@ -42,10 +43,10 @@ export default class Skaters extends Component {
             // partnerLink
             if (Array.isArray(athlete.partner)) {
                 partner = <div className="partners">
-                        partners: &nbsp;
+                    partners: &nbsp;
                     {athlete.partner.map((p, index) =>
-                 
-                        <p className="partner" key={index} onClick={(e) => { this.partnerLink(p, e) }}> {p}  &nbsp; </p>)}
+
+                    <p className="partner" key={index} onClick={(e) => { this.partnerLink(p, e) }}> {p}  &nbsp; </p>)}
                 </div>
 
             } else {
@@ -74,6 +75,50 @@ export default class Skaters extends Component {
                 {/* </div> */}
             </td>
         </tr>
+    }
+
+    handleSort(e) {
+        let sort = e.target.value.toLowerCase();
+        if (sort === '') {
+            this.setState({
+                athletes: this.state.allAthletes
+            })
+        } else {
+            this.setState({
+                athletes: this.state.allAthletes.concat().sort(this.sort(sort))
+            })
+        }
+    }
+
+    sort(sort) {
+        let disciplines = ["men's singles", "ladies' singles", "pairs", "ice dance"]
+        sort = sort.split(" ")
+        if (sort[0] == "discipline") {
+            return function (a, b) {
+                console.log(a[sort[0]])
+                console.log(b[sort[0]])
+                if (disciplines.indexOf(a['discipline']) > disciplines.indexOf(b['discipline'])) {
+                    return (sort[1] === 'asc') ? 1 : -1
+                } else if (a[sort[0]] < b[sort[0]]) {
+                    return (sort[1] === 'asc') ? -1 : 1
+                }
+                return 0;
+            }
+        } else {
+            console.log(sort[0])
+            return function (a, b) {
+                console.log(a['athlete'] + a[sort[0]] + " vs " + b['athlete'] + b[sort[0]])
+                if (a[sort[0]] > b[sort[0]]) {
+                    return (sort[1] === 'asc') ? 1 : -1
+                } else if (a[sort[0]] < b[sort[0]]) {
+                    return (sort[1] === 'asc') ? -1 : 1
+                }else if(disciplines.indexOf(a['discipline']) !== disciplines.indexOf(b['discipline'])){
+                    console.log("hello")
+                    return (disciplines.indexOf(a['discipline']) > disciplines.indexOf(b['discipline'])) ? 1 : -1
+                }
+                return 0;
+            }
+        }
     }
 
     handleQuery(e) {
@@ -380,6 +425,21 @@ export default class Skaters extends Component {
                                         <option value="Yemen">Yemen</option>
                                         <option value="Zambia">Zambia</option>
                                         <option value="Zimbabwe">Zimbabwe</option>
+                                    </Form.Control>
+                                </Form.Group>
+                            </Col>
+                            <Col className="col">
+                                <Form.Group>
+                                    <Form.Control className="formInput" as="select" onChange={this.handleSort} >
+                                        <option value="">sort by</option>
+                                        <option value="athlete asc">name: ascending order</option>
+                                        <option value="athlete desc">name: descending order</option>
+                                        <option value="rank asc">rank: ascending order</option>
+                                        <option value="rank desc">rank: descending order</option>
+                                        <option value="discipline asc"> discipline: ascending order</option>
+                                        <option value="discipline desc"> discipline: descending order</option>
+                                        <option value="representing asc">country: ascending order</option>
+                                        <option value="representing desc">country: descending order</option>
                                     </Form.Control>
                                 </Form.Group>
                             </Col>
