@@ -609,3 +609,64 @@ img {
 .compDetail {
     font-size: 13px;
 }
+
+.profilePic {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid lightgray
+}
+
+.athleteResult {
+    float: left;
+    display: flex;
+}
+
+.athleteDiscipline {
+    text-align: left;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.athleteRepresenting {
+    text-align: left;
+    display: flex;
+    padding-top: 10px;
+}
+
+.athleteName {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.picWrapper {
+    margin: 10px;
+}
+
+.profileWrapper {
+    margin: 10px;
+    margin-left: 70px;
+}
+
+.athleteFlag {
+    width: 50px;
+    margin-left: 10px;
+}
+
+.partner {
+    text-align: left;
+    z-index: 1;
+}
+
+.partner:hover {
+    text-decoration: underline;
+}
+
+.partners {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: -10px;
+}

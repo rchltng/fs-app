@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
-import { Form, Row, Col} from 'react-bootstrap';
+import { Form, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'semantic-ui-css/semantic.min.css';
 import 'font-awesome/css/font-awesome.min.css';
+import Flag from 'react-world-flags'
 
 export default class Skaters extends Component {
     constructor(props) {
         super(props);
+        this.partnerLink = this.partnerLink.bind(this);
         this.handleQuery = this.handleQuery.bind(this);
         this.handleDiscipline = this.handleDiscipline.bind(this);
         this.handleCountry = this.handleCountry.bind(this);
+        this.listAthletes = this.listAthletes.bind(this);
         this.state = {
             allAthletes: [],
             athletes: [],
@@ -26,12 +29,50 @@ export default class Skaters extends Component {
         });
     }
 
+    partnerLink(partner, e) {
+        let partnerLink = 'skaters/' + partner
+        window.location.replace(partnerLink)
+        e.stopPropagation();
+    }
+
     listAthletes(athlete, index) {
         let link = 'skaters/' + athlete.athlete;
-        return <tr key={index} onClick= {() => window.location.replace(link)} className="article">
-            <td className="athleteTD"> {athlete.athlete} </td>
-            <td className="athleteTD"> {athlete.discipline} </td>
-            <td className="athleteTD"> {athlete.representing}</td>
+        let partner;
+        if (athlete.hasOwnProperty('partner')) {
+            // partnerLink
+            if (Array.isArray(athlete.partner)) {
+                partner = <div className="partners">
+                        partners: &nbsp;
+                    {athlete.partner.map((p, index) =>
+                 
+                        <p className="partner" key={index} onClick={(e) => { this.partnerLink(p, e) }}> {p}  &nbsp; </p>)}
+                </div>
+
+            } else {
+                partner = <div className="partners">
+                    partner: &nbsp;
+                    <p className="partner" onClick={(e) => { this.partnerLink(athlete.partner, e) }}> {athlete.partner} </p>
+                </div>
+            }
+
+        } else {
+            partner = null;
+        }
+        return <tr key={index} onClick={() => window.location.replace(link)} className="article">
+
+            <td className="athleteTD">
+                <div className="athleteResult">
+                    <div className="picWrapper">
+                        <img className="profilePic" src={athlete.img}></img>
+                    </div>
+                    <div className="profileWrapper">
+                        <p className="athleteName"> {athlete.athlete.toUpperCase()} <Flag className="athleteFlag" code={athlete.countryCode} /> </p>
+                        {partner}
+                        <p className="athleteDiscipline"> {athlete.discipline.toLowerCase()} </p>
+                    </div>
+                </div>
+                {/* </div> */}
+            </td>
         </tr>
     }
 
@@ -348,20 +389,13 @@ export default class Skaters extends Component {
                     {(this.state.athletes.length !== 0) ?
                         <div className="athleteTable">
                             <table className="table table-hover" >
-                                <thead className="head">
-                                    <tr>
-                                        <th scope="col">skater / pair</th>
-                                        <th scope="col">discipline</th>
-                                        <th scope="col">country representing</th>
-                                    </tr>
-                                </thead>
                                 <tbody>
                                     {athletesList}
                                 </tbody>
                             </table>
 
                         </div>
-                        : <p className = "noResults"> sorry, there no skaters were found in this search. please try a different query. </p>
+                        : <p className="noResults"> sorry, there no skaters were found in this search. please try a different query. </p>
                     }
 
                 </div>
