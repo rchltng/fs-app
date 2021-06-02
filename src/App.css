@@ -219,6 +219,7 @@ body {
 tr {
     color: #F6F6F6;
     text-align: center;
+    /* border: #0A1B26 */
 }
 
 .table {
@@ -276,10 +277,6 @@ tr {
 .head {
     font-size: 20px;
     font-weight: bolder;
-}
-
-.athleteTD {
-    width: 33.33% !important
 }
 
 .noResults {
@@ -612,8 +609,8 @@ img {
 
 .profilePic {
     display: inline-block;
-    width: 80px;
-    height: 80px;
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
     object-fit: cover;
     border: 1px solid lightgray
@@ -627,38 +624,39 @@ img {
 .athleteDiscipline {
     text-align: left;
     margin: 0;
-    margin-top: 10px;
 }
 
 .athleteRepresenting {
     text-align: left;
     display: flex;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 .athleteName {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
     margin: 0;
+    text-align: left
 }
 
 .picWrapper {
-    margin: 10px;
+    margin: 5px;
 }
 
 .profileWrapper {
     margin: 10px;
-    margin-left: 70px;
+    margin-left: 50px;
 }
 
 .athleteFlag {
-    width: 50px;
+    width: 40px;
     margin-left: 10px;
 }
 
 .partner {
     text-align: left;
     z-index: 1;
+    margin: 0px;
 }
 
 .partner:hover {
@@ -667,6 +665,5 @@ img {
 
 .partners {
     display: flex;
-    margin-top: 10px;
-    margin-bottom: -10px;
+    margin-top: 5px;
 }
