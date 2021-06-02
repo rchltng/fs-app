@@ -43,9 +43,27 @@ export default class Discipline extends Component {
     }
 
     recordTable(record, index) {
-        let record_detail = record.map((detail, index) =>
-            <td key = {index}>{detail}</td>)
-        return <tr key = {index}>{record_detail}</tr>
+        let link
+        let record_detail = record.map(function(detail, index){
+            if(index === 2){
+                let detailLink = detail.split('/')
+                link = "skaters/" + detailLink[0];
+            }
+            return <td key = {index}>{detail}</td>})
+
+        return <tr className = "superSlam" onClick={() => window.location.replace(link)} key = {index}>{record_detail}</tr>
+    }
+
+    recordSlam(record, index) {
+        let link
+        let record_detail = record.map(function(detail, index){
+            if(index === 0){
+                link = "skaters/" + detail;
+            }
+    
+            return <td key = {index}>{detail}</td>})
+
+        return <tr className = "superSlam" onClick={() => window.location.replace(link)} key = {index}>{record_detail}</tr>
     }
 
     render() {
@@ -78,7 +96,7 @@ export default class Discipline extends Component {
             </tr>
         </thead>
         <tbody>
-            {this.state.super_slam.map(this.recordTable)}
+            {this.state.super_slam.map(this.recordSlam)}
         </tbody>
     </table>
 

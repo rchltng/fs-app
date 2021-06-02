@@ -765,3 +765,8 @@ img {
     cursor: pointer;
     color: white;
 }
+
+.superSlam:hover {
+    background-color: #16344A !important;
+    cursor: pointer;
+}
