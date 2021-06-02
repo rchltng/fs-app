@@ -426,7 +426,7 @@ img {
 .skaterImg {
     width: 25% !important;
     padding-right: 5%;
-    padding-top: 2.5%;
+    padding-top: 1%;
     min-height: 400px !important;
     vertical-align: middle;
 }
@@ -619,11 +619,10 @@ img {
 
 .profilePic {
     display: inline-block;
-    width: 75px;
-    height: 75px;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
     object-fit: cover;
-    border: 1px solid lightgray
 }
 
 .athleteResult {
@@ -689,19 +688,19 @@ img {
     margin-top: 5px;
 }
 
-.glyphicon-arrow-left {
-    margin-right: 20px;
-    font-size: 20px;
-}
-
 .arrows {
     margin: 20px;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
-.glyphicon-arrow-right {
+.glyphicon-menu-right {
     margin-left: 20px;
-    font-size: 20px;
+    font-size: 25px;
+}
+
+.glyphicon-menu-left {
+    margin-right: 20px;
+    font-size: 25px;
 }
 
 .arrow-right {
@@ -736,12 +735,10 @@ img {
     color: white;
 }
 
-.suggestedRight {
-    color: transparent
-}
-
+.suggestedRight,
 .suggestedLeft {
-    color: transparent
+    color: transparent;
+    margin-top: 2px !important;
 }
 
 .medalTD {
@@ -752,4 +749,19 @@ img {
     text-align: center;
     color: #0A1B26;
     margin: auto;
+}
+
+.glyphicon-arrow-left {
+    font-size: 30px;
+    padding-left: 5px;
+}
+
+.backArrow {
+    font-size: 50px;
+    color: #0A1B26;
+}
+
+.backArrow:hover {
+    cursor: pointer;
+    color: white;
 }

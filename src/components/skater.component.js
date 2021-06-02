@@ -6,6 +6,7 @@ import data from "../data/skaters.json";
 import Profile from "./profile.components"
 import Achievements from "./achievements.component"
 import Competitions from "./competitions.component"
+import { ArrowLeft } from 'react-bootstrap-icons';
 
 export default class Skater extends Component {
     constructor(props) {
@@ -26,7 +27,8 @@ export default class Skater extends Component {
             representing: '',
             code: '',
             discipline: '',
-            standing: [],
+            rank: ''
+
         }
     }
 
@@ -46,7 +48,7 @@ export default class Skater extends Component {
             skating_since: data.athletes[index]["Began skating"],
             representing: data.athletes[index].representing,
             discipline: data.athletes[index].discipline,
-            standing: data.athletes[index].standing,
+            rank: data.athletes[index].rank
         });
     }
 
@@ -61,19 +63,9 @@ export default class Skater extends Component {
     }
 
     getStanding() {
-        let rank
-        if (this.state.discipline === "men's singles") {
-            rank = this.state.index
-        } else if (this.state.discipline === "ladies' singles") {
-            rank = this.state.index % 94
-        } else if (this.state.discipline === "pairs") {
-            rank = Math.floor((this.state.index % 186) / 2)
-        } else {
-            rank = Math.floor((this.state.index % 338) / 2)
-        }
         return <div>
             <p className="standingHeader">WORLD STANDING </p>
-            <p className="standingNum"> #{rank + 1}</p>
+            <p className="standingNum"> #{this.state.rank}</p>
         </div>
     }
 
@@ -93,22 +85,27 @@ export default class Skater extends Component {
         }
     }
 
+    backButton() {
+      
+    }
+
     render() {
         let name = this.getName(this.state.name);
         let standing = this.getStanding();
         let thirdDiv = this.getThird();
         let prev;
-        if(this.state.index > 0){
+        if (this.state.index > 0) {
             prev = data.athletes[this.state.index - 1].athlete
         }
         let next;
-        if(this.state.index < this.state.max - 1){
+        if (this.state.index < this.state.max - 1) {
             next = data.athletes[this.state.index + 1].athlete
         }
+        let backButtonUrl =  window.location.href.slice(0, window.location.href.lastIndexOf("/"));
 
         return (
             <div className="skaterDetail">
-
+                <ArrowLeft className="backArrow" onClick={ () => window.location.replace(backButtonUrl)} />
                 <div className="profile_card">
 
                     <div className="skaterTop skaterImg">
@@ -158,17 +155,17 @@ export default class Skater extends Component {
                 </div>
                 <div className="arrows">
                     {this.state.index > 0 ?
-                    <div className="arrow-left" onClick={() => window.location.replace(prev)}> 
-                        <span className="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> 
-                        <p className = "suggestedLeft"> {data.athletes[this.state.index - 1].athlete}</p>
+                        <div className="arrow-left" onClick={() => window.location.replace(prev)}>
+                            <span className="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                            <p className="suggestedLeft"> {data.athletes[this.state.index - 1].athlete}</p>
                         </div>
                         : null}
                     {this.state.index < this.state.max - 1 ?
-                    <div className="arrow-right" onClick={() => window.location.replace(next)}> 
-                    <p className = "suggestedRight"> {data.athletes[this.state.index + 1].athlete}</p>
-                    <span className="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> 
+                        <div className="arrow-right" onClick={() => window.location.replace(next)}>
+                            <p className="suggestedRight"> {data.athletes[this.state.index + 1].athlete}</p>
+                            <span className="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
 
-</div>
+                        </div>
                         : null}
                 </div>
 
@@ -177,7 +174,7 @@ export default class Skater extends Component {
                     <Tabs transition={false} defaultActiveKey="profile" id="skaterTabs">
                         <Tab className="tab" eventKey="profile" title="PROFILE">
                             <Profile
-                                index={this.state.index}/>
+                                index={this.state.index} />
                         </Tab>
                         <Tab className="tab" eventKey="achievements" title="MEDAL COUNT">
                             <Achievements index={this.state.index} achievements={this.state.medals} />
