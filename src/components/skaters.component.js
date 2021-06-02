@@ -40,7 +40,6 @@ export default class Skaters extends Component {
         let link = 'skaters/' + athlete.athlete;
         let partner;
         if (athlete.hasOwnProperty('partner')) {
-            // partnerLink
             if (Array.isArray(athlete.partner)) {
                 partner = <div className="partners">
                     partners: &nbsp;
@@ -73,6 +72,9 @@ export default class Skaters extends Component {
                     </div>
                 </div>
                 {/* </div> */}
+            </td>
+            <td>
+                world standing: {athlete.rank}
             </td>
         </tr>
     }
@@ -432,14 +434,14 @@ export default class Skaters extends Component {
                                 <Form.Group>
                                     <Form.Control className="formInput" as="select" onChange={this.handleSort} >
                                         <option value="">sort by</option>
-                                        <option value="athlete asc">name: ascending order</option>
-                                        <option value="athlete desc">name: descending order</option>
-                                        <option value="rank asc">rank: ascending order</option>
-                                        <option value="rank desc">rank: descending order</option>
-                                        <option value="discipline asc"> discipline: ascending order</option>
-                                        <option value="discipline desc"> discipline: descending order</option>
-                                        <option value="representing asc">country: ascending order</option>
-                                        <option value="representing desc">country: descending order</option>
+                                        <option value="athlete asc">name: ascending</option>
+                                        <option value="athlete desc">name: descending</option>
+                                        <option value="rank asc">world standing: ascending</option>
+                                        <option value="rank desc">world standing: descending</option>
+                                        <option value="discipline asc"> discipline: ascending</option>
+                                        <option value="discipline desc"> discipline: descending</option>
+                                        <option value="representing asc">country: ascending</option>
+                                        <option value="representing desc">country: descending</option>
                                     </Form.Control>
                                 </Form.Group>
                             </Col>

@@ -487,8 +487,9 @@ img {
 
 .achievementTitle {
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     margin: 0;
+    margin-bottom: 10px;
 }
 
 .achievement {
@@ -607,6 +608,13 @@ img {
 
 .compDetail {
     font-size: 13px;
+}
+
+.compTD,
+.compTH {
+    background-color: #16344A !important;
+    border: 2px solid #0A1B26 !important;
+    vertical-align: middle !important;
 }
 
 .profilePic {
@@ -734,4 +742,14 @@ img {
 
 .suggestedLeft {
     color: transparent
+}
+
+.medalTD {
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    line-height: 24px;
+    text-align: center;
+    color: #0A1B26;
+    margin: auto;
 }

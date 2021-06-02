@@ -8,8 +8,20 @@ export default class Achievements extends Component {
     }
 
     medalsList(medals, index) {
-        let medals_detail = medals.map((detail, index) =>
-            <td className = "compDetail" key={index}>{detail.toUpperCase()}</td>)
+        let medals_detail = medals.map(function (detail, index) {
+            if (detail === "🥇") {
+                return <td className="compTD compDetail" key={index}> <div className="medalTD gold">  G
+                </div></td>
+            } else if (detail === "🥈") {
+                return <td className="compTD compDetail" key={index}> <div className="medalTD silver">  S
+                </div></td>
+            } else if (detail === "🥉") {
+                return <td className="compTD compDetail" key={index}> <div className="medalTD bronze">  B
+                </div></td>
+            } else {
+                return <td className="compTD compDetail" key={index}>{detail.toUpperCase()}</td>
+            }
+        })
         return <tr key={index}>{medals_detail}</tr>
     }
 
@@ -21,9 +33,9 @@ export default class Achievements extends Component {
             <table className="table achievements">
                 <thead >
                     <tr>
-                        <th scope="col">MEDAL</th>
-                        <th scope="col">SEASON</th>
-                        <th scope="col">DISCIPLINE</th>
+                        <th className="compTH" scope="col">MEDAL</th>
+                        <th className="compTH" scope="col">SEASON</th>
+                        <th className="compTH" scope="col">DISCIPLINE</th>
                     </tr>
                 </thead>
                 <tbody>

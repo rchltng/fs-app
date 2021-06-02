@@ -9,7 +9,7 @@ export default class Competitions extends Component {
 
     competitionsList(competitions, index) {
         let competitions_detail = competitions.map((detail, index) =>
-            <td key={index}>{detail}</td>
+            <td className = "compTD compDetail" key={index}>{detail}</td>
         )
         return <tr key={index}>{competitions_detail}</tr>
     }
@@ -18,15 +18,18 @@ export default class Competitions extends Component {
         let seasonYear = season.season;
         let competitions = season.competitions.map(this.competitionsList);
         return <div key={index} className="achievement">
-            <p className="achievementTitle"> {seasonYear} season</p>
+
+
+            <p className="achievementTitle"> {seasonYear} </p>
+       
             <table className="table achievements">
                 <thead >
                     <tr>
-                        <th scope="col">EVENT</th>
-                        <th scope="col">SP</th>
-                        <th scope="col">FS</th>
-                        <th scope="col">TOTAL</th>
-                        <th scope="col">RANK</th>
+                        <th className = "compTH" scope="col">Event</th>
+                        <th className = "compTH" scope="col">SP</th>
+                        <th className = "compTH" scope="col">FS</th>
+                        <th className = "compTH" scope="col">Total</th>
+                        <th className = "compTH" scope="col">Rank</th>
                     </tr>
                 </thead>
                 <tbody>
