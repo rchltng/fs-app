@@ -33,6 +33,7 @@ export default class Skater extends Component {
     componentWillMount() {
         var index = data.athletes.findIndex(i => i.athlete === this.props.match.params.skater);
         this.setState({
+            max: data.athletes.length,
             index: index,
             name: data.athletes[index].athlete,
             age: data.athletes[index].age,
@@ -61,18 +62,14 @@ export default class Skater extends Component {
 
     getStanding() {
         let rank
-        if(this.state.discipline == "men's singles"){
+        if (this.state.discipline === "men's singles") {
             rank = this.state.index
-        }else if(this.state.discipline == "ladies' singles"){
+        } else if (this.state.discipline === "ladies' singles") {
             rank = this.state.index % 94
-        }else if(this.state.discipline == "pairs"){
-            console.log("?? HELLO")
-            rank = Math.floor((this.state.index % 186)/2)
-            console.log(this.state.athlete + " " + rank)
-        }else{
-            console.log("?? HELLO")
-            console.log(this.state.index)
-            rank = Math.floor((this.state.index % 338)/2)
+        } else if (this.state.discipline === "pairs") {
+            rank = Math.floor((this.state.index % 186) / 2)
+        } else {
+            rank = Math.floor((this.state.index % 338) / 2)
         }
         return <div>
             <p className="standingHeader">WORLD STANDING </p>
@@ -81,12 +78,10 @@ export default class Skater extends Component {
     }
 
     getThird() {
-        console.log("retire " + this.state.retired)
-        console.log("skating since" + this.skating_since)
         if (typeof this.state.retired !== 'undefined') {
             return <div className="blurbDetail skatingSince">
                 <p className="blurbTitle"> RETIRED </p>
-                <p> {this.state.retired}</p>
+                <p className="retired"> {this.state.retired}</p>
             </div>
         } else if (typeof this.state.skating_since !== 'undefined') {
             return <div className="blurbDetail skatingSince">
@@ -102,11 +97,20 @@ export default class Skater extends Component {
         let name = this.getName(this.state.name);
         let standing = this.getStanding();
         let thirdDiv = this.getThird();
+        let prev;
+        if(this.state.index > 0){
+            prev = data.athletes[this.state.index - 1].athlete
+        }
+        let next;
+        if(this.state.index < this.state.max - 1){
+            next = data.athletes[this.state.index + 1].athlete
+        }
 
         return (
             <div className="skaterDetail">
 
                 <div className="profile_card">
+
                     <div className="skaterTop skaterImg">
                         <img src={this.state.img} alt="bio" />
                     </div>
@@ -150,14 +154,30 @@ export default class Skater extends Component {
                                 {thirdDiv}
                             </div>}
                     </div>
+
                 </div>
+                <div className="arrows">
+                    {this.state.index > 0 ?
+                    <div className="arrow-left" onClick={() => window.location.replace(prev)}> 
+                        <span className="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> 
+                        <p className = "suggestedLeft"> {data.athletes[this.state.index - 1].athlete}</p>
+                        </div>
+                        : null}
+                    {this.state.index < this.state.max - 1 ?
+                    <div className="arrow-right" onClick={() => window.location.replace(next)}> 
+                    <p className = "suggestedRight"> {data.athletes[this.state.index + 1].athlete}</p>
+                    <span className="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> 
+
+</div>
+                        : null}
+                </div>
+
 
                 <div className="skaterInfo">
                     <Tabs transition={false} defaultActiveKey="profile" id="skaterTabs">
                         <Tab className="tab" eventKey="profile" title="PROFILE">
                             <Profile
-                                index={this.state.index}
-                            />
+                                index={this.state.index}/>
                         </Tab>
                         <Tab className="tab" eventKey="achievements" title="MEDAL COUNT">
                             <Achievements index={this.state.index} achievements={this.state.medals} />
@@ -170,7 +190,7 @@ export default class Skater extends Component {
                         </Tab> */}
                     </Tabs>
                 </div>
-            </div>
+            </div >
 
 
         )

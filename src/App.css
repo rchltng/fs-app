@@ -87,7 +87,7 @@ body {
 }
 
 .searchSkater {
-    margin-top: 5%;
+    margin-top: 6%;
     padding: 50px;
 }
 
@@ -325,7 +325,7 @@ select {
 }
 
 .skaterInfo {
-    margin-top: 2.5%;
+    margin-top: 7%;
 }
 
 .profile_card {
@@ -482,6 +482,7 @@ img {
 
 .profileDetail ol {
     margin: 0;
+    padding-bottom: 2px;
 }
 
 .achievementTitle {
@@ -574,7 +575,8 @@ img {
 }
 
 .retired {
-    margin: 0px;
+    font-size: 15px;
+    margin-top: 5px;
 }
 
 .medal {
@@ -661,9 +663,75 @@ img {
 
 .partner:hover {
     text-decoration: underline;
+    cursor: pointer;
+}
+
+.personLink {
+    text-decoration: underline;
+    text-decoration-color: gray;
+}
+
+.personLink:hover {
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .partners {
     display: flex;
     margin-top: 5px;
+}
+
+.glyphicon-arrow-left {
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.arrows {
+    margin: 20px;
+    margin-top: 50px;
+}
+
+.glyphicon-arrow-right {
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.arrow-right {
+    float: right;
+    display: flex;
+    color: #11293B;
+}
+
+.arrow-right:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.arrow-right:hover .suggestedRight {
+    font-weight: bold;
+    color: white;
+}
+
+.arrow-left {
+    float: left;
+    display: flex;
+    color: #11293B;
+}
+
+.arrow-left:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.arrow-left:hover .suggestedLeft {
+    font-weight: bold;
+    color: white;
+}
+
+.suggestedRight {
+    color: transparent
+}
+
+.suggestedLeft {
+    color: transparent
 }

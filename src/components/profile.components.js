@@ -5,13 +5,15 @@ export default class Profile extends Component {
     constructor(props) {
         super(props);
         this.medalCount = this.medalCount.bind(this);
+        this.linkPerson = this.linkPerson.bind(this);
         this.state = {
             bio: [],
             skating_club: [],
             coaches: [],
             choreographers: [],
             pb: [],
-            medal_count: []
+            medal_count: [],
+            partner: []
             // current_programs: [],
         }
     }
@@ -40,7 +42,6 @@ export default class Profile extends Component {
         }
 
         if (data.athletes[this.props.index].hasOwnProperty("Choreographer")) {
-            console.log("here")
             this.setState({
                 choreographers: data.athletes[this.props.index]["Choreographer"]
             })
@@ -48,6 +49,18 @@ export default class Profile extends Component {
             this.setState({
                 choreographers: data.athletes[this.props.index]["Former choreographer"]
             })
+        } 
+        
+        if (data.athletes[this.props.index].hasOwnProperty("partner")) {
+            if(Array.isArray(data.athletes[this.props.index]["partner"])){
+                this.setState({
+                    partner: data.athletes[this.props.index]["partner"]
+                })
+            }else{
+                this.setState({
+                    partner: [data.athletes[this.props.index]["partner"]]
+                })
+            }
         }
 
         this.setState({
@@ -66,16 +79,25 @@ export default class Profile extends Component {
         return this.state.medal_count.length !== 0 ? <tr>
             <th className="profileHeader"> MEDAL COUNT </th>
             <td className="profileDetail">
-            <ol className ="medalDetail">
-                <div className="medal gold">  {this.state.medal_count[0]}
-                </div>
-                <div className="medal silver">  {this.state.medal_count[1]}
-                </div>
-                <div className="medal bronze">  {this.state.medal_count[2]}
-                </div>
+                <ol className="medalDetail">
+                    <div className="medal gold">  {this.state.medal_count[0]}
+                    </div>
+                    <div className="medal silver">  {this.state.medal_count[1]}
+                    </div>
+                    <div className="medal bronze">  {this.state.medal_count[2]}
+                    </div>
                 </ol>
             </td>
         </tr> : null
+    }
+
+    linkPerson(person, index){
+        var exist = data.athletes.findIndex(i => i.athlete === person);
+        if(exist === -1){
+            return <ol key={index}> {person}</ol>
+        }else{
+            return <ol className = "personLink" key={index} onClick={()=>{window.location.replace(person)}}> {person}</ol>
+        }
     }
 
     render() {
@@ -86,30 +108,37 @@ export default class Profile extends Component {
                 <p key={index}> {sentence} </p>)}
         </div> : null
 
-        let pb = (this.state.pb.length !== 0) ? <tr >
+        let pb = (this.state.pb.length !== 0) ? <tr>
             <th className="profileHeader">PERSONAL BESTS</th>
             <td className="profileDetail">
                 {this.state.pb.map(this.scores)}
             </td>
         </tr> : null
 
+        let partner = (this.state.partner.length !== 0) ?<tr> 
+        {(this.state.partner.length === 1) ?<th className="profileHeader">PARTNER</th> : <th className="profileHeader">PARTNERS</th>}
+                    <td className="profileDetail">
+                        {this.state.partner.map((p, index) =>
+                        <ol className = "personLink" onClick={()=>{window.location.replace(p)}}key={index}>{p}</ol>)}
+                    </td>
+                </tr>
+            : null
+
         let coaches = (this.state.coaches.length !== 0) ? <tr>
-            <th className="profileHeader">COACHES</th>
-            <td className="profileDetail">{this.state.coaches.map((coach, index) =>
-                <ol key={index}> {coach}</ol>)}</td>
+              {(this.state.coaches.length === 1) ?<th className="profileHeader">COACH</th> : <th className="profileHeader">COACHES</th>}
+            <td className="profileDetail">{this.state.coaches.map(this.linkPerson)}</td>
         </tr> : null
 
         let choreographers = (this.state.choreographers.length !== 0) ? <tr>
-            <th className="profileHeader">CHOREOGRAPHERS</th>
-            <td className="profileDetail">{this.state.choreographers.map((choreographer, index) =>
-                <ol key={index}> {choreographer}</ol>)}</td>
+             {(this.state.choreographers.length === 1) ?<th className="profileHeader">CHOREOGRAPHER</th> : <th className="profileHeader">CHOREOGRAPHERS</th>}
+            <td className="profileDetail">{this.state.choreographers.map(this.linkPerson)}</td>
         </tr> : null
 
         let skating_club = (this.state.skating_club.length !== 0) ? <tr className="profileHeader">
-            <th className="profileHeader">SKATING CLUB</th>
+               {(this.state.skating_club.length === 1) ?<th className="profileHeader">SKATING CLUBS</th> : <th className="profileHeader">SKATING CLUB</th>}
             <td className="profileDetail">
                 {this.state.skating_club.map((club, index) =>
-                    <ol key={index}> {club}</ol>)} </td>
+                <ol key={index}> {club}</ol>)}</td>
         </tr> : null
 
         return (
@@ -122,6 +151,7 @@ export default class Profile extends Component {
                             {medal_count}
                             {pb}
                             {skating_club}
+                            {partner}
                             {coaches}
                             {choreographers}
                         </tbody>

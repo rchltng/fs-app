@@ -63,7 +63,7 @@ export default class Skaters extends Component {
             <td className="athleteTD">
                 <div className="athleteResult">
                     <div className="picWrapper">
-                        <img className="profilePic" src={athlete.img}></img>
+                        <img className="profilePic" src={athlete.img} alt="profile_pic" ></img>
                     </div>
                     <div className="profileWrapper">
                         <p className="athleteName"> {athlete.athlete.toUpperCase()} <Flag className="athleteFlag" code={athlete.countryCode} /> </p>
