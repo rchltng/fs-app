@@ -104,10 +104,12 @@ export default class Discipline extends Component {
                 </tbody>
             </table>
 
+        let title = this.state.discipline.split(" ").map(word => word.charAt(0).toUpperCase() + word.slice(1) + " ");
+
         return (
             <React.Fragment>
                 <div className="disciplineTitle">
-                    {this.state.discipline.charAt(0).toUpperCase() + this.state.discipline.slice(1)}
+                    {title}
                 </div>
                 <div className="overview">
                     {overview}
@@ -139,16 +141,19 @@ export default class Discipline extends Component {
                     </div>
                 </div>
 
-                <div className="attribute">
+                <div className="discContainer">
+                <div className="element">
                     <p className="element-header"> World Records</p>
                     {records}
                 </div>
-                <br></br>
-                <div className="attribute">
+                <div className="element">
                     <p className="element-header"> Super Slam </p>
-                    <p> Winning all major international competitions during the course of a career is called a "Career Super Grand Slam" or "Super Slam". Major competitions consist of the Olympics, Worlds, 4 Continents/Europeans, Grand Prix Final, Junior Worlds, and Junior Grand Prix Final. The following individuals in this discipline have achieved this feat.</p>
+                    <p className = "slamDesc"> Winning all major international competitions during the course of a career is called a "Career Super Grand Slam" or "Super Slam". Major competitions consist of the Olympics, Worlds, 4 Continents/Europeans, Grand Prix Final, Junior Worlds, and Junior Grand Prix Final. The following individuals in this discipline have achieved this feat.</p>
+                    <br/>
                     {super_slam}
                 </div>
+                <div className = "line"></div>
+                </div> 
             </React.Fragment>
         )
     }

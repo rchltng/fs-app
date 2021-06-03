@@ -176,7 +176,8 @@ body {
 }
 
 .discipline {
-    margin: 50px;
+    margin: 20px;
+    padding-top: 5%;
     padding: 2%;
     height: 100% !important;
 }
@@ -194,12 +195,13 @@ body {
 .element-header {
     font-size: 25px;
     text-align: center;
+    /* text-transform: uppercase; */
 }
 
 .discContainer {
-    border-spacing: 15px;
+    border-top: 1px solid;
     margin: 0;
-    margin-top: 70px;
+    border-color: lightgray;
 }
 
 .elements {
@@ -207,12 +209,17 @@ body {
     table-layout: fixed;
 }
 
+.line {
+    border-bottom: 1px solid;
+    border-color: lightgray;
+}
+
 .element {
     display: table-cell;
     font-size: 15px;
-    border: solid 1px;
-    border-radius: 10px;
-    padding: 5%;
+    /* border: solid 1px; */
+    /* border-radius: 10px; */
+    padding: 2.5%;
     width: 50%;
 }
 
@@ -767,14 +774,23 @@ img {
     color: white;
 }
 
+.slamDesc {
+    font-size: 12px;
+}
+
+.superSlam {
+    font-size: 12px;
+}
+
 .superSlam:hover {
     background-color: #16344A !important;
     cursor: pointer;
 }
 
 .disciplineVid {
-    height: 500px;
-    margin: 51px;
+    height: 591px;
+    margin-top: 51px;
+    margin-bottom: 51px;
 }
 
 .elementGif {
@@ -796,16 +812,17 @@ img {
 .gif {
     display: inline-block;
     vertical-align: middle;
-    width: 50% !important;
+    width: 58% !important;
     margin-left: 30px;
+    font-size: 15px;
 }
 
 .jumpGif {
-    display: inline-block;
-    width: 50% !important;
+    width: 58% !important;
     margin-left: 30px;
     float: right;
     margin-top: 6%;
+    font-size: 15px;
 }
 
 .jump {
