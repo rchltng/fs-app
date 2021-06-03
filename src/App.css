@@ -155,7 +155,7 @@ body {
 .discDetail:hover {
     color: #F7FBFC !important;
     transition: all .3s ease;
-    -webkit-transition: all .3s ease;
+    -webkit-transition: all .3s ease !important;
     text-decoration: none !important;
     border: 1px solid;
     border-radius: 10px;
@@ -230,7 +230,7 @@ tr {
 }
 
 .table {
-    width: 93% !important;
+    /* width: 93% !important; */
     margin: 0 auto;
 }
 
@@ -263,6 +263,8 @@ tr {
     transition: all .3s ease;
     -webkit-transition: all .3s ease;
     background-color: #0A1B26;
+    transition: all .3s ease !important;
+    -webkit-transition: all .3s ease !important;
 }
 
 .required {
@@ -279,6 +281,8 @@ tr {
     background-color: #16344A;
     color: #F6F6F6;
     cursor: pointer;
+    transition: all .3s ease !important;
+    -webkit-transition: all .3s ease !important;
 }
 
 
@@ -413,6 +417,8 @@ select {
 
 .nav-link:hover {
     background-color: #11293B !important;
+    transition: all .3s ease !important;
+    -webkit-transition: all .3s ease !important;
 }
 
 .nav-item {
@@ -720,11 +726,15 @@ img {
 .arrow-right:hover {
     cursor: pointer;
     color: white;
+    transition: all .3s ease !important;
+    -webkit-transition: all .3s ease !important;
 }
 
 .arrow-right:hover .suggestedRight {
     font-weight: bold;
     color: white;
+    transition: all .3s ease !important;
+    -webkit-transition: all .3s ease !important;
 }
 
 .arrow-left {
@@ -736,11 +746,15 @@ img {
 .arrow-left:hover {
     cursor: pointer;
     color: white;
+    transition: all .3s ease !important;
+    -webkit-transition: all .3s ease !important;
 }
 
 .arrow-left:hover .suggestedLeft {
     font-weight: bold;
     color: white;
+    transition: all .3s ease !important;
+    -webkit-transition: all .3s ease !important;
 }
 
 .suggestedRight,
@@ -772,19 +786,29 @@ img {
 .backArrow:hover {
     cursor: pointer;
     color: white;
+    transition: all .3s ease !important;
+    -webkit-transition: all .3s ease !important;
 }
 
 .slamDesc {
     font-size: 12px;
 }
 
-.superSlam {
-    font-size: 12px;
+.discTH {
+    font-size: 14px;
 }
 
-.superSlam:hover {
+.superSlam,
+.athleteResults {
+    font-size: 14px;
+}
+
+.superSlam:hover,
+.athleteResults:hover {
     background-color: #16344A !important;
     cursor: pointer;
+    transition: all .3s ease !important;
+    -webkit-transition: all .3s ease !important;
 }
 
 .disciplineVid {
@@ -812,13 +836,13 @@ img {
 .gif {
     display: inline-block;
     vertical-align: middle;
-    width: 58% !important;
+    width: 43vw !important;
     margin-left: 30px;
     font-size: 15px;
 }
 
 .jumpGif {
-    width: 58% !important;
+    width: 43vw !important;
     margin-left: 30px;
     float: right;
     margin-top: 6%;

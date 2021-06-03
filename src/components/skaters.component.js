@@ -58,7 +58,7 @@ export default class Skaters extends Component {
         } else {
             partner = null;
         }
-        return <tr key={index} onClick={() => window.location.replace(link)} className="article">
+        return <tr className = "athleteResults" key={index} onClick={() => window.location.replace(link)} >
 
             <td className="athleteTD">
                 <div className="athleteResult">
@@ -71,7 +71,6 @@ export default class Skaters extends Component {
                         <p className="athleteDiscipline"> {athlete.discipline.toLowerCase()} </p>
                     </div>
                 </div>
-                {/* </div> */}
             </td>
             <td>
                 world standing: {athlete.rank}
@@ -450,7 +449,7 @@ export default class Skaters extends Component {
 
                     {(this.state.athletes.length !== 0) ?
                         <div className="athleteTable">
-                            <table className="table table-hover" >
+                            <table className="table" >
                                 <tbody>
                                     {athletesList}
                                 </tbody>

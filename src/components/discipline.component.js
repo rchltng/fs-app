@@ -51,7 +51,7 @@ export default class Discipline extends Component {
                 let detailLink = detail.split('/')
                 link = "skaters/" + detailLink[0];
             }
-            return <td key={index}>{detail}</td>
+            return <td className = "records" key={index}>{detail}</td>
         })
 
         return <tr className="superSlam" onClick={() => window.location.replace(link)} key={index}>{record_detail}</tr>
@@ -64,7 +64,7 @@ export default class Discipline extends Component {
                 link = "skaters/" + detail;
             }
 
-            return <td key={index}>{detail}</td>
+            return <td className = "records" key={index}>{detail}</td>
         })
 
         return <tr className="superSlam" onClick={() => window.location.replace(link)} key={index}>{record_detail}</tr>
@@ -81,9 +81,9 @@ export default class Discipline extends Component {
             <table className="table">
                 <thead className="head">
                     <tr>
-                        <th scope="col">COMPONENT</th>
-                        <th scope="col">SCORE</th>
-                        <th scope="col">SKATER</th>
+                        <th className = "discTH" scope="col">COMPONENT</th>
+                        <th className = "discTH" scope="col">SCORE</th>
+                        <th className = "discTH" scope="col">SKATER</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -95,8 +95,8 @@ export default class Discipline extends Component {
             <table className="table">
                 <thead className="head">
                     <tr>
-                        <th scope="col">SKATER</th>
-                        <th scope="col">YEAR ACHIEVED</th>
+                        <th className = "discTH" scope="col">SKATER</th>
+                        <th className = "discTH" scope="col">YEAR ACHIEVED</th>
                     </tr>
                 </thead>
                 <tbody>
