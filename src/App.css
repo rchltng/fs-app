@@ -274,10 +274,11 @@ tr {
     cursor: pointer;
 }
 
-.head {
+
+/* .head {
     font-size: 20px;
     font-weight: bolder;
-}
+} */
 
 .noResults {
     text-align: center !important;
@@ -769,4 +770,60 @@ img {
 .superSlam:hover {
     background-color: #16344A !important;
     cursor: pointer;
+}
+
+.disciplineVid {
+    height: 500px;
+    margin: 51px;
+}
+
+.elementGif {
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.elementSrc {
+    margin: 0 auto;
+}
+
+.elementDescription {}
+
+.gif {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50% !important;
+    margin-left: 30px;
+}
+
+.jumpGif {
+    display: inline-block;
+    width: 50% !important;
+    margin-left: 30px;
+    float: right;
+    margin-top: 6%;
+}
+
+.jump {
+    margin-bottom: 30px;
+}
+
+.jumps {
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: absolute
+}
+
+.jumpDesc {
+    height: 800px;
+    margin-bottom: 80px;
 }

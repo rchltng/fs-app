@@ -13,7 +13,8 @@ export default class Discipline extends Component {
             sp_elements: [],
             fs_elements: [],
             records: [],
-            super_slam: []
+            super_slam: [],
+            src: ''
         }
     }
 
@@ -27,6 +28,7 @@ export default class Discipline extends Component {
             fs_elements: data.disciplines[index].fs_elements,
             records: data.disciplines[index].records,
             super_slam: data.disciplines[index].super_slam,
+            src: data.disciplines[index].video
         });
 
     }
@@ -34,9 +36,9 @@ export default class Discipline extends Component {
     programElements(element, index) {
         if (Array.isArray(element)) {
             let element_detail = element.map((detail, index) =>
-                <li key = {index}>{detail}</li>
+                <li key={index}>{detail}</li>
             )
-            return <ul key = {index}>{element_detail}</ul>
+            return <ul key={index}>{element_detail}</ul>
         } else {
             return <li key={index}>{element}</li>
         }
@@ -44,26 +46,28 @@ export default class Discipline extends Component {
 
     recordTable(record, index) {
         let link
-        let record_detail = record.map(function(detail, index){
-            if(index === 2){
+        let record_detail = record.map(function (detail, index) {
+            if (index === 2) {
                 let detailLink = detail.split('/')
                 link = "skaters/" + detailLink[0];
             }
-            return <td key = {index}>{detail}</td>})
+            return <td key={index}>{detail}</td>
+        })
 
-        return <tr className = "superSlam" onClick={() => window.location.replace(link)} key = {index}>{record_detail}</tr>
+        return <tr className="superSlam" onClick={() => window.location.replace(link)} key={index}>{record_detail}</tr>
     }
 
     recordSlam(record, index) {
         let link
-        let record_detail = record.map(function(detail, index){
-            if(index === 0){
+        let record_detail = record.map(function (detail, index) {
+            if (index === 0) {
                 link = "skaters/" + detail;
             }
-    
-            return <td key = {index}>{detail}</td>})
 
-        return <tr className = "superSlam" onClick={() => window.location.replace(link)} key = {index}>{record_detail}</tr>
+            return <td key={index}>{detail}</td>
+        })
+
+        return <tr className="superSlam" onClick={() => window.location.replace(link)} key={index}>{record_detail}</tr>
     }
 
     render() {
@@ -77,9 +81,9 @@ export default class Discipline extends Component {
             <table className="table">
                 <thead className="head">
                     <tr>
-                        <th scope="col">component</th>
-                        <th scope="col">score</th>
-                        <th scope="col">skater</th>
+                        <th scope="col">COMPONENT</th>
+                        <th scope="col">SCORE</th>
+                        <th scope="col">SKATER</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -87,18 +91,18 @@ export default class Discipline extends Component {
                 </tbody>
             </table>
 
-        let super_slam = 
-        <table className="table">
-        <thead className="head">
-            <tr>
-                <th scope="col">skater</th>
-                <th scope="col">year achieved</th>
-            </tr>
-        </thead>
-        <tbody>
-            {this.state.super_slam.map(this.recordSlam)}
-        </tbody>
-    </table>
+        let super_slam =
+            <table className="table">
+                <thead className="head">
+                    <tr>
+                        <th scope="col">SKATER</th>
+                        <th scope="col">YEAR ACHIEVED</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {this.state.super_slam.map(this.recordSlam)}
+                </tbody>
+            </table>
 
         return (
             <React.Fragment>
@@ -108,11 +112,16 @@ export default class Discipline extends Component {
                 <div className="overview">
                     {overview}
                 </div>
+                <div className = "disciplineVid">
+                    <iframe title="video" frameBorder="0" height="100%" width="100%"
+                        src={this.state.src}>
+                    </iframe>
+                </div>
                 <div className="discContainer">
                     <div className="elements">
                         <div className="element">
-                            {this.props.discipline === "ice dance" ? <p className="element-header"> short dance elements</p> :
-                                <p className="element-header"> short program elements</p>
+                            {this.props.discipline === "ice dance" ? <p className="element-header"> Short Dance Elements</p> :
+                                <p className="element-header"> Short Program Elements</p>
                             }
                             <ul>
                                 {sp_elements}
@@ -120,8 +129,8 @@ export default class Discipline extends Component {
                         </div>
 
                         <div className="element">
-                            {this.props.discipline === "ice dance" ? <p className="element-header"> free dance elements</p> :
-                                <p className="element-header"> free skate elements</p>
+                            {this.props.discipline === "ice dance" ? <p className="element-header"> Free Dance Elements</p> :
+                                <p className="element-header"> Free Skate Elements</p>
                             }
                             <ul>
                                 {fs_elements}
@@ -131,12 +140,12 @@ export default class Discipline extends Component {
                 </div>
 
                 <div className="attribute">
-                    <p className="element-header"> world records</p>
+                    <p className="element-header"> World Records</p>
                     {records}
                 </div>
-<br></br>
+                <br></br>
                 <div className="attribute">
-                    <p className="element-header"> super slam </p>
+                    <p className="element-header"> Super Slam </p>
                     <p> Winning all major international competitions during the course of a career is called a "Career Super Grand Slam" or "Super Slam". Major competitions consist of the Olympics, Worlds, 4 Continents/Europeans, Grand Prix Final, Junior Worlds, and Junior Grand Prix Final. The following individuals in this discipline have achieved this feat.</p>
                     {super_slam}
                 </div>
